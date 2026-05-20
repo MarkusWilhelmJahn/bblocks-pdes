@@ -1,0 +1,20 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "DiffusionOperator",
+  "description": "Spatial diffusion term \u2014 D\u00b7\u2207\u00b2u",
+  "type": "object",
+  "required": [
+    "D"
+  ],
+  "properties": {
+    "D": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Diffusion coefficient [cm\u00b2/d]",
+      "x-jsonld-id": "https://mwj.example.org/pdes/spatial/diffusionCoefficient"
+    }
+  },
+  "x-jsonld-prefixes": {
+    "spatial": "https://mwj.example.org/pdes/spatial/"
+  }
+}

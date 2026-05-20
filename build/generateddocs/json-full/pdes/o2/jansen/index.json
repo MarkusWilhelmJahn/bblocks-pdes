@@ -1,0 +1,48 @@
+
+
+{
+  "itemIdentifier": "mwj.pdes.o2.jansen",
+  "name": "Jansen Host-Parasitoid Model",
+  "abstract": "Jansen (1995) host-parasitoid model with density dependence. Jansen.java.",
+  "status": "experimental",
+  "dateTimeAddition": "2025-01-01T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "dependsOn": [
+    "mwj.pdes.common.stac-result",
+    "mwj.pdes.common.observation",
+    "mwj.pdes.common.simulation-run"
+  ],
+  "tags": [
+    "model",
+    "ODE"
+  ],
+  "sources": [
+    {
+      "title": "FiniteDifferenceMethod4PDES",
+      "link": "https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES"
+    }
+  ],
+  "shaclShapes": {},
+  "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/jansen/context.jsonld",
+  "dateOfLastChange": "2025-01-01",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/jansen/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/jansen/schema.json"
+  },
+  "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/jansen/schema.yaml",
+  "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/jansen/context.jsonld",
+  "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/jansen/resolvedProperties.json",
+  "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/jansen/",
+  "validationPassed": true,
+  "description": "# Jansen Host-Parasitoid Model\n\n**Equation(s):**\n```\ndN/dt = lambda\u00b7N\u00b7exp(-a\u00b7P) - N\\ndP/dt = N\u00b7(1 - exp(-a\u00b7P)) - mu\u00b7P\n```\n\n**Java class:** `model.lokal.o2.Jansen`\n**Tags:** o2, host-parasitoid, cycles\n\nCombined with `model.global.Diffusion` / `model.global.Advection` for PDE runs.\nSolved by `jEuler`, `jRungeKutta`, or `jButcher` (model/numerik/).\nOutput via `JPlotter0D` (ODE), `JPlotter1D/2D` or `VTKPlotter3D` (PDE).\n",
+  "examples": [
+    {
+      "title": "Default parameter set",
+      "content": "{ \"lambda\": 2.0, \"a\": 0.5, \"mu\": 0.5, \"N0\": 10.0, \"P0\": 1.0 }\n"
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntitle: JansenHostParasitoidParameters\ndescription: \"Jansen (1995) host-parasitoid model with density dependence:\\n  dN/dt\n  = lambda\\xB7N\\xB7exp(-a\\xB7P) - N\\n  dP/dt = N\\xB7(1 - exp(-a\\xB7P)) - mu\\xB7P\\n\"\ntype: object\nrequired:\n- lambda\n- a\n- mu\n- N0\n- P0\nproperties:\n  lambda:\n    type: number\n    minimum: 0\n    description: Host finite rate of increase\n  a:\n    type: number\n    minimum: 0\n    description: Parasitoid search efficiency\n  mu:\n    type: number\n    minimum: 0\n    description: Parasitoid survival rate\n  N0:\n    type: number\n    minimum: 0\n    description: Initial host density\n  P0:\n    type: number\n    minimum: 0\n    description: Initial parasitoid density\nx-jsonld-prefixes:\n  plk: https://mwj.example.org/pdes/model/\n  prov: http://www.w3.org/ns/prov#\n",
+  "gitRepository": "https://github.com/MarkusWilhelmJahn/bblocks-pdes",
+  "gitPath": "_sources/o2/jansen"
+}

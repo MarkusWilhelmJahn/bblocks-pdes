@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SchloeglParameters",
+  "description": "Schl\u00f6gl (1972) bistable chemical reaction:\n  A + 2X <-> 3X  (autocatalytic)\n  B + X  <-> C   (drain)\n  dX/dt = k1\u00b7A\u00b7X\u00b2 - k2\u00b7X\u00b3 + k3\u00b7B - k4\u00b7X\nControl parameter: A or B drives first-order phase transition.\n",
+  "type": "object",
+  "required": [
+    "k1",
+    "k2",
+    "k3",
+    "k4",
+    "A",
+    "B",
+    "X0"
+  ],
+  "properties": {
+    "k1": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Forward rate constant (autocatalysis)"
+    },
+    "k2": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Reverse rate constant (autocatalysis)"
+    },
+    "k3": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Forward rate constant (drain)"
+    },
+    "k4": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Reverse rate constant (drain)"
+    },
+    "A": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Concentration of species A (control)"
+    },
+    "B": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Concentration of species B (control)"
+    },
+    "X0": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Initial concentration of X"
+    }
+  },
+  "x-jsonld-prefixes": {
+    "plk": "https://mwj.example.org/pdes/model/",
+    "prov": "http://www.w3.org/ns/prov#"
+  }
+}

@@ -1,7 +1,7 @@
 {
   "@context": [
     {
-      "@base": "https://opengeospatial.github.io/bblocks-template"
+      "@base": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined"
     },
     {
       "bblocks": "https://www.opengis.net/def/bblocks/",
@@ -191,43 +191,42 @@
       }
     }
   ],
-  "name": "Building Blocks - My OGC Building Blocks repository",
-  "abstract": "This is an example text for the abstract. It should be short and to the point.\nA \"Tell me more\" link will appear if there is an additional description with a longer explanation.\n",
-  "description": "The description can be longer. Both **the abstract** *and the description* support Markdown,\nincluding [links](https://google.es).\n",
-  "modified": "2026-05-07T11:37:21.546445",
+  "name": "Building Blocks - FiniteDifferenceMethod4PDES \u2014 OGC Building Block Register",
+  "abstract": "OGC Building Block register for all ODE/PDE models implemented in FiniteDifferenceMethod4PDES (Java/Maven, MVC architecture). Covers 22 local kinetic models across 4 complexity tiers, 4 Holling functional response components, and 2 spatial operators, all described using SOSA, PROV-O and STAC 1.0.\n",
+  "modified": "2026-05-20T15:11:38.640400",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"6c782d91e288340ba681da9c977d75a37c22b8b7",
-      "shortCommitId": "\"6c782d",
-      "date": "2026-05-07T11:32:58+00:00\""
+      "commitId": "\"1c38e230d79a22d5b242ea63ec3c6d6a95af173d",
+      "shortCommitId": "\"1c38e2",
+      "date": "2026-05-20T11:46:31+00:00\""
     }
   },
-  "gitRepository": "https://github.com/opengeospatial/bblocks-template",
-  "gitHubRepository": "https://github.com/opengeospatial/bblocks-template/blob/master/",
-  "baseURL": "https://opengeospatial.github.io/bblocks-template/",
-  "viewerURL": "https://opengeospatial.github.io/bblocks-template/",
-  "validationReport": "https://opengeospatial.github.io/bblocks-template/build/tests/report.html",
-  "validationReportJson": "https://opengeospatial.github.io/bblocks-template/build/tests/report.json",
+  "gitRepository": "https://github.com/MarkusWilhelmJahn/bblocks-pdes",
+  "gitHubRepository": "https://github.com/MarkusWilhelmJahn/bblocks-pdes/blob/master/",
+  "baseURL": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/",
+  "viewerURL": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/",
+  "validationReport": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/tests/report.html",
+  "validationReportJson": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/tests/report.json",
   "imports": [
     "https://opengeospatial.github.io/bblocks/register.json"
   ],
-  "remoteCacheDir": "https://opengeospatial.github.io/bblocks-template/build/annotated/_cache",
+  "remoteCacheDir": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/_cache",
   "links": [
     {
       "rel": "self",
-      "href": "https://opengeospatial.github.io/bblocks-template/build/register.json",
+      "href": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/register.json",
       "type": "application/json",
       "title": "This Building Blocks Register in JSON format"
     },
     {
       "rel": "self",
-      "href": "https://opengeospatial.github.io/bblocks-template/build/bblocks.ttl",
+      "href": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/bblocks.ttl",
       "type": "text/turtle",
       "title": "This Building Blocks Register in RDF Turtle format"
     },
     {
       "rel": "self",
-      "href": "https://opengeospatial.github.io/bblocks-template/build/bblocks.jsonld",
+      "href": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/bblocks.jsonld",
       "type": "application/ld+json",
       "title": "This Building Blocks Register in JSON-LD format"
     }
@@ -237,205 +236,2309 @@
     "dcat:Catalog",
     "bblocks:BBlocksRegister"
   ],
-  "skos:prefLabel": "Building Blocks - My OGC Building Blocks repository",
+  "skos:prefLabel": "Building Blocks - FiniteDifferenceMethod4PDES \u2014 OGC Building Block Register",
   "hasConcepts": [
     {
-      "itemIdentifier": "ogc.bbr.template.mySchema",
-      "$schema": "metaschema.yaml",
-      "name": "My Schema",
-      "abstract": "An example schema defining the set of properties of any type of object.",
-      "status": "under-development",
-      "dateTimeAddition": "2023-04-05T00:00:00Z",
+      "itemIdentifier": "mwj.pdes.common.observation",
+      "name": "Initial Observation (SOSA)",
+      "abstract": "SOSA ObservationCollection providing initial state variables and control parameters for any model run. resultTime becomes t=0 of the simulation.",
+      "status": "experimental",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
       "itemClass": "schema",
-      "register": "ogc-building-block-register",
       "version": "0.1",
-      "link": "https://github.com/opengeospatial/bblock-template",
+      "tags": [
+        "SOSA",
+        "initial-conditions",
+        "observation"
+      ],
       "sources": [
         {
-          "title": "Sample source document",
-          "link": "https://example.com/sources/1"
+          "title": "W3C SOSA/SSN Ontology",
+          "link": "https://www.w3.org/TR/vocab-ssn/"
         }
       ],
-      "tags": [
-        "templates"
+      "rdfType": [
+        "http://www.w3.org/ns/sosa/ObservationCollection"
       ],
-      "shaclShapes": [
-        {
-          "prof:hasArtifact": [
-            "https://opengeospatial.github.io/bblocks-template/_sources/mySchema/shapes.shacl"
-          ],
-          "rdfs:seeAlso": "bblocks://ogc.bbr.template.mySchema",
-          "prof:hasRole": "role:validation",
-          "dct:format": "text/turtle",
-          "dct:conformsTo": "shacl:"
-        }
-      ],
+      "shaclShapes": null,
       "ldContext": {
-        "prof:hasArtifact": "https://opengeospatial.github.io/bblocks-template/build/annotated/bbr/template/mySchema/context.jsonld",
+        "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/observation/context.jsonld",
         "prof:hasRole": "role:mapping",
         "dct:format": "application/ld+json",
         "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
       },
-      "dateOfLastChange": "2023-04-05",
+      "dateOfLastChange": "2025-01-01",
       "schema": [
         {
-          "prof:hasArtifact": "https://opengeospatial.github.io/bblocks-template/build/annotated/bbr/template/mySchema/schema.yaml",
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/observation/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://opengeospatial.github.io/bblocks-template/build/annotated/bbr/template/mySchema/schema.json",
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/observation/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://opengeospatial.github.io/bblocks-template/_sources/mySchema/schema.yaml",
-      "sourceLdContext": "https://opengeospatial.github.io/bblocks-template/_sources/mySchema/context.jsonld",
-      "resolvedSchemaProperties": "https://opengeospatial.github.io/bblocks-template/build/annotated/bbr/template/mySchema/resolvedProperties.json",
-      "sourceFiles": "https://opengeospatial.github.io/bblocks-template/_sources/mySchema/",
+      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/observation/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/observation/context.jsonld",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/observation/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/observation/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/opengeospatial/bblocks-template/blob/master/build/tests/bbr/template/mySchema/",
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/bblocks-template/build/generateddocs/json-full/bbr/template/mySchema/index.json"
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/common/observation/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/bblocks-template/build/generateddocs/markdown/bbr/template/mySchema/index.md"
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/common/observation/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/bblocks-template/bblock/ogc.bbr.template.mySchema"
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.common.observation"
         }
       },
-      "@id": "bblocks://ogc.bbr.template.mySchema",
+      "@id": "bblocks://mwj.pdes.common.observation",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
         "dcat:Dataset",
         "bblocks:BBlock"
       ],
-      "skos:prefLabel": "My Schema",
+      "skos:prefLabel": "Initial Observation (SOSA)",
       "openAPIDocument": null,
       "ontology": null,
       "rdfData": [],
       "dependsOn": null,
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://opengeospatial.github.io/bblocks-template/"
+        "@id": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/"
       }
     },
     {
-      "itemIdentifier": "ogc.bbr.template.myFeature",
-      "name": "Custom Feature",
-      "abstract": "This examples shows a simple customisation for OGC API Feature schemas",
-      "status": "under-development",
-      "dateTimeAddition": "2023-05-19T00:00:00Z",
+      "itemIdentifier": "mwj.pdes.components.advection",
+      "name": "Spatial Advection Operator",
+      "abstract": "Linear advection term -v\u00b7\u2207u. Implemented in model.global.Advection.java. Combined with any local kinetic model and diffusion to produce a DIFICI travelling-wave system.",
+      "status": "experimental",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
       "itemClass": "schema",
-      "register": "ogc-building-block-examples",
-      "version": "1.0",
-      "sources": [
-        {
-          "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
-          "link": "https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7"
-        }
-      ],
-      "dependsOn": [
-        "bblocks://ogc.bbr.template.mySchema",
-        "bblocks://ogc.geo.features.feature"
-      ],
+      "version": "0.1",
       "tags": [
-        "feature",
-        "examples"
+        "spatial",
+        "advection",
+        "PDE",
+        "DIFICI",
+        "operator"
       ],
-      "group": "Examples",
-      "highlighted": true,
-      "shaclShapes": [
-        {
-          "prof:hasArtifact": [
-            "https://opengeospatial.github.io/bblocks-template/_sources/mySchema/shapes.shacl"
-          ],
-          "rdfs:seeAlso": "bblocks://ogc.bbr.template.mySchema",
-          "prof:hasRole": "role:validation",
-          "dct:format": "text/turtle",
-          "dct:conformsTo": "shacl:"
-        },
-        {
-          "prof:hasArtifact": [
-            "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl"
-          ],
-          "rdfs:seeAlso": "bblocks://ogc.geo.features.feature",
-          "prof:hasRole": "role:validation",
-          "dct:format": "text/turtle",
-          "dct:conformsTo": "shacl:"
-        }
-      ],
-      "dateOfLastChange": "2023-05-19",
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/advection/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "dateOfLastChange": "2025-01-01",
       "schema": [
         {
-          "prof:hasArtifact": "https://opengeospatial.github.io/bblocks-template/build/annotated/bbr/template/myFeature/schema.yaml",
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/advection/schema.yaml",
           "prof:hasRole": "role:schema",
           "dct:format": "application/yaml",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         },
         {
-          "prof:hasArtifact": "https://opengeospatial.github.io/bblocks-template/build/annotated/bbr/template/myFeature/schema.json",
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/advection/schema.json",
           "prof:hasRole": "role:schema",
           "dct:format": "application/json",
           "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
         }
       ],
-      "sourceSchema": "https://opengeospatial.github.io/bblocks-template/_sources/myFeature/schema.yaml",
-      "ldContext": {
-        "prof:hasArtifact": "https://opengeospatial.github.io/bblocks-template/build/annotated/bbr/template/myFeature/context.jsonld",
-        "prof:hasRole": "role:mapping",
-        "dct:format": "application/ld+json",
-        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
-      },
-      "resolvedSchemaProperties": "https://opengeospatial.github.io/bblocks-template/build/annotated/bbr/template/myFeature/resolvedProperties.json",
-      "sourceFiles": "https://opengeospatial.github.io/bblocks-template/_sources/myFeature/",
+      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/advection/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/advection/context.jsonld",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/advection/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/advection/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/opengeospatial/bblocks-template/blob/master/build/tests/bbr/template/myFeature/",
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/bblocks-template/build/generateddocs/json-full/bbr/template/myFeature/index.json"
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/components/advection/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/bblocks-template/build/generateddocs/markdown/bbr/template/myFeature/index.md"
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/components/advection/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/bblocks-template/bblock/ogc.bbr.template.myFeature"
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.components.advection"
         }
       },
-      "@id": "bblocks://ogc.bbr.template.myFeature",
+      "@id": "bblocks://mwj.pdes.components.advection",
       "@type": [
         "bblocks:Schema",
         "skos:Concept",
         "dcat:Dataset",
         "bblocks:BBlock"
       ],
-      "skos:prefLabel": "Custom Feature",
+      "skos:prefLabel": "Spatial Advection Operator",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "mwj.pdes.components.diffusion",
+      "name": "Spatial Diffusion Operator",
+      "abstract": "Fickian diffusion term D\u00b7\u2207\u00b2u. Implemented in model.global.Diffusion.java. Combined with any local kinetic model to produce a reaction-diffusion PDE.",
+      "status": "experimental",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "tags": [
+        "spatial",
+        "diffusion",
+        "PDE",
+        "operator"
+      ],
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/diffusion/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "dateOfLastChange": "2025-01-01",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/diffusion/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/diffusion/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/diffusion/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/diffusion/context.jsonld",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/diffusion/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/diffusion/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/components/diffusion/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/components/diffusion/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.components.diffusion"
+        }
+      },
+      "@id": "bblocks://mwj.pdes.components.diffusion",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Spatial Diffusion Operator",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "mwj.pdes.components.holling-i",
+      "name": "Holling Type I Functional Response",
+      "abstract": "Linear prey consumption proportional to prey density. No handling time. Implemented in model/lokal/holling/HollingI.java.",
+      "status": "experimental",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "tags": [
+        "Holling",
+        "functional-response",
+        "component"
+      ],
+      "sources": [
+        {
+          "title": "Holling (1959) Canadian Entomologist 91:293-320"
+        }
+      ],
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-i/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "dateOfLastChange": "2025-01-01",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-i/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-i/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-i/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-i/context.jsonld",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-i/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-i/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/components/holling-i/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/components/holling-i/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.components.holling-i"
+        }
+      },
+      "@id": "bblocks://mwj.pdes.components.holling-i",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Holling Type I Functional Response",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "mwj.pdes.components.holling-ii",
+      "name": "Holling Type II Functional Response",
+      "abstract": "Saturating Michaelis-Menten (disc equation) response. Implemented in model/lokal/holling/HollingII.java.",
+      "status": "experimental",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "tags": [
+        "Holling",
+        "functional-response",
+        "component"
+      ],
+      "sources": [
+        {
+          "title": "Holling (1959) Canadian Entomologist 91:293-320"
+        }
+      ],
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-ii/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "dateOfLastChange": "2025-01-01",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-ii/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-ii/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-ii/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-ii/context.jsonld",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-ii/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-ii/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/components/holling-ii/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/components/holling-ii/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.components.holling-ii"
+        }
+      },
+      "@id": "bblocks://mwj.pdes.components.holling-ii",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Holling Type II Functional Response",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "mwj.pdes.components.holling-iii",
+      "name": "Holling Type III Functional Response",
+      "abstract": "Sigmoid response \u2014 accelerating at low density, saturating at high. Implemented in model/lokal/holling/HollingIII.java.",
+      "status": "experimental",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "tags": [
+        "Holling",
+        "functional-response",
+        "component"
+      ],
+      "sources": [
+        {
+          "title": "Holling (1959) Canadian Entomologist 91:293-320"
+        }
+      ],
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iii/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "dateOfLastChange": "2025-01-01",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iii/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iii/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-iii/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-iii/context.jsonld",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iii/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-iii/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/components/holling-iii/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/components/holling-iii/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.components.holling-iii"
+        }
+      },
+      "@id": "bblocks://mwj.pdes.components.holling-iii",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Holling Type III Functional Response",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "mwj.pdes.components.holling-iv",
+      "name": "Holling Type IV Functional Response",
+      "abstract": "Inhibition / Monod-Haldane response \u2014 unimodal, decreasing at high prey density. Implemented in model/lokal/holling/HollingIV.java.",
+      "status": "experimental",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "tags": [
+        "Holling",
+        "functional-response",
+        "component"
+      ],
+      "sources": [
+        {
+          "title": "Holling (1959) Canadian Entomologist 91:293-320"
+        }
+      ],
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iv/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "dateOfLastChange": "2025-01-01",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iv/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iv/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-iv/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-iv/context.jsonld",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iv/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-iv/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/components/holling-iv/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/components/holling-iv/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.components.holling-iv"
+        }
+      },
+      "@id": "bblocks://mwj.pdes.components.holling-iv",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Holling Type IV Functional Response",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "dependsOn": null,
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "mwj.pdes.common.simulation-run",
+      "name": "Simulation Run (PROV)",
+      "abstract": "Generic PROV Activity capturing one execution of any local kinetic model in FiniteDifferenceMethod4PDES, optionally extended with spatial operators (Diffusion, Advection).",
+      "status": "experimental",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "dependsOn": [
+        "bblocks://mwj.pdes.common.observation"
+      ],
+      "tags": [
+        "PROV",
+        "simulation",
+        "lineage",
+        "FDM"
+      ],
+      "sources": [
+        {
+          "title": "W3C PROV-O",
+          "link": "https://www.w3.org/TR/prov-o/"
+        },
+        {
+          "title": "FiniteDifferenceMethod4PDES",
+          "link": "https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES"
+        }
+      ],
+      "rdfType": [
+        "http://www.w3.org/ns/prov#Activity"
+      ],
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/simulation-run/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "dateOfLastChange": "2025-01-01",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/simulation-run/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/simulation-run/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/simulation-run/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/simulation-run/context.jsonld",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/simulation-run/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/simulation-run/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/common/simulation-run/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/common/simulation-run/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.common.simulation-run"
+        }
+      },
+      "@id": "bblocks://mwj.pdes.common.simulation-run",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Simulation Run (PROV)",
       "openAPIDocument": null,
       "ontology": null,
       "rdfData": [],
       "isProfileOf": null,
       "skos:topConceptOf": {
-        "@id": "https://opengeospatial.github.io/bblocks-template/"
+        "@id": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "mwj.pdes.common.stac-result",
+      "name": "Simulation Result STAC Item",
+      "abstract": "STAC 1.0 Item cataloguing outputs of any simulation run from FiniteDifferenceMethod4PDES, with plankton-rda extension for model-specific searchable properties.",
+      "status": "experimental",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "dependsOn": [
+        "bblocks://mwj.pdes.common.simulation-run"
+      ],
+      "tags": [
+        "STAC",
+        "catalog",
+        "timeseries",
+        "spatial-field"
+      ],
+      "sources": [
+        {
+          "title": "STAC 1.0",
+          "link": "https://stacspec.org/"
+        }
+      ],
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/stac-result/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "dateOfLastChange": "2025-01-01",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/stac-result/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/stac-result/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/stac-result/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/stac-result/context.jsonld",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/stac-result/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/stac-result/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/common/stac-result/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/common/stac-result/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.common.stac-result"
+        }
+      },
+      "@id": "bblocks://mwj.pdes.common.stac-result",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Simulation Result STAC Item",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "mwj.pdes.o1.blei",
+      "name": "Lead Kinetics (Blei)",
+      "abstract": "One-compartment lead (Blei) kinetics model dX/dt = k_in - k_out\u00b7X. Implemented in Blei.java.",
+      "status": "experimental",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "dependsOn": [
+        "bblocks://mwj.pdes.common.stac-result",
+        "bblocks://mwj.pdes.common.observation",
+        "bblocks://mwj.pdes.common.simulation-run"
+      ],
+      "tags": [
+        "model",
+        "ODE"
+      ],
+      "sources": [
+        {
+          "title": "FiniteDifferenceMethod4PDES",
+          "link": "https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES"
+        }
+      ],
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o1/blei/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "dateOfLastChange": "2025-01-01",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o1/blei/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o1/blei/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o1/blei/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o1/blei/context.jsonld",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o1/blei/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o1/blei/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o1/blei/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o1/blei/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o1.blei"
+        }
+      },
+      "@id": "bblocks://mwj.pdes.o1.blei",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Lead Kinetics (Blei)",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "mwj.pdes.o2.china",
+      "name": "China Population Model",
+      "abstract": "Two-component demographic or resource-competition model. China.java.",
+      "status": "experimental",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "dependsOn": [
+        "bblocks://mwj.pdes.common.stac-result",
+        "bblocks://mwj.pdes.common.observation",
+        "bblocks://mwj.pdes.common.simulation-run"
+      ],
+      "tags": [
+        "model",
+        "ODE"
+      ],
+      "sources": [
+        {
+          "title": "FiniteDifferenceMethod4PDES",
+          "link": "https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES"
+        }
+      ],
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/china/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "dateOfLastChange": "2025-01-01",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/china/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/china/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/china/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/china/context.jsonld",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/china/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/china/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/china/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/china/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.china"
+        }
+      },
+      "@id": "bblocks://mwj.pdes.o2.china",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "China Population Model",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "mwj.pdes.o2.harvesting-dependent",
+      "name": "Stock-Dependent Harvesting",
+      "abstract": "Logistic growth with proportional (stock-dependent) harvesting effort. Bestandsabhaengige_Ernte.java.",
+      "status": "experimental",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "dependsOn": [
+        "bblocks://mwj.pdes.common.stac-result",
+        "bblocks://mwj.pdes.common.observation",
+        "bblocks://mwj.pdes.common.simulation-run"
+      ],
+      "tags": [
+        "model",
+        "ODE"
+      ],
+      "sources": [
+        {
+          "title": "FiniteDifferenceMethod4PDES",
+          "link": "https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES"
+        }
+      ],
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/harvesting-dependent/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "dateOfLastChange": "2025-01-01",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/harvesting-dependent/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/harvesting-dependent/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/harvesting-dependent/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/harvesting-dependent/context.jsonld",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/harvesting-dependent/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/harvesting-dependent/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/harvesting-dependent/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/harvesting-dependent/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.harvesting-dependent"
+        }
+      },
+      "@id": "bblocks://mwj.pdes.o2.harvesting-dependent",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Stock-Dependent Harvesting",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "mwj.pdes.o2.harvesting-independent",
+      "name": "Stock-Independent Harvesting",
+      "abstract": "Logistic growth with constant (stock-independent) harvest rate H. Bestandsunabhaengige_Ernte.java.",
+      "status": "experimental",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "dependsOn": [
+        "bblocks://mwj.pdes.common.stac-result",
+        "bblocks://mwj.pdes.common.observation",
+        "bblocks://mwj.pdes.common.simulation-run"
+      ],
+      "tags": [
+        "model",
+        "ODE"
+      ],
+      "sources": [
+        {
+          "title": "FiniteDifferenceMethod4PDES",
+          "link": "https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES"
+        }
+      ],
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/harvesting-independent/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "dateOfLastChange": "2025-01-01",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/harvesting-independent/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/harvesting-independent/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/harvesting-independent/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/harvesting-independent/context.jsonld",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/harvesting-independent/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/harvesting-independent/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/harvesting-independent/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/harvesting-independent/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.harvesting-independent"
+        }
+      },
+      "@id": "bblocks://mwj.pdes.o2.harvesting-independent",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Stock-Independent Harvesting",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "mwj.pdes.o2.jansen",
+      "name": "Jansen Host-Parasitoid Model",
+      "abstract": "Jansen (1995) host-parasitoid model with density dependence. Jansen.java.",
+      "status": "experimental",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "dependsOn": [
+        "bblocks://mwj.pdes.common.stac-result",
+        "bblocks://mwj.pdes.common.observation",
+        "bblocks://mwj.pdes.common.simulation-run"
+      ],
+      "tags": [
+        "model",
+        "ODE"
+      ],
+      "sources": [
+        {
+          "title": "FiniteDifferenceMethod4PDES",
+          "link": "https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES"
+        }
+      ],
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/jansen/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "dateOfLastChange": "2025-01-01",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/jansen/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/jansen/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/jansen/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/jansen/context.jsonld",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/jansen/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/jansen/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/jansen/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/jansen/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.jansen"
+        }
+      },
+      "@id": "bblocks://mwj.pdes.o2.jansen",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Jansen Host-Parasitoid Model",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "mwj.pdes.o2.lorenz",
+      "name": "Lorenz System",
+      "abstract": "Lorenz (1963) chaotic attractor: dx/dt=sigma(y-x), dy/dt=x(rho-z)-y, dz/dt=xy-beta\u00b7z. Lorenz.java.",
+      "status": "experimental",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "dependsOn": [
+        "bblocks://mwj.pdes.common.stac-result",
+        "bblocks://mwj.pdes.common.observation",
+        "bblocks://mwj.pdes.common.simulation-run"
+      ],
+      "tags": [
+        "model",
+        "ODE"
+      ],
+      "sources": [
+        {
+          "title": "FiniteDifferenceMethod4PDES",
+          "link": "https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES"
+        }
+      ],
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/lorenz/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "dateOfLastChange": "2025-01-01",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/lorenz/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/lorenz/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/lorenz/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/lorenz/context.jsonld",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/lorenz/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/lorenz/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/lorenz/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/lorenz/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.lorenz"
+        }
+      },
+      "@id": "bblocks://mwj.pdes.o2.lorenz",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Lorenz System",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "mwj.pdes.o2.lotka-volterra",
+      "name": "Lotka-Volterra Predator-Prey",
+      "abstract": "Classic Lotka-Volterra: dX/dt=a\u00b7X-b\u00b7X\u00b7Y, dY/dt=-c\u00b7Y+d\u00b7X\u00b7Y. Implemented in Lotka.java.",
+      "status": "experimental",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "dependsOn": [
+        "bblocks://mwj.pdes.common.stac-result",
+        "bblocks://mwj.pdes.common.observation",
+        "bblocks://mwj.pdes.common.simulation-run"
+      ],
+      "tags": [
+        "model",
+        "ODE"
+      ],
+      "sources": [
+        {
+          "title": "FiniteDifferenceMethod4PDES",
+          "link": "https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES"
+        }
+      ],
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/lotka-volterra/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "dateOfLastChange": "2025-01-01",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/lotka-volterra/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/lotka-volterra/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/lotka-volterra/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/lotka-volterra/context.jsonld",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/lotka-volterra/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/lotka-volterra/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/lotka-volterra/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/lotka-volterra/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.lotka-volterra"
+        }
+      },
+      "@id": "bblocks://mwj.pdes.o2.lotka-volterra",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Lotka-Volterra Predator-Prey",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "mwj.pdes.o2.plankton",
+      "name": "Generic Plankton Model",
+      "abstract": "Simplified two-component phytoplankton-zooplankton model. Plankton.java.",
+      "status": "experimental",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "dependsOn": [
+        "bblocks://mwj.pdes.common.stac-result",
+        "bblocks://mwj.pdes.common.observation",
+        "bblocks://mwj.pdes.common.simulation-run"
+      ],
+      "tags": [
+        "model",
+        "ODE"
+      ],
+      "sources": [
+        {
+          "title": "FiniteDifferenceMethod4PDES",
+          "link": "https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES"
+        }
+      ],
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/plankton/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "dateOfLastChange": "2025-01-01",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/plankton/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/plankton/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/plankton/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/plankton/context.jsonld",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/plankton/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/plankton/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/plankton/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/plankton/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.plankton"
+        }
+      },
+      "@id": "bblocks://mwj.pdes.o2.plankton",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Generic Plankton Model",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "mwj.pdes.o2.roessler",
+      "name": "R\u00f6ssler System",
+      "abstract": "R\u00f6ssler (1976) chaotic system: dx/dt=-(y+z), dy/dt=x+a\u00b7y, dz/dt=b+z(x-c). Roessler.java.",
+      "status": "experimental",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "dependsOn": [
+        "bblocks://mwj.pdes.common.stac-result",
+        "bblocks://mwj.pdes.common.observation",
+        "bblocks://mwj.pdes.common.simulation-run"
+      ],
+      "tags": [
+        "model",
+        "ODE"
+      ],
+      "sources": [
+        {
+          "title": "FiniteDifferenceMethod4PDES",
+          "link": "https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES"
+        }
+      ],
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/roessler/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "dateOfLastChange": "2025-01-01",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/roessler/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/roessler/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/roessler/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/roessler/context.jsonld",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/roessler/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/roessler/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/roessler/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/roessler/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.roessler"
+        }
+      },
+      "@id": "bblocks://mwj.pdes.o2.roessler",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "R\u00f6ssler System",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "mwj.pdes.o2.scheffer",
+      "name": "Scheffer Phytoplankton-Zooplankton (RDA)",
+      "abstract": "Scheffer (1991) phytoplankton/zooplankton predator-prey model with Holling II/III responses and optional diffusion/advection. Scheffer.java.",
+      "status": "experimental",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "dependsOn": [
+        "bblocks://mwj.pdes.common.stac-result",
+        "bblocks://mwj.pdes.common.observation",
+        "bblocks://mwj.pdes.common.simulation-run"
+      ],
+      "tags": [
+        "model",
+        "ODE"
+      ],
+      "sources": [
+        {
+          "title": "FiniteDifferenceMethod4PDES",
+          "link": "https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES"
+        }
+      ],
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/scheffer/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "dateOfLastChange": "2025-01-01",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/scheffer/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/scheffer/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/scheffer/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/scheffer/context.jsonld",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/scheffer/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/scheffer/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/scheffer/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/scheffer/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.scheffer"
+        }
+      },
+      "@id": "bblocks://mwj.pdes.o2.scheffer",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Scheffer Phytoplankton-Zooplankton (RDA)",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "mwj.pdes.o2.tannentriebwickler",
+      "name": "Larch Budmoth (Tannentriebwickler)",
+      "abstract": "Zeiraphera diniana (larch budmoth) population cycle model. Tannentriebwickler.java.",
+      "status": "experimental",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "dependsOn": [
+        "bblocks://mwj.pdes.common.stac-result",
+        "bblocks://mwj.pdes.common.observation",
+        "bblocks://mwj.pdes.common.simulation-run"
+      ],
+      "tags": [
+        "model",
+        "ODE"
+      ],
+      "sources": [
+        {
+          "title": "FiniteDifferenceMethod4PDES",
+          "link": "https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES"
+        }
+      ],
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/tannentriebwickler/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "dateOfLastChange": "2025-01-01",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/tannentriebwickler/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/tannentriebwickler/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/tannentriebwickler/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/tannentriebwickler/context.jsonld",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/tannentriebwickler/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/tannentriebwickler/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/tannentriebwickler/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/tannentriebwickler/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.tannentriebwickler"
+        }
+      },
+      "@id": "bblocks://mwj.pdes.o2.tannentriebwickler",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Larch Budmoth (Tannentriebwickler)",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "mwj.pdes.o2.tumor",
+      "name": "Tumor-Immune Interaction",
+      "abstract": "Two-component tumor growth and immune response model. Tumor.java.",
+      "status": "experimental",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "dependsOn": [
+        "bblocks://mwj.pdes.common.stac-result",
+        "bblocks://mwj.pdes.common.observation",
+        "bblocks://mwj.pdes.common.simulation-run"
+      ],
+      "tags": [
+        "model",
+        "ODE"
+      ],
+      "sources": [
+        {
+          "title": "FiniteDifferenceMethod4PDES",
+          "link": "https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES"
+        }
+      ],
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/tumor/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "dateOfLastChange": "2025-01-01",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/tumor/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/tumor/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/tumor/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/tumor/context.jsonld",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/tumor/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/tumor/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/tumor/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/tumor/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.tumor"
+        }
+      },
+      "@id": "bblocks://mwj.pdes.o2.tumor",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Tumor-Immune Interaction",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "mwj.pdes.o2.volterra",
+      "name": "Volterra Predator-Prey with Carrying Capacity",
+      "abstract": "Extended Volterra with logistic prey: dX/dt=r\u00b7X(1-X/K)-a\u00b7X\u00b7Y, dY/dt=-c\u00b7Y+d\u00b7a\u00b7X\u00b7Y. Volterra.java.",
+      "status": "experimental",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "dependsOn": [
+        "bblocks://mwj.pdes.common.stac-result",
+        "bblocks://mwj.pdes.common.observation",
+        "bblocks://mwj.pdes.common.simulation-run"
+      ],
+      "tags": [
+        "model",
+        "ODE"
+      ],
+      "sources": [
+        {
+          "title": "FiniteDifferenceMethod4PDES",
+          "link": "https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES"
+        }
+      ],
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/volterra/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "dateOfLastChange": "2025-01-01",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/volterra/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/volterra/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/volterra/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/volterra/context.jsonld",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/volterra/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/volterra/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/volterra/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/volterra/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.volterra"
+        }
+      },
+      "@id": "bblocks://mwj.pdes.o2.volterra",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Volterra Predator-Prey with Carrying Capacity",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "mwj.pdes.o3.fischfang",
+      "name": "Fish Harvesting (Fischfang)",
+      "abstract": "Three-component fish harvesting model (prey-predator-effort or nutrient-fish-harvest). Fischfang.java.",
+      "status": "experimental",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "dependsOn": [
+        "bblocks://mwj.pdes.common.stac-result",
+        "bblocks://mwj.pdes.common.observation",
+        "bblocks://mwj.pdes.common.simulation-run"
+      ],
+      "tags": [
+        "model",
+        "ODE"
+      ],
+      "sources": [
+        {
+          "title": "FiniteDifferenceMethod4PDES",
+          "link": "https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES"
+        }
+      ],
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o3/fischfang/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "dateOfLastChange": "2025-01-01",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o3/fischfang/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o3/fischfang/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o3/fischfang/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o3/fischfang/context.jsonld",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o3/fischfang/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o3/fischfang/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o3/fischfang/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o3/fischfang/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o3.fischfang"
+        }
+      },
+      "@id": "bblocks://mwj.pdes.o3.fischfang",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Fish Harvesting (Fischfang)",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "mwj.pdes.o3.schloegl",
+      "name": "Schl\u00f6gl Bistable Chemical Reaction",
+      "abstract": "Schl\u00f6gl (1972) chemical bistability: dX/dt = k1\u00b7A\u00b7X\u00b2-k2\u00b7X\u00b3+k3\u00b7B-k4\u00b7X. Schloegl.java.",
+      "status": "experimental",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "dependsOn": [
+        "bblocks://mwj.pdes.common.stac-result",
+        "bblocks://mwj.pdes.common.observation",
+        "bblocks://mwj.pdes.common.simulation-run"
+      ],
+      "tags": [
+        "model",
+        "ODE"
+      ],
+      "sources": [
+        {
+          "title": "FiniteDifferenceMethod4PDES",
+          "link": "https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES"
+        }
+      ],
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o3/schloegl/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "dateOfLastChange": "2025-01-01",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o3/schloegl/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o3/schloegl/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o3/schloegl/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o3/schloegl/context.jsonld",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o3/schloegl/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o3/schloegl/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o3/schloegl/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o3/schloegl/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o3.schloegl"
+        }
+      },
+      "@id": "bblocks://mwj.pdes.o3.schloegl",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Schl\u00f6gl Bistable Chemical Reaction",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "mwj.pdes.standard.exponential",
+      "name": "Exponential Growth",
+      "abstract": "Single-species exponential growth dX/dt = r\u00b7X. Implemented in Exponentiell.java.",
+      "status": "experimental",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "dependsOn": [
+        "bblocks://mwj.pdes.common.stac-result",
+        "bblocks://mwj.pdes.common.observation",
+        "bblocks://mwj.pdes.common.simulation-run"
+      ],
+      "tags": [
+        "model",
+        "ODE"
+      ],
+      "sources": [
+        {
+          "title": "FiniteDifferenceMethod4PDES",
+          "link": "https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES"
+        }
+      ],
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/exponential/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "dateOfLastChange": "2025-01-01",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/exponential/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/exponential/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/exponential/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/exponential/context.jsonld",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/exponential/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/exponential/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/standard/exponential/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/standard/exponential/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.standard.exponential"
+        }
+      },
+      "@id": "bblocks://mwj.pdes.standard.exponential",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Exponential Growth",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "mwj.pdes.standard.goal-seeking",
+      "name": "Goal-Seeking Model",
+      "abstract": "Goal-seeking (target) dynamics dX/dt = r\u00b7(Z-X). Implemented in Zielsuchend.java.",
+      "status": "experimental",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "dependsOn": [
+        "bblocks://mwj.pdes.common.stac-result",
+        "bblocks://mwj.pdes.common.observation",
+        "bblocks://mwj.pdes.common.simulation-run"
+      ],
+      "tags": [
+        "model",
+        "ODE"
+      ],
+      "sources": [
+        {
+          "title": "FiniteDifferenceMethod4PDES",
+          "link": "https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES"
+        }
+      ],
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/goal-seeking/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "dateOfLastChange": "2025-01-01",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/goal-seeking/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/goal-seeking/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/goal-seeking/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/goal-seeking/context.jsonld",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/goal-seeking/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/goal-seeking/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/standard/goal-seeking/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/standard/goal-seeking/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.standard.goal-seeking"
+        }
+      },
+      "@id": "bblocks://mwj.pdes.standard.goal-seeking",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Goal-Seeking Model",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "mwj.pdes.standard.linear",
+      "name": "Linear ODE",
+      "abstract": "Linear scalar ODE dX/dt = a\u00b7X + b. Implemented in Linear.java.",
+      "status": "experimental",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "dependsOn": [
+        "bblocks://mwj.pdes.common.stac-result",
+        "bblocks://mwj.pdes.common.observation",
+        "bblocks://mwj.pdes.common.simulation-run"
+      ],
+      "tags": [
+        "model",
+        "ODE"
+      ],
+      "sources": [
+        {
+          "title": "FiniteDifferenceMethod4PDES",
+          "link": "https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES"
+        }
+      ],
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/linear/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "dateOfLastChange": "2025-01-01",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/linear/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/linear/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/linear/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/linear/context.jsonld",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/linear/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/linear/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/standard/linear/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/standard/linear/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.standard.linear"
+        }
+      },
+      "@id": "bblocks://mwj.pdes.standard.linear",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Linear ODE",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/"
+      }
+    },
+    {
+      "itemIdentifier": "mwj.pdes.standard.logistic",
+      "name": "Logistic Growth",
+      "abstract": "Single-species logistic growth dX/dt = r\u00b7X\u00b7(1-X/K). Implemented in Logistisch.java.",
+      "status": "experimental",
+      "dateTimeAddition": "2025-01-01T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1",
+      "dependsOn": [
+        "bblocks://mwj.pdes.common.stac-result",
+        "bblocks://mwj.pdes.common.observation",
+        "bblocks://mwj.pdes.common.simulation-run"
+      ],
+      "tags": [
+        "model",
+        "ODE"
+      ],
+      "sources": [
+        {
+          "title": "FiniteDifferenceMethod4PDES",
+          "link": "https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES"
+        }
+      ],
+      "shaclShapes": null,
+      "ldContext": {
+        "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/logistic/context.jsonld",
+        "prof:hasRole": "role:mapping",
+        "dct:format": "application/ld+json",
+        "dct:conformsTo": "https://www.w3.org/TR/json-ld11/"
+      },
+      "dateOfLastChange": "2025-01-01",
+      "schema": [
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/logistic/schema.yaml",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/yaml",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        },
+        {
+          "prof:hasArtifact": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/logistic/schema.json",
+          "prof:hasRole": "role:schema",
+          "dct:format": "application/json",
+          "dct:conformsTo": "https://json-schema.org/draft/2020-12/schema"
+        }
+      ],
+      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/logistic/schema.yaml",
+      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/logistic/context.jsonld",
+      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/logistic/resolvedProperties.json",
+      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/logistic/",
+      "validationPassed": true,
+      "documentation": {
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/standard/logistic/index.json"
+        },
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/standard/logistic/index.md"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.standard.logistic"
+        }
+      },
+      "@id": "bblocks://mwj.pdes.standard.logistic",
+      "@type": [
+        "bblocks:Schema",
+        "skos:Concept",
+        "dcat:Dataset",
+        "bblocks:BBlock"
+      ],
+      "skos:prefLabel": "Logistic Growth",
+      "openAPIDocument": null,
+      "ontology": null,
+      "rdfData": [],
+      "isProfileOf": null,
+      "skos:topConceptOf": {
+        "@id": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/"
       }
     }
   ],
   "skos:hasTopConcept": [
     {
-      "@id": "bblocks://ogc.bbr.template.mySchema"
+      "@id": "bblocks://mwj.pdes.common.observation"
     },
     {
-      "@id": "bblocks://ogc.bbr.template.myFeature"
+      "@id": "bblocks://mwj.pdes.components.advection"
+    },
+    {
+      "@id": "bblocks://mwj.pdes.components.diffusion"
+    },
+    {
+      "@id": "bblocks://mwj.pdes.components.holling-i"
+    },
+    {
+      "@id": "bblocks://mwj.pdes.components.holling-ii"
+    },
+    {
+      "@id": "bblocks://mwj.pdes.components.holling-iii"
+    },
+    {
+      "@id": "bblocks://mwj.pdes.components.holling-iv"
+    },
+    {
+      "@id": "bblocks://mwj.pdes.common.simulation-run"
+    },
+    {
+      "@id": "bblocks://mwj.pdes.common.stac-result"
+    },
+    {
+      "@id": "bblocks://mwj.pdes.o1.blei"
+    },
+    {
+      "@id": "bblocks://mwj.pdes.o2.china"
+    },
+    {
+      "@id": "bblocks://mwj.pdes.o2.harvesting-dependent"
+    },
+    {
+      "@id": "bblocks://mwj.pdes.o2.harvesting-independent"
+    },
+    {
+      "@id": "bblocks://mwj.pdes.o2.jansen"
+    },
+    {
+      "@id": "bblocks://mwj.pdes.o2.lorenz"
+    },
+    {
+      "@id": "bblocks://mwj.pdes.o2.lotka-volterra"
+    },
+    {
+      "@id": "bblocks://mwj.pdes.o2.plankton"
+    },
+    {
+      "@id": "bblocks://mwj.pdes.o2.roessler"
+    },
+    {
+      "@id": "bblocks://mwj.pdes.o2.scheffer"
+    },
+    {
+      "@id": "bblocks://mwj.pdes.o2.tannentriebwickler"
+    },
+    {
+      "@id": "bblocks://mwj.pdes.o2.tumor"
+    },
+    {
+      "@id": "bblocks://mwj.pdes.o2.volterra"
+    },
+    {
+      "@id": "bblocks://mwj.pdes.o3.fischfang"
+    },
+    {
+      "@id": "bblocks://mwj.pdes.o3.schloegl"
+    },
+    {
+      "@id": "bblocks://mwj.pdes.standard.exponential"
+    },
+    {
+      "@id": "bblocks://mwj.pdes.standard.goal-seeking"
+    },
+    {
+      "@id": "bblocks://mwj.pdes.standard.linear"
+    },
+    {
+      "@id": "bblocks://mwj.pdes.standard.logistic"
     }
   ]
 }

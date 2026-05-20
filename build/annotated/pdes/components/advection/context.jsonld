@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "vx": "spatial:velocityX",
+    "vy": "spatial:velocityY",
+    "vz": "spatial:velocityZ",
+    "spatial": "https://mwj.example.org/pdes/spatial/",
+    "@version": 1.1
+  }
+}

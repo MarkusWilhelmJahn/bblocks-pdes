@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for mwj.pdes.o2.tannentriebwickler - Larch Budmoth (Tannentriebwickler)",
+  "bblockName": "Larch Budmoth (Tannentriebwickler)",
+  "bblockId": "mwj.pdes.o2.tannentriebwickler",
+  "generated": "2026-05-20T15:11:45.838827+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

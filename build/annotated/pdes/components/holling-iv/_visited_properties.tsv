@@ -1,0 +1,4 @@
+path	@id	schema
+/a	https://mwj.example.org/pdes/holling/maxRate	/github/workspace/build/annotated/pdes/components/holling-iv/schema.yaml
+/b	https://mwj.example.org/pdes/holling/halfSaturation	/github/workspace/build/annotated/pdes/components/holling-iv/schema.yaml
+/c	https://mwj.example.org/pdes/holling/inhibitionCoeff	/github/workspace/build/annotated/pdes/components/holling-iv/schema.yaml

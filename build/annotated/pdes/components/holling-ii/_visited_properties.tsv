@@ -1,0 +1,3 @@
+path	@id	schema
+/gamma	https://mwj.example.org/pdes/holling/maxConsumptionRate	/github/workspace/build/annotated/pdes/components/holling-ii/schema.yaml
+/H	https://mwj.example.org/pdes/holling/halfSaturation	/github/workspace/build/annotated/pdes/components/holling-ii/schema.yaml

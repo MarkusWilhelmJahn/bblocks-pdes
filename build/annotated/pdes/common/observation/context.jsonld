@@ -1,0 +1,35 @@
+{
+  "@context": {
+    "ObservationCollection": "sosa:ObservationCollection",
+    "featureOfInterest": "sosa:hasFeatureOfInterest",
+    "phenomenonTime": "sosa:phenomenonTime",
+    "madeBySensor": "sosa:madeBySensor",
+    "hasMember": {
+      "@context": {
+        "observedProperty": {
+          "@id": "sosa:observedProperty",
+          "@type": "@id"
+        },
+        "hasResult": {
+          "@context": {
+            "value": "sosa:hasSimpleResult",
+            "unit": "http://qudt.org/schema/qudt/unit"
+          },
+          "@id": "sosa:hasResult"
+        },
+        "resultTime": {
+          "@id": "sosa:resultTime",
+          "@type": "xsd:dateTime"
+        },
+        "usedProcedure": {
+          "@id": "sosa:usedProcedure",
+          "@type": "@id"
+        }
+      },
+      "@id": "sosa:hasMember"
+    },
+    "sosa": "http://www.w3.org/ns/sosa/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "@version": 1.1
+  }
+}

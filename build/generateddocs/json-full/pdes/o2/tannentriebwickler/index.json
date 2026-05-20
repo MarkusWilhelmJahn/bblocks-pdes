@@ -1,0 +1,48 @@
+
+
+{
+  "itemIdentifier": "mwj.pdes.o2.tannentriebwickler",
+  "name": "Larch Budmoth (Tannentriebwickler)",
+  "abstract": "Zeiraphera diniana (larch budmoth) population cycle model. Tannentriebwickler.java.",
+  "status": "experimental",
+  "dateTimeAddition": "2025-01-01T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "dependsOn": [
+    "mwj.pdes.common.stac-result",
+    "mwj.pdes.common.observation",
+    "mwj.pdes.common.simulation-run"
+  ],
+  "tags": [
+    "model",
+    "ODE"
+  ],
+  "sources": [
+    {
+      "title": "FiniteDifferenceMethod4PDES",
+      "link": "https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES"
+    }
+  ],
+  "shaclShapes": {},
+  "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/tannentriebwickler/context.jsonld",
+  "dateOfLastChange": "2025-01-01",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/tannentriebwickler/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/tannentriebwickler/schema.json"
+  },
+  "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/tannentriebwickler/schema.yaml",
+  "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/tannentriebwickler/context.jsonld",
+  "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/tannentriebwickler/resolvedProperties.json",
+  "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/tannentriebwickler/",
+  "validationPassed": true,
+  "description": "# Larch Budmoth (Tannentriebwickler)\n\n**Equation(s):**\n```\ndN/dt = r\u00b7N/(1+alpha\u00b7N) - beta\u00b7N\u00b7Q\\ndQ/dt = gamma\u00b7(Q_max-Q) - delta\u00b7N\u00b7Q\n```\n\n**Java class:** `model.lokal.o2.Tannentriebwickler`\n**Tags:** o2, insect-outbreak, 9-year-cycle, Alps\n\nCombined with `model.global.Diffusion` / `model.global.Advection` for PDE runs.\nSolved by `jEuler`, `jRungeKutta`, or `jButcher` (model/numerik/).\nOutput via `JPlotter0D` (ODE), `JPlotter1D/2D` or `VTKPlotter3D` (PDE).\n",
+  "examples": [
+    {
+      "title": "Default parameter set",
+      "content": "{ \"r\": 2.0, \"alpha\": 0.01, \"beta\": 0.5, \"gamma\": 0.3, \"delta\": 0.1, \"Q_max\": 1.0, \"N0\": 0.1, \"Q0\": 1.0 }\n"
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntitle: TannentriebwicklerParameters\ndescription: \"Zeiraphera diniana (larch budmoth) cycle model. Larval density (N) oscillates\n  with a ~9-year period driven by interplay of tree quality (Q) and parasitism:\\n\n  \\ dN/dt = r\\xB7N/(1 + alpha\\xB7N) - beta\\xB7N\\xB7Q\\n  dQ/dt = gamma\\xB7(Q_max -\n  Q) - delta\\xB7N\\xB7Q\\n\"\ntype: object\nrequired:\n- r\n- alpha\n- beta\n- gamma\n- delta\n- Q_max\n- N0\n- Q0\nproperties:\n  r:\n    type: number\n    minimum: 0\n    description: Budmoth intrinsic growth rate\n  alpha:\n    type: number\n    minimum: 0\n    description: Intraspecific competition\n  beta:\n    type: number\n    minimum: 0\n    description: Tree quality effect on budmoth\n  gamma:\n    type: number\n    minimum: 0\n    description: Tree quality recovery rate\n  delta:\n    type: number\n    minimum: 0\n    description: Budmoth effect on tree quality\n  Q_max:\n    type: number\n    minimum: 0\n    description: Maximum tree quality\n  N0:\n    type: number\n    minimum: 0\n    description: Initial budmoth density\n  Q0:\n    type: number\n    minimum: 0\n    description: Initial tree quality\nx-jsonld-prefixes:\n  plk: https://mwj.example.org/pdes/model/\n  prov: http://www.w3.org/ns/prov#\n",
+  "gitRepository": "https://github.com/MarkusWilhelmJahn/bblocks-pdes",
+  "gitPath": "_sources/o2/tannentriebwickler"
+}

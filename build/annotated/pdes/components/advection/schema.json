@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AdvectionOperator",
+  "description": "Spatial advection term \u2014 -v\u00b7\u2207u",
+  "type": "object",
+  "properties": {
+    "vx": {
+      "type": "number",
+      "description": "Advection velocity x-direction [cm/d]",
+      "x-jsonld-id": "https://mwj.example.org/pdes/spatial/velocityX"
+    },
+    "vy": {
+      "type": "number",
+      "description": "Advection velocity y-direction [cm/d]",
+      "x-jsonld-id": "https://mwj.example.org/pdes/spatial/velocityY"
+    },
+    "vz": {
+      "type": "number",
+      "description": "Advection velocity z-direction [cm/d]",
+      "x-jsonld-id": "https://mwj.example.org/pdes/spatial/velocityZ"
+    }
+  },
+  "x-jsonld-prefixes": {
+    "spatial": "https://mwj.example.org/pdes/spatial/"
+  }
+}

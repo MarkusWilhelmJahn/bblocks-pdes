@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for mwj.pdes.components.holling-iii - Holling Type III Functional Response",
+  "bblockName": "Holling Type III Functional Response",
+  "bblockId": "mwj.pdes.components.holling-iii",
+  "generated": "2026-05-20T15:11:45.735959+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "VolterraParameters",
+  "description": "Volterra predator-prey with logistic prey:\n  dX/dt = r\u00b7X\u00b7(1-X/K) - a\u00b7X\u00b7Y\n  dY/dt = -c\u00b7Y + d\u00b7a\u00b7X\u00b7Y\n",
+  "type": "object",
+  "required": [
+    "r",
+    "K",
+    "a",
+    "c",
+    "d",
+    "X0",
+    "Y0"
+  ],
+  "properties": {
+    "r": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Prey intrinsic growth rate"
+    },
+    "K": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Prey carrying capacity"
+    },
+    "a": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Attack rate"
+    },
+    "c": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Predator mortality rate"
+    },
+    "d": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Conversion efficiency"
+    },
+    "X0": {
+      "type": "number",
+      "minimum": 0
+    },
+    "Y0": {
+      "type": "number",
+      "minimum": 0
+    }
+  },
+  "x-jsonld-prefixes": {
+    "plk": "https://mwj.example.org/pdes/model/",
+    "prov": "http://www.w3.org/ns/prov#"
+  }
+}

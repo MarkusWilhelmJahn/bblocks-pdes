@@ -1,0 +1,7 @@
+path	@id	schema
+/sigma		/github/workspace/build/annotated/pdes/o2/lorenz/schema.yaml
+/rho		/github/workspace/build/annotated/pdes/o2/lorenz/schema.yaml
+/beta		/github/workspace/build/annotated/pdes/o2/lorenz/schema.yaml
+/x0		/github/workspace/build/annotated/pdes/o2/lorenz/schema.yaml
+/y0		/github/workspace/build/annotated/pdes/o2/lorenz/schema.yaml
+/z0		/github/workspace/build/annotated/pdes/o2/lorenz/schema.yaml

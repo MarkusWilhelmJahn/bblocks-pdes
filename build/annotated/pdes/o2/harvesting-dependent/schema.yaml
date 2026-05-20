@@ -1,0 +1,47 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: StockDependentHarvestingParameters
+description: "Logistic growth with stock-proportional harvesting:\n  dX/dt = r\xB7X\xB7(1-X/K)
+  - q\xB7E\xB7X   (stock)\n  dE/dt = p\xB7(q\xB7pX\xB7X - c)\xB7E       (effort)\n"
+type: object
+required:
+- r
+- K
+- q
+- p
+- pX
+- c
+- X0
+- E0
+properties:
+  r:
+    type: number
+    minimum: 0
+    description: Intrinsic growth rate
+  K:
+    type: number
+    minimum: 0
+    description: Carrying capacity
+  q:
+    type: number
+    minimum: 0
+    description: Catchability coefficient
+  p:
+    type: number
+    description: Profit response coefficient
+  pX:
+    type: number
+    minimum: 0
+    description: Unit price of harvested stock
+  c:
+    type: number
+    minimum: 0
+    description: Unit cost of fishing effort
+  X0:
+    type: number
+    minimum: 0
+  E0:
+    type: number
+    minimum: 0
+x-jsonld-prefixes:
+  plk: https://mwj.example.org/pdes/model/
+  prov: http://www.w3.org/ns/prov#

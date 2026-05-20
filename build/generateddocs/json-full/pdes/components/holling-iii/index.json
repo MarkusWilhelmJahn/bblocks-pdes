@@ -1,0 +1,43 @@
+
+
+{
+  "itemIdentifier": "mwj.pdes.components.holling-iii",
+  "name": "Holling Type III Functional Response",
+  "abstract": "Sigmoid response \u2014 accelerating at low density, saturating at high. Implemented in model/lokal/holling/HollingIII.java.",
+  "status": "experimental",
+  "dateTimeAddition": "2025-01-01T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "tags": [
+    "Holling",
+    "functional-response",
+    "component"
+  ],
+  "sources": [
+    {
+      "title": "Holling (1959) Canadian Entomologist 91:293-320"
+    }
+  ],
+  "shaclShapes": {},
+  "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iii/context.jsonld",
+  "dateOfLastChange": "2025-01-01",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iii/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iii/schema.json"
+  },
+  "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-iii/schema.yaml",
+  "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-iii/context.jsonld",
+  "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iii/resolvedProperties.json",
+  "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-iii/",
+  "validationPassed": true,
+  "description": "# Holling Type III Functional Response\n**Formula:** `f(X) = gamma\u00b7X\u00b2 / (H\u00b2 + X\u00b2)`\nSigmoid. Used for fish predation on zooplankton in Scheffer model.\n",
+  "examples": [
+    {
+      "title": "Scheffer fish predation on zooplankton",
+      "content": "{ \"gamma\": 0.4, \"H\": 5.0 }\n"
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntitle: HollingTypeIIIParameters\ndescription: \"f(X) = gamma\\xB7X\\xB2 / (H\\xB2 + X\\xB2) \\u2014 sigmoid functional response\"\ntype: object\nrequired:\n- gamma\n- H\nproperties:\n  gamma:\n    type: number\n    minimum: 0\n    description: Maximum consumption rate\n    x-jsonld-id: https://mwj.example.org/pdes/holling/maxConsumptionRate\n  H:\n    type: number\n    minimum: 0\n    description: Half-saturation constant (inflection point)\n    x-jsonld-id: https://mwj.example.org/pdes/holling/halfSaturation\nx-jsonld-prefixes:\n  holling: https://mwj.example.org/pdes/holling/\n",
+  "gitRepository": "https://github.com/MarkusWilhelmJahn/bblocks-pdes",
+  "gitPath": "_sources/components/holling-iii"
+}

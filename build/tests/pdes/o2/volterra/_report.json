@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for mwj.pdes.o2.volterra - Volterra Predator-Prey with Carrying Capacity",
+  "bblockName": "Volterra Predator-Prey with Carrying Capacity",
+  "bblockId": "mwj.pdes.o2.volterra",
+  "generated": "2026-05-20T15:11:45.852187+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

@@ -1,0 +1,2 @@
+path	@id	schema
+/D	https://mwj.example.org/pdes/spatial/diffusionCoefficient	/github/workspace/build/annotated/pdes/components/diffusion/schema.yaml

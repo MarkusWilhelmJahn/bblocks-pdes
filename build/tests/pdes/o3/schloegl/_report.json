@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for mwj.pdes.o3.schloegl - Schl\u00f6gl Bistable Chemical Reaction",
+  "bblockName": "Schl\u00f6gl Bistable Chemical Reaction",
+  "bblockId": "mwj.pdes.o3.schloegl",
+  "generated": "2026-05-20T15:11:45.866217+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

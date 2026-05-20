@@ -1,0 +1,21 @@
+path	@id	schema
+/type		/github/workspace/build/annotated/pdes/common/stac-result/schema.yaml
+/stac_version		/github/workspace/build/annotated/pdes/common/stac-result/schema.yaml
+/stac_extensions		/github/workspace/build/annotated/pdes/common/stac-result/schema.yaml
+/id		/github/workspace/build/annotated/pdes/common/stac-result/schema.yaml
+/geometry		/github/workspace/build/annotated/pdes/common/stac-result/schema.yaml
+/bbox		/github/workspace/build/annotated/pdes/common/stac-result/schema.yaml
+/properties		/github/workspace/build/annotated/pdes/common/stac-result/schema.yaml
+/properties/datetime		/github/workspace/build/annotated/pdes/common/stac-result/schema.yaml
+/properties/start_datetime		/github/workspace/build/annotated/pdes/common/stac-result/schema.yaml
+/properties/end_datetime		/github/workspace/build/annotated/pdes/common/stac-result/schema.yaml
+/links		/github/workspace/build/annotated/pdes/common/stac-result/schema.yaml
+/links/href		/github/workspace/build/annotated/pdes/common/stac-result/schema.yaml
+/links/rel		/github/workspace/build/annotated/pdes/common/stac-result/schema.yaml
+/links/type		/github/workspace/build/annotated/pdes/common/stac-result/schema.yaml
+/links/title		/github/workspace/build/annotated/pdes/common/stac-result/schema.yaml
+/assets		/github/workspace/build/annotated/pdes/common/stac-result/schema.yaml
+/assets/href		/github/workspace/build/annotated/pdes/common/stac-result/schema.yaml
+/assets/type		/github/workspace/build/annotated/pdes/common/stac-result/schema.yaml
+/assets/title		/github/workspace/build/annotated/pdes/common/stac-result/schema.yaml
+/assets/roles		/github/workspace/build/annotated/pdes/common/stac-result/schema.yaml

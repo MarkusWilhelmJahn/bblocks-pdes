@@ -1,0 +1,14 @@
+{
+  "@context": {
+    "mwj-pdes:provenance": {
+      "@type": "@id"
+    },
+    "mwj-pdes:observation": {
+      "@type": "@id"
+    },
+    "prov": "http://www.w3.org/ns/prov#",
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "mwj-pdes": "https://mwj.example.org/pdes/stac/",
+    "@version": 1.1
+  }
+}

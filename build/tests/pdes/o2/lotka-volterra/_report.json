@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for mwj.pdes.o2.lotka-volterra - Lotka-Volterra Predator-Prey",
+  "bblockName": "Lotka-Volterra Predator-Prey",
+  "bblockId": "mwj.pdes.o2.lotka-volterra",
+  "generated": "2026-05-20T15:11:45.808932+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

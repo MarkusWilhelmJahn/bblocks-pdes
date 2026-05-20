@@ -1,0 +1,35 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: JansenHostParasitoidParameters
+description: "Jansen (1995) host-parasitoid model with density dependence:\n  dN/dt
+  = lambda\xB7N\xB7exp(-a\xB7P) - N\n  dP/dt = N\xB7(1 - exp(-a\xB7P)) - mu\xB7P\n"
+type: object
+required:
+- lambda
+- a
+- mu
+- N0
+- P0
+properties:
+  lambda:
+    type: number
+    minimum: 0
+    description: Host finite rate of increase
+  a:
+    type: number
+    minimum: 0
+    description: Parasitoid search efficiency
+  mu:
+    type: number
+    minimum: 0
+    description: Parasitoid survival rate
+  N0:
+    type: number
+    minimum: 0
+    description: Initial host density
+  P0:
+    type: number
+    minimum: 0
+    description: Initial parasitoid density
+x-jsonld-prefixes:
+  plk: https://mwj.example.org/pdes/model/
+  prov: http://www.w3.org/ns/prov#

@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ExponentialParameters",
+  "description": "dX/dt = r\u00b7X",
+  "type": "object",
+  "required": [
+    "r",
+    "X0"
+  ],
+  "properties": {
+    "r": {
+      "type": "number",
+      "description": "Growth rate [d^-1]. r>0 growth, r<0 decay."
+    },
+    "X0": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Initial value"
+    }
+  },
+  "x-jsonld-prefixes": {
+    "plk": "https://mwj.example.org/pdes/model/",
+    "prov": "http://www.w3.org/ns/prov#"
+  }
+}

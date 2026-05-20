@@ -1,0 +1,7 @@
+{
+  "@context": {
+    "a": "holling:attackRate",
+    "holling": "https://mwj.example.org/pdes/holling/",
+    "@version": 1.1
+  }
+}

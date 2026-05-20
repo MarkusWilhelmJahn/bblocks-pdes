@@ -1,0 +1,1 @@
+{"defs":{},"properties":[{"path":["r"],"description":"Growth rate [d^-1]. r>0 growth, r<0 decay.","required":true,"schema_type":"number","sources":["bblocks://mwj.pdes.standard.exponential"]},{"path":["X0"],"description":"Initial value","required":true,"schema_type":"number","sources":["bblocks://mwj.pdes.standard.exponential"]}]}

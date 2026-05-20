@@ -1,0 +1,43 @@
+
+
+{
+  "itemIdentifier": "mwj.pdes.components.holling-iv",
+  "name": "Holling Type IV Functional Response",
+  "abstract": "Inhibition / Monod-Haldane response \u2014 unimodal, decreasing at high prey density. Implemented in model/lokal/holling/HollingIV.java.",
+  "status": "experimental",
+  "dateTimeAddition": "2025-01-01T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "tags": [
+    "Holling",
+    "functional-response",
+    "component"
+  ],
+  "sources": [
+    {
+      "title": "Holling (1959) Canadian Entomologist 91:293-320"
+    }
+  ],
+  "shaclShapes": {},
+  "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iv/context.jsonld",
+  "dateOfLastChange": "2025-01-01",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iv/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iv/schema.json"
+  },
+  "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-iv/schema.yaml",
+  "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-iv/context.jsonld",
+  "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iv/resolvedProperties.json",
+  "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-iv/",
+  "validationPassed": true,
+  "description": "# Holling Type IV Functional Response\n**Formula:** `f(X) = a\u00b7X / (b + X + c\u00b7X\u00b2)`\nMonod-Haldane inhibition. Prey can \"confuse\" or overwhelm predators at high density.\n",
+  "examples": [
+    {
+      "title": "Default inhibition response",
+      "content": "{ \"a\": 0.4, \"b\": 0.6, \"c\": 0.1 }\n"
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntitle: HollingTypeIVParameters\ndescription: \"f(X) = a\\xB7X / (b + X + c\\xB7X\\xB2) \\u2014 inhibition functional response\"\ntype: object\nrequired:\n- a\n- b\n- c\nproperties:\n  a:\n    type: number\n    minimum: 0\n    description: Maximum rate numerator\n    x-jsonld-id: https://mwj.example.org/pdes/holling/maxRate\n  b:\n    type: number\n    minimum: 0\n    description: Baseline half-saturation\n    x-jsonld-id: https://mwj.example.org/pdes/holling/halfSaturation\n  c:\n    type: number\n    minimum: 0\n    description: Inhibition coefficient\n    x-jsonld-id: https://mwj.example.org/pdes/holling/inhibitionCoeff\nx-jsonld-prefixes:\n  holling: https://mwj.example.org/pdes/holling/\n",
+  "gitRepository": "https://github.com/MarkusWilhelmJahn/bblocks-pdes",
+  "gitPath": "_sources/components/holling-iv"
+}

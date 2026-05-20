@@ -1,0 +1,49 @@
+
+
+{
+  "itemIdentifier": "mwj.pdes.common.simulation-run",
+  "name": "Simulation Run (PROV)",
+  "abstract": "Generic PROV Activity capturing one execution of any local kinetic model in FiniteDifferenceMethod4PDES, optionally extended with spatial operators (Diffusion, Advection).",
+  "status": "experimental",
+  "dateTimeAddition": "2025-01-01T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "dependsOn": [
+    "mwj.pdes.common.observation"
+  ],
+  "tags": [
+    "PROV",
+    "simulation",
+    "lineage",
+    "FDM"
+  ],
+  "sources": [
+    {
+      "title": "W3C PROV-O",
+      "link": "https://www.w3.org/TR/prov-o/"
+    },
+    {
+      "title": "FiniteDifferenceMethod4PDES",
+      "link": "https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES"
+    }
+  ],
+  "rdfType": [
+    "http://www.w3.org/ns/prov#Activity"
+  ],
+  "shaclShapes": {},
+  "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/simulation-run/context.jsonld",
+  "dateOfLastChange": "2025-01-01",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/simulation-run/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/simulation-run/schema.json"
+  },
+  "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/simulation-run/schema.yaml",
+  "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/simulation-run/context.jsonld",
+  "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/simulation-run/resolvedProperties.json",
+  "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/simulation-run/",
+  "validationPassed": true,
+  "description": "# Simulation Run (PROV)\n\nGeneric **`prov:Activity`** for any model execution in FiniteDifferenceMethod4PDES.\n\n## Architecture\n\nThe software follows an MVC pattern:\n- **Model** \u2014 local kinetic classes (`model/lokal/`) + spatial operators (`model/global/`)\n- **Numerik** \u2014 solvers: `jEuler`, `jRungeKutta`, `jButcher` (`model/numerik/`)\n- **View** \u2014 plotters: `JPlotter0D/1D/2D`, `VTKPlotter0D/3D` (`view/`)\n- **GUI** \u2014 `MainPanel`, `MainPanelController`, `Simulator`\n\n## PROV alignment\n\n```\nsosa:ObservationCollection \u2500\u2500prov:used\u2500\u2500\u25ba SimulationRun (prov:Activity)\nParameter set (prov:Entity) \u2500\u2500prov:used\u2500\u2500\u25ba       \u2502 wasAssociatedWith\n                               FiniteDifferenceMethod4PDES (prov:Agent)\n                                          prov:wasGeneratedBy\n                                    \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u25bc\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n                                    \u2502 timeseries-csv           \u2502\n                                    \u2502 spatial-field-vtk        \u2502\n                                    \u2502 plot-*.png               \u2502\n                                    \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n                                               \u2502 dcat:landingPage\n                                         STAC Item\n```\n\n## Concrete model blocks\n\nEach concrete model block (e.g. `mwj.pdes.o2.scheffer`) extends this schema\nby adding its specific `parameters` sub-schema.\n",
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntitle: SimulationRun\ndescription: 'A PROV Activity representing one execution of any model in FiniteDifferenceMethod4PDES.\n  Concrete model building blocks extend this schema with their specific parameter\n  sets.\n\n  '\ntype: object\nrequired:\n- type\n- modelClass\n- startedAtTime\n- endedAtTime\n- wasAssociatedWith\n- used\n- generated\nproperties:\n  type:\n    const: SimulationRun\n  id:\n    type: string\n    x-jsonld-id: '@id'\n  label:\n    type: string\n    x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label\n  modelClass:\n    type: string\n    description: Fully-qualified Java class name of the local kinetic model\n    examples:\n    - model.lokal.o2.Scheffer\n    - model.lokal.o2.Lorenz\n    - model.lokal.standard.Logistisch\n    x-jsonld-id: https://mwj.example.org/pdes/sim/modelClass\n  startedAtTime:\n    type: string\n    format: date-time\n    x-jsonld-id: http://www.w3.org/ns/prov#startedAtTime\n    x-jsonld-type: http://www.w3.org/2001/XMLSchema#dateTime\n  endedAtTime:\n    type: string\n    format: date-time\n    x-jsonld-id: http://www.w3.org/ns/prov#endedAtTime\n    x-jsonld-type: http://www.w3.org/2001/XMLSchema#dateTime\n  wasAssociatedWith:\n    type: object\n    required:\n    - id\n    - label\n    - version\n    properties:\n      id:\n        type: string\n        const: https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES\n        x-jsonld-id: '@id'\n      label:\n        type: string\n        const: FiniteDifferenceMethod4PDES\n        x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#label\n      version:\n        type: string\n      localPath:\n        type: string\n        const: /Users/markusjahn/Documents/GitHub/FiniteDifferenceMethod4PDES\n    x-jsonld-id: http://www.w3.org/ns/prov#wasAssociatedWith\n  numericalSolver:\n    type: string\n    enum:\n    - jEuler\n    - jRungeKutta\n    - jButcher\n    description: Solver class used (model.numerik.*)\n    x-jsonld-id: https://mwj.example.org/pdes/sim/numericalSolver\n  spatialSetup:\n    type: object\n    description: Present only for PDE runs; absent for pure ODE runs\n    properties:\n      dimensions:\n        type: integer\n        enum:\n        - 1\n        - 2\n        - 3\n      domain_length_x:\n        type: number\n      domain_length_y:\n        type: number\n      domain_length_z:\n        type: number\n      grid_points_x:\n        type: integer\n      grid_points_y:\n        type: integer\n      grid_points_z:\n        type: integer\n      boundary_condition:\n        type: string\n        enum:\n        - zero-flux\n        - periodic\n        - dirichlet\n      diffusion:\n        type: boolean\n      advection:\n        type: boolean\n    x-jsonld-id: https://mwj.example.org/pdes/sim/spatialSetup\n  visualisation:\n    type: string\n    enum:\n    - JPlotter0D\n    - JPlotter1D\n    - JPlotter2D\n    - VTKPlotter0D\n    - VTKPlotter3D\n    description: View class used for output (view.*)\n    x-jsonld-id: https://mwj.example.org/pdes/sim/visualisation\n  used:\n    type: object\n    required:\n    - observation\n    properties:\n      observation:\n        type: string\n      parametersId:\n        type: string\n    x-jsonld-id: http://www.w3.org/ns/prov#used\n  parameters:\n    type: object\n    description: \"Model-specific parameters \\u2014 defined in each concrete model\n      block\"\n    x-jsonld-id: http://www.w3.org/ns/prov#used\n  generated:\n    type: array\n    minItems: 1\n    items:\n      type: object\n      required:\n      - id\n      - type\n      - format\n      properties:\n        id:\n          type: string\n          x-jsonld-id: '@id'\n        type:\n          type: string\n          enum:\n          - timeseries-csv\n          - spatial-field-csv\n          - spatial-field-vtk\n          - plot-0d-png\n          - plot-1d-png\n          - plot-2d-png\n          - plot-3d-vtk\n        format:\n          type: string\n        description:\n          type: string\n    x-jsonld-reverse: prov:wasGeneratedBy\n  stacItem:\n    type: string\n    x-jsonld-id: http://www.w3.org/ns/dcat#landingPage\nx-jsonld-extra-terms:\n  SimulationRun: http://www.w3.org/ns/prov#Activity\nx-jsonld-prefixes:\n  prov: http://www.w3.org/ns/prov#\n  rdfs: http://www.w3.org/2000/01/rdf-schema#\n  plksim: https://mwj.example.org/pdes/sim/\n  xsd: http://www.w3.org/2001/XMLSchema#\n  dcat: http://www.w3.org/ns/dcat#\n",
+  "gitRepository": "https://github.com/MarkusWilhelmJahn/bblocks-pdes",
+  "gitPath": "_sources/common/simulation-run"
+}

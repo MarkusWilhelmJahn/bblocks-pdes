@@ -1,0 +1,63 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: FischfangParameters
+description: "Three-component fish harvesting system (nutrient N, fish F, effort E):\n
+  \ dN/dt = r_N - k\xB7N\xB7F\n  dF/dt = e\xB7k\xB7N\xB7F - m\xB7F - q\xB7E\xB7F\n
+  \ dE/dt = p\xB7(q\xB7pF\xB7F - c)\xB7E\n"
+type: object
+required:
+- r_N
+- k
+- e
+- m
+- q
+- p
+- pF
+- c
+- N0
+- F0
+- E0
+properties:
+  r_N:
+    type: number
+    minimum: 0
+    description: Nutrient / food input rate
+  k:
+    type: number
+    minimum: 0
+    description: Fish feeding rate
+  e:
+    type: number
+    minimum: 0
+    maximum: 1
+    description: Conversion efficiency
+  m:
+    type: number
+    minimum: 0
+    description: Fish natural mortality
+  q:
+    type: number
+    minimum: 0
+    description: Catchability coefficient
+  p:
+    type: number
+    description: Effort response to profit
+  pF:
+    type: number
+    minimum: 0
+    description: Fish price per unit
+  c:
+    type: number
+    minimum: 0
+    description: Cost per unit effort
+  N0:
+    type: number
+    minimum: 0
+  F0:
+    type: number
+    minimum: 0
+  E0:
+    type: number
+    minimum: 0
+x-jsonld-prefixes:
+  plk: https://mwj.example.org/pdes/model/
+  prov: http://www.w3.org/ns/prov#

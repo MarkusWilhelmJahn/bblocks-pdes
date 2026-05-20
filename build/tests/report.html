@@ -64,292 +64,656 @@
     <body>
         <div class="container">
             <h1 class="title">Building blocks validation report</h1>
-            <small class="datetime">Generated at 2026-05-07T11:37:22.648615+00:00</small>
+            <small class="datetime">Generated at 2026-05-20T15:11:45.924857+00:00</small>
                 <p class="summary fw-semibold text-success">
-                    Number of passing building blocks: 2 / 2 (100%)
+                    Number of passing building blocks: 28 / 28 (100%)
                 </p>
             <div class="text-end small" id="expand-collapse">
                 <a href="#" class="expand-all">Expand all</a>
                 <a href="#" class="collapse-all">Collapse all</a>
             </div>
                 <div class="accordion mt-2" id="bblock-reports">
-                        <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.template.mySchema" id="bblock-ogc.bbr.template.mySchema">
+                        <div class="accordion-item bblock-report" data-bblock-id="mwj.pdes.common.observation" id="bblock-mwj.pdes.common.observation">
                             <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
-                                    data-bs-target="#bblock-collapse-ogc\.bbr\.template\.mySchema">
+                                    data-bs-target="#bblock-collapse-mwj\.pdes\.common\.observation">
                                     <div class="flex-fill">
-                                        My Schema
-                                        <small class="ms-2 bblock-id">ogc.bbr.template.mySchema</small>
-                                        <a class="anchor" href="#bblock-ogc.bbr.template.mySchema">¶</a>
+                                        Initial Observation (SOSA)
+                                        <small class="ms-2 bblock-id">mwj.pdes.common.observation</small>
+                                        <a class="anchor" href="#bblock-mwj.pdes.common.observation">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
                                             Passed
-                                            (100% passed)
+                                            (no tests)
                                     </span>
                                 </button>
                             </h2>
-                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.bbr.template.mySchema">
+                            <div class="accordion-collapse collapse " id="bblock-collapse-mwj.pdes.common.observation">
                                 <div class="accordion-body">
-                                        <p class="summary fw-semibold text-success">
-                                            Test passed: 2 / 2
-                                        </p>
-                                        <div class="card mb-2 validation-item require-fail" id="item-ogc.bbr.template.mySchema-1">
-                                            <div class="card-body">
-                                                <div class="card-title mb-0 anchor-container">
-                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-1"
-                                                            aria-expanded="false" aria-controls="uid-1"
-                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                                                        <i class="bi bi-caret-right-fill caret"></i>
-                                                        Details
-                                                    </button>
-                                                    <a href="../../_sources/mySchema/tests/rules-fail.json" target="_blank">rules-fail.json</a>
-                                                    <span class="badge bg-secondary test_resource">Test resource</span>
-                                                        <span class="badge text-bg-info">Requires fail</span>
-                                                    <a class="anchor" href="#item-ogc.bbr.template.mySchema-1">¶</a>
-                                                    <div class="float-end">
-                                                            <span class="badge text-bg-success me-2">Passed</span>
-                                                    </div>
-                                                </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-1">
-                                                    <div class="validation-text-inner">
-                                                                    <div class="font-monospace subsection-title mt-2">General</div>
-                                                                    <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
-                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using rules-fail.json from test resources</div>
-                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD rules-fail.jsonld created</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output Turtle rules-fail.ttl created</div>
-                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
-                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
-                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl text-danger">Validation result for _sources/mySchema/shapes.shacl:
-  Validation Report
-  Conforms: False
-  Results (1):
-  Constraint Violation in LessThanConstraintComponent (http://www.w3.org/ns/shacl#LessThanConstraintComponent):
-  	Severity: sh:Violation
-  	Source Shape: [ sh:lessThan ns1:b ; sh:path ns1:c ]
-  	Focus Node: [ ns1:b Literal(&quot;23&quot;, datatype=xsd:integer) ; ns1:c Literal(&quot;25.5&quot;, datatype=xsd:double) ; rdf:type mynamespace:aThing ]
-  	Value Node: Literal(&quot;25.5&quot;, datatype=xsd:double)
-  	Result Path: ns1:c
-  	Message: Value of [ ns1:b Literal(&quot;23&quot;, datatype=xsd:integer) ; ns1:c Literal(&quot;25.5&quot;, datatype=xsd:double) ; rdf:type mynamespace:aThing ]-&gt;ns1:b &lt;= Literal(&quot;25.5&quot;, datatype=xsd:double)
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/mySchema/shapes.shacl:
- - Shape &lt;https://www.ogc.org/rules/template/#testValues&gt;: _:N7a2da5c3e2d64c859f844e5d7fffc6da
-</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card mb-2 validation-item " id="item-ogc.bbr.template.mySchema-2">
-                                            <div class="card-body">
-                                                <div class="card-title mb-0 anchor-container">
-                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-2"
-                                                            aria-expanded="false" aria-controls="uid-2"
-                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                                                        <i class="bi bi-caret-right-fill caret"></i>
-                                                        Details
-                                                    </button>
-                                                    <a href="bbr/template/mySchema/example_1_1.json" target="_blank">example_1_1.json</a>
-                                                    <span class="badge bg-secondary example">Example</span>
-                                                    <a class="anchor" href="#item-ogc.bbr.template.mySchema-2">¶</a>
-                                                    <div class="float-end">
-                                                            <span class="badge text-bg-success me-2">Passed</span>
-                                                    </div>
-                                                </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-2">
-                                                    <div class="validation-text-inner">
-                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example.json from examples</div>
-                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
-                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
-                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
-                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/mySchema/shapes.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/mySchema/shapes.shacl:
- - Shape &lt;https://www.ogc.org/rules/template/#testValues&gt;: *none*
-</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
                                 </div>
                             </div>
                         </div>
-                        <div class="accordion-item bblock-report" data-bblock-id="ogc.bbr.template.myFeature" id="bblock-ogc.bbr.template.myFeature">
+                        <div class="accordion-item bblock-report" data-bblock-id="mwj.pdes.components.advection" id="bblock-mwj.pdes.components.advection">
                             <h2 class="accordion-header bblock-title anchor-container">
                                 <button class="accordion-button collapsed" type="button"
                                     data-bs-toggle="collapse"
-                                    data-bs-target="#bblock-collapse-ogc\.bbr\.template\.myFeature">
+                                    data-bs-target="#bblock-collapse-mwj\.pdes\.components\.advection">
                                     <div class="flex-fill">
-                                        Custom Feature
-                                        <small class="ms-2 bblock-id">ogc.bbr.template.myFeature</small>
-                                        <a class="anchor" href="#bblock-ogc.bbr.template.myFeature">¶</a>
+                                        Spatial Advection Operator
+                                        <small class="ms-2 bblock-id">mwj.pdes.components.advection</small>
+                                        <a class="anchor" href="#bblock-mwj.pdes.components.advection">¶</a>
                                     </div>
 
                                     <span class="badge text-bg-success me-2">
                                             Passed
-                                            (100% passed)
+                                            (no tests)
                                     </span>
                                 </button>
                             </h2>
-                            <div class="accordion-collapse collapse " id="bblock-collapse-ogc.bbr.template.myFeature">
+                            <div class="accordion-collapse collapse " id="bblock-collapse-mwj.pdes.components.advection">
                                 <div class="accordion-body">
-                                        <p class="summary fw-semibold text-success">
-                                            Test passed: 3 / 3
-                                        </p>
-                                        <div class="card mb-2 validation-item require-fail" id="item-ogc.bbr.template.myFeature-1">
-                                            <div class="card-body">
-                                                <div class="card-title mb-0 anchor-container">
-                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-3"
-                                                            aria-expanded="false" aria-controls="uid-3"
-                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                                                        <i class="bi bi-caret-right-fill caret"></i>
-                                                        Details
-                                                    </button>
-                                                    <a href="../../_sources/myFeature/tests/feature-fail.json" target="_blank">feature-fail.json</a>
-                                                    <span class="badge bg-secondary test_resource">Test resource</span>
-                                                        <span class="badge text-bg-info">Requires fail</span>
-                                                    <a class="anchor" href="#item-ogc.bbr.template.myFeature-1">¶</a>
-                                                    <div class="float-end">
-                                                            <span class="badge text-bg-success me-2">Passed</span>
-                                                    </div>
-                                                </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-3">
-                                                    <div class="validation-text-inner">
-                                                                    <div class="font-monospace subsection-title mt-2">General</div>
-                                                                    <div class="font-monospace entry-message section-general ">Test was expected to fail and it did.</div>
-                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using feature-fail.json from test resources</div>
-                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD feature-fail.jsonld created</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output Turtle feature-fail.ttl created</div>
-                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
-                                                                    <div class="font-monospace entry-message section-json_schema text-danger">ValidationError: {&#x27;id&#x27;: &#x27;f1&#x27;, &#x27;type&#x27;: &#x27;Feature&#x27;, &#x27;geometry&#x27;: {&#x27;type&#x27;: &#x27;LineString&#x27;, &#x27;coordinates&#x27;: [[-111.67183507997295, 40.056709946862874], [-111.71, 40.156709946862875]]}, &#x27;properties&#x27;: {&#x27;notMyProp&#x27;: &#x27;Mandatory property not present example&#x27;}} is not valid under any of the given schemas
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="mwj.pdes.components.diffusion" id="bblock-mwj.pdes.components.diffusion">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-mwj\.pdes\.components\.diffusion">
+                                    <div class="flex-fill">
+                                        Spatial Diffusion Operator
+                                        <small class="ms-2 bblock-id">mwj.pdes.components.diffusion</small>
+                                        <a class="anchor" href="#bblock-mwj.pdes.components.diffusion">¶</a>
+                                    </div>
 
-Failed validating &#x27;anyOf&#x27; in schema:
-    {&#x27;$defs&#x27;: {&#x27;MyFeature&#x27;: {&#x27;allOf&#x27;: [{&#x27;$ref&#x27;: &#x27;https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml&#x27;},
-                                       {&#x27;properties&#x27;: {&#x27;properties&#x27;: {&#x27;$ref&#x27;: &#x27;https://opengeospatial.github.io/bblocks-template/build/annotated/bbr/template/mySchema/schema.yaml&#x27;}}}]}},
-     &#x27;$schema&#x27;: &#x27;https://json-schema.org/draft/2020-12/schema&#x27;,
-     &#x27;anyOf&#x27;: [{&#x27;$ref&#x27;: &#x27;#/$defs/MyFeature&#x27;}],
-     &#x27;description&#x27;: &#x27;Example of a simple GeoJSON Feature specialisation&#x27;}
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-mwj.pdes.components.diffusion">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="mwj.pdes.components.holling-i" id="bblock-mwj.pdes.components.holling-i">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-mwj\.pdes\.components\.holling-i">
+                                    <div class="flex-fill">
+                                        Holling Type I Functional Response
+                                        <small class="ms-2 bblock-id">mwj.pdes.components.holling-i</small>
+                                        <a class="anchor" href="#bblock-mwj.pdes.components.holling-i">¶</a>
+                                    </div>
 
-On instance:
-    {&#x27;geometry&#x27;: {&#x27;coordinates&#x27;: [[-111.67183507997295, 40.056709946862874],
-                                  [-111.71, 40.156709946862875]],
-                  &#x27;type&#x27;: &#x27;LineString&#x27;},
-     &#x27;id&#x27;: &#x27;f1&#x27;,
-     &#x27;properties&#x27;: {&#x27;notMyProp&#x27;: &#x27;Mandatory property not present example&#x27;},
-     &#x27;type&#x27;: &#x27;Feature&#x27;}</div>
-                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/mySchema/shapes.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/mySchema/shapes.shacl:
- - Shape &lt;https://www.ogc.org/rules/template/#testValues&gt;: *none*
-</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:LinkShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:FeatureShape: &lt;file:///github/workspace/f1&gt;
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:GeometryShape: *none*
-</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card mb-2 validation-item " id="item-ogc.bbr.template.myFeature-2">
-                                            <div class="card-body">
-                                                <div class="card-title mb-0 anchor-container">
-                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-4"
-                                                            aria-expanded="false" aria-controls="uid-4"
-                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                                                        <i class="bi bi-caret-right-fill caret"></i>
-                                                        Details
-                                                    </button>
-                                                    <a href="bbr/template/myFeature/example_1_1.json" target="_blank">example_1_1.json</a>
-                                                    <span class="badge bg-secondary example">Example</span>
-                                                    <a class="anchor" href="#item-ogc.bbr.template.myFeature-2">¶</a>
-                                                    <div class="float-end">
-                                                            <span class="badge text-bg-success me-2">Passed</span>
-                                                    </div>
-                                                </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-4">
-                                                    <div class="validation-text-inner">
-                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using examples/feature.json from examples</div>
-                                                                    <div class="font-monospace entry-message section-files ">JSON-LD context is present - uplifting</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output JSON-LD example_1_1.jsonld created</div>
-                                                                    <div class="font-monospace entry-message section-files ">Output Turtle example_1_1.ttl created</div>
-                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
-                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
-                                                                    <div class="font-monospace subsection-title mt-2">SHACL</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for _sources/mySchema/shapes.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for _sources/mySchema/shapes.shacl:
- - Shape &lt;https://www.ogc.org/rules/template/#testValues&gt;: &lt;http://example.com/features/f1&gt;
-</div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Validation result for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
-  Validation Report
-  Conforms: True
-  </div>
-                                                                    <div class="font-monospace entry-message section-shacl ">Focus nodes for https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl:
- - Shape geojson:LinkShape: *none*
- - Shape geojson:GeometryShape/sh:or/rdf:first: *none*
- - Shape geojson:FeatureShape: &lt;http://example.com/features/f1&gt;
- - Shape geojson:GeometryShape/sh:or/rdf:rest/rdf:first: *none*
- - Shape geojson:GeometryShape: *none*
-</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="card mb-2 validation-item " id="item-ogc.bbr.template.myFeature-3">
-                                            <div class="card-body">
-                                                <div class="card-title mb-0 anchor-container">
-                                                    <button type="button" class="btn btn-sm btn-primary collapsed"
-                                                            data-bs-toggle="collapse" data-bs-target="#uid-5"
-                                                            aria-expanded="false" aria-controls="uid-5"
-                                                            style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-                                                        <i class="bi bi-caret-right-fill caret"></i>
-                                                        Details
-                                                    </button>
-                                                    <a href="bbr/template/myFeature/example_1_2.yaml" target="_blank">example_1_2.yaml</a>
-                                                    <span class="badge bg-secondary example">Example</span>
-                                                    <a class="anchor" href="#item-ogc.bbr.template.myFeature-3">¶</a>
-                                                    <div class="float-end">
-                                                            <span class="badge text-bg-success me-2">Passed</span>
-                                                    </div>
-                                                </div>
-                                                <div class="card-text mt-2 validation-text collapse" id="uid-5">
-                                                    <div class="validation-text-inner">
-                                                                    <div class="font-monospace subsection-title mt-2">Files</div>
-                                                                    <div class="font-monospace entry-message section-files ">Using example_1_2.yaml from examples</div>
-                                                                    <div class="font-monospace subsection-title mt-2">JSON Schema</div>
-                                                                    <div class="font-monospace entry-message section-json_schema ">Validation passed</div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-mwj.pdes.components.holling-i">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="mwj.pdes.components.holling-ii" id="bblock-mwj.pdes.components.holling-ii">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-mwj\.pdes\.components\.holling-ii">
+                                    <div class="flex-fill">
+                                        Holling Type II Functional Response
+                                        <small class="ms-2 bblock-id">mwj.pdes.components.holling-ii</small>
+                                        <a class="anchor" href="#bblock-mwj.pdes.components.holling-ii">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-mwj.pdes.components.holling-ii">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="mwj.pdes.components.holling-iii" id="bblock-mwj.pdes.components.holling-iii">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-mwj\.pdes\.components\.holling-iii">
+                                    <div class="flex-fill">
+                                        Holling Type III Functional Response
+                                        <small class="ms-2 bblock-id">mwj.pdes.components.holling-iii</small>
+                                        <a class="anchor" href="#bblock-mwj.pdes.components.holling-iii">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-mwj.pdes.components.holling-iii">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="mwj.pdes.components.holling-iv" id="bblock-mwj.pdes.components.holling-iv">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-mwj\.pdes\.components\.holling-iv">
+                                    <div class="flex-fill">
+                                        Holling Type IV Functional Response
+                                        <small class="ms-2 bblock-id">mwj.pdes.components.holling-iv</small>
+                                        <a class="anchor" href="#bblock-mwj.pdes.components.holling-iv">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-mwj.pdes.components.holling-iv">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="mwj.pdes.common.simulation-run" id="bblock-mwj.pdes.common.simulation-run">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-mwj\.pdes\.common\.simulation-run">
+                                    <div class="flex-fill">
+                                        Simulation Run (PROV)
+                                        <small class="ms-2 bblock-id">mwj.pdes.common.simulation-run</small>
+                                        <a class="anchor" href="#bblock-mwj.pdes.common.simulation-run">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-mwj.pdes.common.simulation-run">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="mwj.pdes.common.stac-result" id="bblock-mwj.pdes.common.stac-result">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-mwj\.pdes\.common\.stac-result">
+                                    <div class="flex-fill">
+                                        Simulation Result STAC Item
+                                        <small class="ms-2 bblock-id">mwj.pdes.common.stac-result</small>
+                                        <a class="anchor" href="#bblock-mwj.pdes.common.stac-result">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-mwj.pdes.common.stac-result">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="mwj.pdes.o1.blei" id="bblock-mwj.pdes.o1.blei">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-mwj\.pdes\.o1\.blei">
+                                    <div class="flex-fill">
+                                        Lead Kinetics (Blei)
+                                        <small class="ms-2 bblock-id">mwj.pdes.o1.blei</small>
+                                        <a class="anchor" href="#bblock-mwj.pdes.o1.blei">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-mwj.pdes.o1.blei">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="mwj.pdes.o2.china" id="bblock-mwj.pdes.o2.china">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-mwj\.pdes\.o2\.china">
+                                    <div class="flex-fill">
+                                        China Population Model
+                                        <small class="ms-2 bblock-id">mwj.pdes.o2.china</small>
+                                        <a class="anchor" href="#bblock-mwj.pdes.o2.china">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-mwj.pdes.o2.china">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="mwj.pdes.o2.harvesting-dependent" id="bblock-mwj.pdes.o2.harvesting-dependent">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-mwj\.pdes\.o2\.harvesting-dependent">
+                                    <div class="flex-fill">
+                                        Stock-Dependent Harvesting
+                                        <small class="ms-2 bblock-id">mwj.pdes.o2.harvesting-dependent</small>
+                                        <a class="anchor" href="#bblock-mwj.pdes.o2.harvesting-dependent">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-mwj.pdes.o2.harvesting-dependent">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="mwj.pdes.o2.harvesting-independent" id="bblock-mwj.pdes.o2.harvesting-independent">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-mwj\.pdes\.o2\.harvesting-independent">
+                                    <div class="flex-fill">
+                                        Stock-Independent Harvesting
+                                        <small class="ms-2 bblock-id">mwj.pdes.o2.harvesting-independent</small>
+                                        <a class="anchor" href="#bblock-mwj.pdes.o2.harvesting-independent">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-mwj.pdes.o2.harvesting-independent">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="mwj.pdes.o2.jansen" id="bblock-mwj.pdes.o2.jansen">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-mwj\.pdes\.o2\.jansen">
+                                    <div class="flex-fill">
+                                        Jansen Host-Parasitoid Model
+                                        <small class="ms-2 bblock-id">mwj.pdes.o2.jansen</small>
+                                        <a class="anchor" href="#bblock-mwj.pdes.o2.jansen">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-mwj.pdes.o2.jansen">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="mwj.pdes.o2.lorenz" id="bblock-mwj.pdes.o2.lorenz">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-mwj\.pdes\.o2\.lorenz">
+                                    <div class="flex-fill">
+                                        Lorenz System
+                                        <small class="ms-2 bblock-id">mwj.pdes.o2.lorenz</small>
+                                        <a class="anchor" href="#bblock-mwj.pdes.o2.lorenz">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-mwj.pdes.o2.lorenz">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="mwj.pdes.o2.lotka-volterra" id="bblock-mwj.pdes.o2.lotka-volterra">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-mwj\.pdes\.o2\.lotka-volterra">
+                                    <div class="flex-fill">
+                                        Lotka-Volterra Predator-Prey
+                                        <small class="ms-2 bblock-id">mwj.pdes.o2.lotka-volterra</small>
+                                        <a class="anchor" href="#bblock-mwj.pdes.o2.lotka-volterra">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-mwj.pdes.o2.lotka-volterra">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="mwj.pdes.o2.plankton" id="bblock-mwj.pdes.o2.plankton">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-mwj\.pdes\.o2\.plankton">
+                                    <div class="flex-fill">
+                                        Generic Plankton Model
+                                        <small class="ms-2 bblock-id">mwj.pdes.o2.plankton</small>
+                                        <a class="anchor" href="#bblock-mwj.pdes.o2.plankton">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-mwj.pdes.o2.plankton">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="mwj.pdes.o2.roessler" id="bblock-mwj.pdes.o2.roessler">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-mwj\.pdes\.o2\.roessler">
+                                    <div class="flex-fill">
+                                        Rössler System
+                                        <small class="ms-2 bblock-id">mwj.pdes.o2.roessler</small>
+                                        <a class="anchor" href="#bblock-mwj.pdes.o2.roessler">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-mwj.pdes.o2.roessler">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="mwj.pdes.o2.scheffer" id="bblock-mwj.pdes.o2.scheffer">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-mwj\.pdes\.o2\.scheffer">
+                                    <div class="flex-fill">
+                                        Scheffer Phytoplankton-Zooplankton (RDA)
+                                        <small class="ms-2 bblock-id">mwj.pdes.o2.scheffer</small>
+                                        <a class="anchor" href="#bblock-mwj.pdes.o2.scheffer">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-mwj.pdes.o2.scheffer">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="mwj.pdes.o2.tannentriebwickler" id="bblock-mwj.pdes.o2.tannentriebwickler">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-mwj\.pdes\.o2\.tannentriebwickler">
+                                    <div class="flex-fill">
+                                        Larch Budmoth (Tannentriebwickler)
+                                        <small class="ms-2 bblock-id">mwj.pdes.o2.tannentriebwickler</small>
+                                        <a class="anchor" href="#bblock-mwj.pdes.o2.tannentriebwickler">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-mwj.pdes.o2.tannentriebwickler">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="mwj.pdes.o2.tumor" id="bblock-mwj.pdes.o2.tumor">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-mwj\.pdes\.o2\.tumor">
+                                    <div class="flex-fill">
+                                        Tumor-Immune Interaction
+                                        <small class="ms-2 bblock-id">mwj.pdes.o2.tumor</small>
+                                        <a class="anchor" href="#bblock-mwj.pdes.o2.tumor">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-mwj.pdes.o2.tumor">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="mwj.pdes.o2.volterra" id="bblock-mwj.pdes.o2.volterra">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-mwj\.pdes\.o2\.volterra">
+                                    <div class="flex-fill">
+                                        Volterra Predator-Prey with Carrying Capacity
+                                        <small class="ms-2 bblock-id">mwj.pdes.o2.volterra</small>
+                                        <a class="anchor" href="#bblock-mwj.pdes.o2.volterra">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-mwj.pdes.o2.volterra">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="mwj.pdes.o3.fischfang" id="bblock-mwj.pdes.o3.fischfang">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-mwj\.pdes\.o3\.fischfang">
+                                    <div class="flex-fill">
+                                        Fish Harvesting (Fischfang)
+                                        <small class="ms-2 bblock-id">mwj.pdes.o3.fischfang</small>
+                                        <a class="anchor" href="#bblock-mwj.pdes.o3.fischfang">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-mwj.pdes.o3.fischfang">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="mwj.pdes.o3.schloegl" id="bblock-mwj.pdes.o3.schloegl">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-mwj\.pdes\.o3\.schloegl">
+                                    <div class="flex-fill">
+                                        Schlögl Bistable Chemical Reaction
+                                        <small class="ms-2 bblock-id">mwj.pdes.o3.schloegl</small>
+                                        <a class="anchor" href="#bblock-mwj.pdes.o3.schloegl">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-mwj.pdes.o3.schloegl">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="mwj.pdes.standard.exponential" id="bblock-mwj.pdes.standard.exponential">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-mwj\.pdes\.standard\.exponential">
+                                    <div class="flex-fill">
+                                        Exponential Growth
+                                        <small class="ms-2 bblock-id">mwj.pdes.standard.exponential</small>
+                                        <a class="anchor" href="#bblock-mwj.pdes.standard.exponential">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-mwj.pdes.standard.exponential">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="mwj.pdes.standard.goal-seeking" id="bblock-mwj.pdes.standard.goal-seeking">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-mwj\.pdes\.standard\.goal-seeking">
+                                    <div class="flex-fill">
+                                        Goal-Seeking Model
+                                        <small class="ms-2 bblock-id">mwj.pdes.standard.goal-seeking</small>
+                                        <a class="anchor" href="#bblock-mwj.pdes.standard.goal-seeking">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-mwj.pdes.standard.goal-seeking">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="mwj.pdes.standard.linear" id="bblock-mwj.pdes.standard.linear">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-mwj\.pdes\.standard\.linear">
+                                    <div class="flex-fill">
+                                        Linear ODE
+                                        <small class="ms-2 bblock-id">mwj.pdes.standard.linear</small>
+                                        <a class="anchor" href="#bblock-mwj.pdes.standard.linear">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-mwj.pdes.standard.linear">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item bblock-report" data-bblock-id="mwj.pdes.standard.logistic" id="bblock-mwj.pdes.standard.logistic">
+                            <h2 class="accordion-header bblock-title anchor-container">
+                                <button class="accordion-button collapsed" type="button"
+                                    data-bs-toggle="collapse"
+                                    data-bs-target="#bblock-collapse-mwj\.pdes\.standard\.logistic">
+                                    <div class="flex-fill">
+                                        Logistic Growth
+                                        <small class="ms-2 bblock-id">mwj.pdes.standard.logistic</small>
+                                        <a class="anchor" href="#bblock-mwj.pdes.standard.logistic">¶</a>
+                                    </div>
+
+                                    <span class="badge text-bg-success me-2">
+                                            Passed
+                                            (no tests)
+                                    </span>
+                                </button>
+                            </h2>
+                            <div class="accordion-collapse collapse " id="bblock-collapse-mwj.pdes.standard.logistic">
+                                <div class="accordion-body">
+                                        <div class="alert alert-info mb-0">No tests were found for this building block.</div>
                                 </div>
                             </div>
                         </div>

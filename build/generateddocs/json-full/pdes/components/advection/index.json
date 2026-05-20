@@ -1,0 +1,40 @@
+
+
+{
+  "itemIdentifier": "mwj.pdes.components.advection",
+  "name": "Spatial Advection Operator",
+  "abstract": "Linear advection term -v\u00b7\u2207u. Implemented in model.global.Advection.java. Combined with any local kinetic model and diffusion to produce a DIFICI travelling-wave system.",
+  "status": "experimental",
+  "dateTimeAddition": "2025-01-01T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "tags": [
+    "spatial",
+    "advection",
+    "PDE",
+    "DIFICI",
+    "operator"
+  ],
+  "shaclShapes": {},
+  "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/advection/context.jsonld",
+  "dateOfLastChange": "2025-01-01",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/advection/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/advection/schema.json"
+  },
+  "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/advection/schema.yaml",
+  "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/advection/context.jsonld",
+  "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/advection/resolvedProperties.json",
+  "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/advection/",
+  "validationPassed": true,
+  "description": "# Spatial Advection Operator\n**Term:** `-v\u00b7\u2207u`\nImplemented in `model.global.Advection.java`. Differential advection between species (v1 \u2260 v2) triggers DIFICI travelling waves even when D1 = D2.\n",
+  "examples": [
+    {
+      "title": "DIFICI scenario \u2014 differential advection in x",
+      "content": "{ \"vx\": 0.01, \"vy\": 0.0, \"vz\": 0.0 }\n"
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntitle: AdvectionOperator\ndescription: \"Spatial advection term \\u2014 -v\\xB7\\u2207u\"\ntype: object\nproperties:\n  vx:\n    type: number\n    description: Advection velocity x-direction [cm/d]\n    x-jsonld-id: https://mwj.example.org/pdes/spatial/velocityX\n  vy:\n    type: number\n    description: Advection velocity y-direction [cm/d]\n    x-jsonld-id: https://mwj.example.org/pdes/spatial/velocityY\n  vz:\n    type: number\n    description: Advection velocity z-direction [cm/d]\n    x-jsonld-id: https://mwj.example.org/pdes/spatial/velocityZ\nx-jsonld-prefixes:\n  spatial: https://mwj.example.org/pdes/spatial/\n",
+  "gitRepository": "https://github.com/MarkusWilhelmJahn/bblocks-pdes",
+  "gitPath": "_sources/components/advection"
+}

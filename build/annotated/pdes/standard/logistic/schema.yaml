@@ -1,0 +1,23 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: LogisticParameters
+description: "dX/dt = r\xB7X\xB7(1 - X/K)"
+type: object
+required:
+- r
+- K
+- X0
+properties:
+  r:
+    type: number
+    description: Intrinsic growth rate [d^-1]
+  K:
+    type: number
+    minimum: 0
+    description: Carrying capacity
+  X0:
+    type: number
+    minimum: 0
+    description: Initial population
+x-jsonld-prefixes:
+  plk: https://mwj.example.org/pdes/model/
+  prov: http://www.w3.org/ns/prov#

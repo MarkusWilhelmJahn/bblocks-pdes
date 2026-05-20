@@ -1,0 +1,7 @@
+{
+  "@context": {
+    "D": "spatial:diffusionCoefficient",
+    "spatial": "https://mwj.example.org/pdes/spatial/",
+    "@version": 1.1
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "@context": {
+    "gamma": "holling:maxConsumptionRate",
+    "H": "holling:halfSaturation",
+    "holling": "https://mwj.example.org/pdes/holling/",
+    "@version": 1.1
+  }
+}

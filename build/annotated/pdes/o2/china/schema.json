@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "ChinaModelParameters",
+  "description": "Two-component population / resource-competition model (China.java).\n  dX/dt = r1\u00b7X\u00b7(1 - X/K1) - alpha12\u00b7X\u00b7Y\n  dY/dt = r2\u00b7Y\u00b7(1 - Y/K2) - alpha21\u00b7X\u00b7Y\n",
+  "type": "object",
+  "required": [
+    "r1",
+    "K1",
+    "r2",
+    "K2",
+    "alpha12",
+    "alpha21",
+    "X0",
+    "Y0"
+  ],
+  "properties": {
+    "r1": {
+      "type": "number",
+      "description": "Growth rate species 1"
+    },
+    "K1": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Carrying capacity species 1"
+    },
+    "r2": {
+      "type": "number",
+      "description": "Growth rate species 2"
+    },
+    "K2": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Carrying capacity species 2"
+    },
+    "alpha12": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Competition effect of 2 on 1"
+    },
+    "alpha21": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Competition effect of 1 on 2"
+    },
+    "X0": {
+      "type": "number",
+      "minimum": 0
+    },
+    "Y0": {
+      "type": "number",
+      "minimum": 0
+    }
+  },
+  "x-jsonld-prefixes": {
+    "plk": "https://mwj.example.org/pdes/model/",
+    "prov": "http://www.w3.org/ns/prov#"
+  }
+}

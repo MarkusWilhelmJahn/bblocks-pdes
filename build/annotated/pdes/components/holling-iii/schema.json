@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HollingTypeIIIParameters",
+  "description": "f(X) = gamma\u00b7X\u00b2 / (H\u00b2 + X\u00b2) \u2014 sigmoid functional response",
+  "type": "object",
+  "required": [
+    "gamma",
+    "H"
+  ],
+  "properties": {
+    "gamma": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Maximum consumption rate",
+      "x-jsonld-id": "https://mwj.example.org/pdes/holling/maxConsumptionRate"
+    },
+    "H": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Half-saturation constant (inflection point)",
+      "x-jsonld-id": "https://mwj.example.org/pdes/holling/halfSaturation"
+    }
+  },
+  "x-jsonld-prefixes": {
+    "holling": "https://mwj.example.org/pdes/holling/"
+  }
+}

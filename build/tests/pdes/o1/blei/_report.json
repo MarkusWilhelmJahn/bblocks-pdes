@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for mwj.pdes.o1.blei - Lead Kinetics (Blei)",
+  "bblockName": "Lead Kinetics (Blei)",
+  "bblockId": "mwj.pdes.o1.blei",
+  "generated": "2026-05-20T15:11:45.771202+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

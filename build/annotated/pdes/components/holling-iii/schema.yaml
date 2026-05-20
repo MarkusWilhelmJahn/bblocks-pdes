@@ -1,0 +1,20 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: HollingTypeIIIParameters
+description: "f(X) = gamma\xB7X\xB2 / (H\xB2 + X\xB2) \u2014 sigmoid functional response"
+type: object
+required:
+- gamma
+- H
+properties:
+  gamma:
+    type: number
+    minimum: 0
+    description: Maximum consumption rate
+    x-jsonld-id: https://mwj.example.org/pdes/holling/maxConsumptionRate
+  H:
+    type: number
+    minimum: 0
+    description: Half-saturation constant (inflection point)
+    x-jsonld-id: https://mwj.example.org/pdes/holling/halfSaturation
+x-jsonld-prefixes:
+  holling: https://mwj.example.org/pdes/holling/

@@ -1,0 +1,56 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: TumorImmuneParameters
+description: "Tumor-immune interaction model:\n  dT/dt = r\xB7T\xB7(1-T/K) - k\xB7T\xB7I
+  \  (tumor cells)\n  dI/dt = sigma - mu\xB7I + alpha\xB7T\xB7I/(1+beta\xB7T)  (immune
+  cells)\n"
+type: object
+required:
+- r
+- K
+- k
+- sigma
+- mu
+- alpha
+- beta
+- T0
+- I0
+properties:
+  r:
+    type: number
+    minimum: 0
+    description: Tumor growth rate [d^-1]
+  K:
+    type: number
+    minimum: 0
+    description: Tumor carrying capacity
+  k:
+    type: number
+    minimum: 0
+    description: Immune killing rate
+  sigma:
+    type: number
+    minimum: 0
+    description: Immune cell influx rate
+  mu:
+    type: number
+    minimum: 0
+    description: Immune cell death rate
+  alpha:
+    type: number
+    minimum: 0
+    description: Immune stimulation rate
+  beta:
+    type: number
+    minimum: 0
+    description: Immune inhibition by tumor
+  T0:
+    type: number
+    minimum: 0
+    description: Initial tumor cell count
+  I0:
+    type: number
+    minimum: 0
+    description: Initial immune cell count
+x-jsonld-prefixes:
+  plk: https://mwj.example.org/pdes/model/
+  prov: http://www.w3.org/ns/prov#

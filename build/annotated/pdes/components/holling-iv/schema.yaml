@@ -1,0 +1,26 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: HollingTypeIVParameters
+description: "f(X) = a\xB7X / (b + X + c\xB7X\xB2) \u2014 inhibition functional response"
+type: object
+required:
+- a
+- b
+- c
+properties:
+  a:
+    type: number
+    minimum: 0
+    description: Maximum rate numerator
+    x-jsonld-id: https://mwj.example.org/pdes/holling/maxRate
+  b:
+    type: number
+    minimum: 0
+    description: Baseline half-saturation
+    x-jsonld-id: https://mwj.example.org/pdes/holling/halfSaturation
+  c:
+    type: number
+    minimum: 0
+    description: Inhibition coefficient
+    x-jsonld-id: https://mwj.example.org/pdes/holling/inhibitionCoeff
+x-jsonld-prefixes:
+  holling: https://mwj.example.org/pdes/holling/

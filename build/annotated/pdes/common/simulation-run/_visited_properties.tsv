@@ -1,0 +1,35 @@
+path	@id	schema
+/type		/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/id	@id	/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/label	http://www.w3.org/2000/01/rdf-schema#label	/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/modelClass	https://mwj.example.org/pdes/sim/modelClass	/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/startedAtTime	http://www.w3.org/ns/prov#startedAtTime	/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/endedAtTime	http://www.w3.org/ns/prov#endedAtTime	/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/wasAssociatedWith	http://www.w3.org/ns/prov#wasAssociatedWith	/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/wasAssociatedWith/id	@id	/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/wasAssociatedWith/label	http://www.w3.org/2000/01/rdf-schema#label	/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/wasAssociatedWith/version		/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/wasAssociatedWith/localPath		/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/numericalSolver	https://mwj.example.org/pdes/sim/numericalSolver	/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/spatialSetup	https://mwj.example.org/pdes/sim/spatialSetup	/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/spatialSetup/dimensions		/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/spatialSetup/domain_length_x		/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/spatialSetup/domain_length_y		/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/spatialSetup/domain_length_z		/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/spatialSetup/grid_points_x		/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/spatialSetup/grid_points_y		/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/spatialSetup/grid_points_z		/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/spatialSetup/boundary_condition		/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/spatialSetup/diffusion		/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/spatialSetup/advection		/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/visualisation	https://mwj.example.org/pdes/sim/visualisation	/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/used	http://www.w3.org/ns/prov#used	/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/used/observation		/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/used/parametersId		/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/parameters	http://www.w3.org/ns/prov#used	/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/generated	prov:wasGeneratedBy	/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/generated/id	@id	/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/generated/type		/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/generated/format		/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/generated/description		/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml
+/stacItem	http://www.w3.org/ns/dcat#landingPage	/github/workspace/build/annotated/pdes/common/simulation-run/schema.yaml

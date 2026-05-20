@@ -1,0 +1,37 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: RoesslerParameters
+description: "R\xF6ssler (1976) chaotic system:\n  dx/dt = -(y + z)\n  dy/dt = x +
+  a\xB7y\n  dz/dt = b + z\xB7(x - c)\n"
+type: object
+required:
+- a
+- b
+- c
+- x0
+- y0
+- z0
+properties:
+  a:
+    type: number
+    default: 0.2
+    description: Coupling parameter
+  b:
+    type: number
+    default: 0.2
+    description: Constant forcing
+  c:
+    type: number
+    default: 5.7
+    description: Bifurcation parameter
+  x0:
+    type: number
+    default: 0.1
+  y0:
+    type: number
+    default: 0.0
+  z0:
+    type: number
+    default: 0.0
+x-jsonld-prefixes:
+  plk: https://mwj.example.org/pdes/model/
+  prov: http://www.w3.org/ns/prov#

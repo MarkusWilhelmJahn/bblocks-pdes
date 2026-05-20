@@ -1,0 +1,7 @@
+{
+  "@context": {
+    "plk": "https://mwj.example.org/pdes/model/",
+    "prov": "http://www.w3.org/ns/prov#",
+    "@version": 1.1
+  }
+}

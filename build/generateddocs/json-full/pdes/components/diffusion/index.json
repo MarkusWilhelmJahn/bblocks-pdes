@@ -1,0 +1,39 @@
+
+
+{
+  "itemIdentifier": "mwj.pdes.components.diffusion",
+  "name": "Spatial Diffusion Operator",
+  "abstract": "Fickian diffusion term D\u00b7\u2207\u00b2u. Implemented in model.global.Diffusion.java. Combined with any local kinetic model to produce a reaction-diffusion PDE.",
+  "status": "experimental",
+  "dateTimeAddition": "2025-01-01T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "tags": [
+    "spatial",
+    "diffusion",
+    "PDE",
+    "operator"
+  ],
+  "shaclShapes": {},
+  "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/diffusion/context.jsonld",
+  "dateOfLastChange": "2025-01-01",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/diffusion/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/diffusion/schema.json"
+  },
+  "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/diffusion/schema.yaml",
+  "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/diffusion/context.jsonld",
+  "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/diffusion/resolvedProperties.json",
+  "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/diffusion/",
+  "validationPassed": true,
+  "description": "# Spatial Diffusion Operator\n**Term:** `D\u00b7\u2207\u00b2u`\nImplemented in `model.global.Diffusion.java`. Triggers Turing instability when diffusivity ratio D2/D1 exceeds the critical threshold (~100 for Scheffer model).\n",
+  "examples": [
+    {
+      "title": "Turing scenario (D1 phytoplankton, D2 zooplankton)",
+      "content": "{ \"D\": 1.0e-5 }\n"
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntitle: DiffusionOperator\ndescription: \"Spatial diffusion term \\u2014 D\\xB7\\u2207\\xB2u\"\ntype: object\nrequired:\n- D\nproperties:\n  D:\n    type: number\n    minimum: 0\n    description: \"Diffusion coefficient [cm\\xB2/d]\"\n    x-jsonld-id: https://mwj.example.org/pdes/spatial/diffusionCoefficient\nx-jsonld-prefixes:\n  spatial: https://mwj.example.org/pdes/spatial/\n",
+  "gitRepository": "https://github.com/MarkusWilhelmJahn/bblocks-pdes",
+  "gitPath": "_sources/components/diffusion"
+}

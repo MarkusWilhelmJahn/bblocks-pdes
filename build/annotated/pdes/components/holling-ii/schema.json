@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "HollingTypeIIParameters",
+  "description": "f(X) = gamma\u00b7X / (H + X) \u2014 saturating response (Michaelis-Menten)",
+  "type": "object",
+  "required": [
+    "gamma",
+    "H"
+  ],
+  "properties": {
+    "gamma": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Maximum consumption rate",
+      "x-jsonld-id": "https://mwj.example.org/pdes/holling/maxConsumptionRate"
+    },
+    "H": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Half-saturation constant",
+      "x-jsonld-id": "https://mwj.example.org/pdes/holling/halfSaturation"
+    }
+  },
+  "x-jsonld-prefixes": {
+    "holling": "https://mwj.example.org/pdes/holling/"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "LorenzParameters",
+  "description": "Lorenz (1963) chaotic attractor:\n  dx/dt = sigma\u00b7(y - x)\n  dy/dt = x\u00b7(rho - z) - y\n  dz/dt = x\u00b7y - beta\u00b7z\n",
+  "type": "object",
+  "required": [
+    "sigma",
+    "rho",
+    "beta",
+    "x0",
+    "y0",
+    "z0"
+  ],
+  "properties": {
+    "sigma": {
+      "type": "number",
+      "minimum": 0,
+      "default": 10.0,
+      "description": "Prandtl number"
+    },
+    "rho": {
+      "type": "number",
+      "minimum": 0,
+      "default": 28.0,
+      "description": "Rayleigh number \u2014 bifurcation parameter"
+    },
+    "beta": {
+      "type": "number",
+      "minimum": 0,
+      "default": 2.666667,
+      "description": "Geometric parameter (8/3)"
+    },
+    "x0": {
+      "type": "number",
+      "default": 0.1,
+      "description": "Initial x (convection amplitude)"
+    },
+    "y0": {
+      "type": "number",
+      "default": 0.0,
+      "description": "Initial y (horizontal temperature)"
+    },
+    "z0": {
+      "type": "number",
+      "default": 0.0,
+      "description": "Initial z (vertical temperature)"
+    }
+  },
+  "x-jsonld-prefixes": {
+    "plk": "https://mwj.example.org/pdes/model/",
+    "prov": "http://www.w3.org/ns/prov#"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "@context": {
+    "a": "holling:maxRate",
+    "b": "holling:halfSaturation",
+    "c": "holling:inhibitionCoeff",
+    "holling": "https://mwj.example.org/pdes/holling/",
+    "@version": 1.1
+  }
+}

@@ -1,0 +1,48 @@
+
+
+{
+  "itemIdentifier": "mwj.pdes.standard.linear",
+  "name": "Linear ODE",
+  "abstract": "Linear scalar ODE dX/dt = a\u00b7X + b. Implemented in Linear.java.",
+  "status": "experimental",
+  "dateTimeAddition": "2025-01-01T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "dependsOn": [
+    "mwj.pdes.common.stac-result",
+    "mwj.pdes.common.observation",
+    "mwj.pdes.common.simulation-run"
+  ],
+  "tags": [
+    "model",
+    "ODE"
+  ],
+  "sources": [
+    {
+      "title": "FiniteDifferenceMethod4PDES",
+      "link": "https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES"
+    }
+  ],
+  "shaclShapes": {},
+  "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/linear/context.jsonld",
+  "dateOfLastChange": "2025-01-01",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/linear/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/linear/schema.json"
+  },
+  "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/linear/schema.yaml",
+  "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/linear/context.jsonld",
+  "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/linear/resolvedProperties.json",
+  "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/linear/",
+  "validationPassed": true,
+  "description": "# Linear ODE\n\n**Equation(s):**\n```\ndX/dt = a\u00b7X + b\n```\n\n**Java class:** `model.lokal.standard.Linear`\n**Tags:** scalar, standard, linear\n\nCombined with `model.global.Diffusion` / `model.global.Advection` for PDE runs.\nSolved by `jEuler`, `jRungeKutta`, or `jButcher` (model/numerik/).\nOutput via `JPlotter0D` (ODE), `JPlotter1D/2D` or `VTKPlotter3D` (PDE).\n",
+  "examples": [
+    {
+      "title": "Default parameter set",
+      "content": "{ \"a\": -0.1, \"b\": 1.0, \"X0\": 0.0 }\n"
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntitle: LinearODEParameters\ndescription: \"dX/dt = a\\xB7X + b\"\ntype: object\nrequired:\n- a\n- b\n- X0\nproperties:\n  a:\n    type: number\n    description: Linear rate coefficient\n  b:\n    type: number\n    description: Constant forcing term\n  X0:\n    type: number\n    description: Initial value\nx-jsonld-prefixes:\n  plk: https://mwj.example.org/pdes/model/\n  prov: http://www.w3.org/ns/prov#\n",
+  "gitRepository": "https://github.com/MarkusWilhelmJahn/bblocks-pdes",
+  "gitPath": "_sources/standard/linear"
+}

@@ -1,0 +1,47 @@
+
+
+{
+  "itemIdentifier": "mwj.pdes.common.observation",
+  "name": "Initial Observation (SOSA)",
+  "abstract": "SOSA ObservationCollection providing initial state variables and control parameters for any model run. resultTime becomes t=0 of the simulation.",
+  "status": "experimental",
+  "dateTimeAddition": "2025-01-01T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "tags": [
+    "SOSA",
+    "initial-conditions",
+    "observation"
+  ],
+  "sources": [
+    {
+      "title": "W3C SOSA/SSN Ontology",
+      "link": "https://www.w3.org/TR/vocab-ssn/"
+    }
+  ],
+  "rdfType": [
+    "http://www.w3.org/ns/sosa/ObservationCollection"
+  ],
+  "shaclShapes": {},
+  "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/observation/context.jsonld",
+  "dateOfLastChange": "2025-01-01",
+  "schema": {
+    "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/observation/schema.yaml",
+    "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/observation/schema.json"
+  },
+  "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/observation/schema.yaml",
+  "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/observation/context.jsonld",
+  "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/observation/resolvedProperties.json",
+  "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/observation/",
+  "validationPassed": true,
+  "description": "# Initial Observation (SOSA)\n\nGeneric **SOSA `ObservationCollection`** used as initial conditions for any\nmodel in this register. Each state variable and control parameter is a\nseparate `sosa:Observation` member, individually typed as a `prov:Activity`\nthat generates one `sosa:Result` (`prov:Entity`).\n\n## PROV alignment (SSN \u00a76.5)\n\n| Concept | PROV equivalent |\n|---|---|\n| `sosa:Observation` (each member) | `prov:Activity` |\n| `sosa:Sensor` (`madeBySensor`) | `prov:Agent` |\n| `sosa:FeatureOfInterest` | `prov:Entity` |\n| `sosa:Result` (`hasResult`) | `prov:Entity` |\n| `sosa:usedProcedure` | `prov:used` |\n",
+  "examples": [
+    {
+      "title": "Generic two-variable initial observation",
+      "content": "{\n  \"type\": \"ObservationCollection\",\n  \"featureOfInterest\": {\n    \"type\": \"Feature\",\n    \"geometry\": { \"type\": \"Point\", \"coordinates\": [9.37, 47.65] },\n    \"properties\": { \"name\": \"Example system\" }\n  },\n  \"phenomenonTime\": \"2024-01-01/2024-01-07\",\n  \"madeBySensor\": \"https://mwj.example.org/sensor/generic-001\",\n  \"hasMember\": [\n    {\n      \"observedProperty\": \"https://mwj.example.org/obs/stateVariable1\",\n      \"hasResult\": { \"value\": 1.0, \"unit\": \"dimensionless\" },\n      \"resultTime\": \"2024-01-07T00:00:00Z\"\n    },\n    {\n      \"observedProperty\": \"https://mwj.example.org/obs/stateVariable2\",\n      \"hasResult\": { \"value\": 0.5, \"unit\": \"dimensionless\" },\n      \"resultTime\": \"2024-01-07T00:00:00Z\"\n    }\n  ]\n}\n"
+    }
+  ],
+  "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\ntitle: InitialObservation\ndescription: 'A SOSA ObservationCollection providing initial conditions for a simulation\n  run. Each hasMember entry is a sosa:Observation (prov:Activity) generating one sosa:Result\n  (prov:Entity) for one sosa:ObservableProperty.\n\n  '\ntype: object\nrequired:\n- type\n- featureOfInterest\n- phenomenonTime\n- madeBySensor\n- hasMember\nproperties:\n  type:\n    const: ObservationCollection\n  featureOfInterest:\n    type: object\n    required:\n    - type\n    - geometry\n    properties:\n      type:\n        const: Feature\n      geometry:\n        type: object\n      properties:\n        type: object\n        properties:\n          name:\n            type: string\n          description:\n            type: string\n    x-jsonld-id: http://www.w3.org/ns/sosa/hasFeatureOfInterest\n  phenomenonTime:\n    type: string\n    x-jsonld-id: http://www.w3.org/ns/sosa/phenomenonTime\n  madeBySensor:\n    type: string\n    x-jsonld-id: http://www.w3.org/ns/sosa/madeBySensor\n  hasMember:\n    type: array\n    minItems: 1\n    items:\n      type: object\n      required:\n      - observedProperty\n      - hasResult\n      - resultTime\n      properties:\n        observedProperty:\n          type: string\n          x-jsonld-id: http://www.w3.org/ns/sosa/observedProperty\n          x-jsonld-type: '@id'\n        hasResult:\n          type: object\n          required:\n          - value\n          properties:\n            value:\n              type: number\n              x-jsonld-id: http://www.w3.org/ns/sosa/hasSimpleResult\n            unit:\n              type: string\n              x-jsonld-id: http://qudt.org/schema/qudt/unit\n          x-jsonld-id: http://www.w3.org/ns/sosa/hasResult\n        resultTime:\n          type: string\n          format: date-time\n          x-jsonld-id: http://www.w3.org/ns/sosa/resultTime\n          x-jsonld-type: http://www.w3.org/2001/XMLSchema#dateTime\n        usedProcedure:\n          type: string\n          x-jsonld-id: http://www.w3.org/ns/sosa/usedProcedure\n          x-jsonld-type: '@id'\n    x-jsonld-id: http://www.w3.org/ns/sosa/hasMember\nx-jsonld-extra-terms:\n  ObservationCollection: http://www.w3.org/ns/sosa/ObservationCollection\nx-jsonld-prefixes:\n  sosa: http://www.w3.org/ns/sosa/\n  xsd: http://www.w3.org/2001/XMLSchema#\n",
+  "gitRepository": "https://github.com/MarkusWilhelmJahn/bblocks-pdes",
+  "gitPath": "_sources/common/observation"
+}

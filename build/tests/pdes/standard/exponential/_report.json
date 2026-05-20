@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for mwj.pdes.standard.exponential - Exponential Growth",
+  "bblockName": "Exponential Growth",
+  "bblockId": "mwj.pdes.standard.exponential",
+  "generated": "2026-05-20T15:11:45.871735+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

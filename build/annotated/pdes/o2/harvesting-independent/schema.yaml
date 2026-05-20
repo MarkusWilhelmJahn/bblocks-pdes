@@ -1,0 +1,30 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: StockIndependentHarvestingParameters
+description: "Logistic growth with constant harvest rate H:\n  dX/dt = r\xB7X\xB7(1-X/K)
+  - H\n"
+type: object
+required:
+- r
+- K
+- H
+- X0
+properties:
+  r:
+    type: number
+    minimum: 0
+    description: Intrinsic growth rate [d^-1]
+  K:
+    type: number
+    minimum: 0
+    description: Carrying capacity
+  H:
+    type: number
+    minimum: 0
+    description: Constant harvest rate
+  X0:
+    type: number
+    minimum: 0
+    description: Initial population
+x-jsonld-prefixes:
+  plk: https://mwj.example.org/pdes/model/
+  prov: http://www.w3.org/ns/prov#

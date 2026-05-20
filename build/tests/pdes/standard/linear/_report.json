@@ -1,0 +1,14 @@
+{
+  "title": "Validation report for mwj.pdes.standard.linear - Linear ODE",
+  "bblockName": "Linear ODE",
+  "bblockId": "mwj.pdes.standard.linear",
+  "generated": "2026-05-20T15:11:45.882915+00:00",
+  "result": true,
+  "items": [],
+  "globalErrors": {},
+  "counts": {
+    "total": 0,
+    "passed": 0,
+    "failed": 0
+  }
+}

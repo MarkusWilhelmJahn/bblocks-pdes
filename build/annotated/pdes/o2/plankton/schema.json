@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PlanktonParameters",
+  "description": "Simplified two-component phytoplankton(P)/zooplankton(Z) model:\n  dP/dt = r\u00b7P\u00b7(1-P/K) - g\u00b7P\u00b7Z/(H+P)\n  dZ/dt = e\u00b7g\u00b7P\u00b7Z/(H+P) - m\u00b7Z\n",
+  "type": "object",
+  "required": [
+    "r",
+    "K",
+    "g",
+    "H",
+    "e",
+    "m",
+    "P0",
+    "Z0"
+  ],
+  "properties": {
+    "r": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Phytoplankton growth rate [d^-1]"
+    },
+    "K": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Phytoplankton carrying capacity"
+    },
+    "g": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Max grazing rate (Holling II)"
+    },
+    "H": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Half-saturation constant"
+    },
+    "e": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "Assimilation efficiency"
+    },
+    "m": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Zooplankton mortality rate"
+    },
+    "P0": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Initial phytoplankton"
+    },
+    "Z0": {
+      "type": "number",
+      "minimum": 0,
+      "description": "Initial zooplankton"
+    }
+  },
+  "x-jsonld-prefixes": {
+    "plk": "https://mwj.example.org/pdes/model/",
+    "prov": "http://www.w3.org/ns/prov#"
+  }
+}

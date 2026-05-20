@@ -1,0 +1,4 @@
+path	@id	schema
+/vx	https://mwj.example.org/pdes/spatial/velocityX	/github/workspace/build/annotated/pdes/components/advection/schema.yaml
+/vy	https://mwj.example.org/pdes/spatial/velocityY	/github/workspace/build/annotated/pdes/components/advection/schema.yaml
+/vz	https://mwj.example.org/pdes/spatial/velocityZ	/github/workspace/build/annotated/pdes/components/advection/schema.yaml
