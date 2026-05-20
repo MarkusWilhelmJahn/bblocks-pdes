@@ -1,0 +1,17 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: PlanktonParameters
+description: >
+  Simplified two-component phytoplankton(P)/zooplankton(Z) model:
+    dP/dt = r·P·(1-P/K) - g·P·Z/(H+P)
+    dZ/dt = e·g·P·Z/(H+P) - m·Z
+type: object
+required: [r, K, g, H, e, m, P0, Z0]
+properties:
+  r:  { type: number, minimum: 0, description: "Phytoplankton growth rate [d^-1]" }
+  K:  { type: number, minimum: 0, description: "Phytoplankton carrying capacity" }
+  g:  { type: number, minimum: 0, description: "Max grazing rate (Holling II)" }
+  H:  { type: number, minimum: 0, description: "Half-saturation constant" }
+  e:  { type: number, minimum: 0, maximum: 1, description: "Assimilation efficiency" }
+  m:  { type: number, minimum: 0, description: "Zooplankton mortality rate" }
+  P0: { type: number, minimum: 0, description: "Initial phytoplankton" }
+  Z0: { type: number, minimum: 0, description: "Initial zooplankton" }

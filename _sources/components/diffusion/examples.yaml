@@ -1,0 +1,3 @@
+- title: Turing scenario (D1 phytoplankton, D2 zooplankton)
+  content: |
+    { "D": 1.0e-5 }

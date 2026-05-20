@@ -1,0 +1,16 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: VolterraParameters
+description: >
+  Volterra predator-prey with logistic prey:
+    dX/dt = r·X·(1-X/K) - a·X·Y
+    dY/dt = -c·Y + d·a·X·Y
+type: object
+required: [r, K, a, c, d, X0, Y0]
+properties:
+  r:  { type: number, minimum: 0, description: "Prey intrinsic growth rate" }
+  K:  { type: number, minimum: 0, description: "Prey carrying capacity" }
+  a:  { type: number, minimum: 0, description: "Attack rate" }
+  c:  { type: number, minimum: 0, description: "Predator mortality rate" }
+  d:  { type: number, minimum: 0, description: "Conversion efficiency" }
+  X0: { type: number, minimum: 0 }
+  Y0: { type: number, minimum: 0 }

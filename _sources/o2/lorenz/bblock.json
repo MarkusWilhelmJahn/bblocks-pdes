@@ -1,0 +1,13 @@
+{
+  "name": "Lorenz System",
+  "abstract": "Lorenz (1963) chaotic attractor: dx/dt=sigma(y-x), dy/dt=x(rho-z)-y, dz/dt=xy-beta·z. Lorenz.java.",
+  "status": "experimental",
+  "dateTimeAddition": "2025-01-01T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "dependsOn": ["mwj.pdes.common.observation", "mwj.pdes.common.simulation-run", "mwj.pdes.common.stac-result"],
+  "tags": ["model", "ODE"],
+  "sources": [
+    { "title": "FiniteDifferenceMethod4PDES", "link": "https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES" }
+  ]
+}

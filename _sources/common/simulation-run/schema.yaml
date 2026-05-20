@@ -1,0 +1,75 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: SimulationRun
+description: >
+  A PROV Activity representing one execution of any model in
+  FiniteDifferenceMethod4PDES. Concrete model building blocks extend
+  this schema with their specific parameter sets.
+type: object
+required: [type, modelClass, startedAtTime, endedAtTime, wasAssociatedWith, used, generated]
+properties:
+  type:           { const: SimulationRun }
+  id:             { type: string }
+  label:          { type: string }
+  modelClass:
+    type: string
+    description: "Fully-qualified Java class name of the local kinetic model"
+    examples:
+      - "model.lokal.o2.Scheffer"
+      - "model.lokal.o2.Lorenz"
+      - "model.lokal.standard.Logistisch"
+  startedAtTime:  { type: string, format: date-time }
+  endedAtTime:    { type: string, format: date-time }
+  wasAssociatedWith:
+    type: object
+    required: [id, label, version]
+    properties:
+      id:        { type: string, const: "https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES" }
+      label:     { type: string, const: "FiniteDifferenceMethod4PDES" }
+      version:   { type: string }
+      localPath: { type: string, const: "/Users/markusjahn/Documents/GitHub/FiniteDifferenceMethod4PDES" }
+  numericalSolver:
+    type: string
+    enum: [jEuler, jRungeKutta, jButcher]
+    description: "Solver class used (model.numerik.*)"
+  spatialSetup:
+    type: object
+    description: "Present only for PDE runs; absent for pure ODE runs"
+    properties:
+      dimensions:         { type: integer, enum: [1, 2, 3] }
+      domain_length_x:    { type: number }
+      domain_length_y:    { type: number }
+      domain_length_z:    { type: number }
+      grid_points_x:      { type: integer }
+      grid_points_y:      { type: integer }
+      grid_points_z:      { type: integer }
+      boundary_condition: { type: string, enum: [zero-flux, periodic, dirichlet] }
+      diffusion:          { type: boolean }
+      advection:          { type: boolean }
+  visualisation:
+    type: string
+    enum: [JPlotter0D, JPlotter1D, JPlotter2D, VTKPlotter0D, VTKPlotter3D]
+    description: "View class used for output (view.*)"
+  used:
+    type: object
+    required: [observation]
+    properties:
+      observation:  { type: string }
+      parametersId: { type: string }
+  parameters:
+    type: object
+    description: "Model-specific parameters — defined in each concrete model block"
+  generated:
+    type: array
+    minItems: 1
+    items:
+      type: object
+      required: [id, type, format]
+      properties:
+        id:          { type: string }
+        type:
+          type: string
+          enum: [timeseries-csv, spatial-field-csv, spatial-field-vtk,
+                 plot-0d-png, plot-1d-png, plot-2d-png, plot-3d-vtk]
+        format:      { type: string }
+        description: { type: string }
+  stacItem: { type: string }

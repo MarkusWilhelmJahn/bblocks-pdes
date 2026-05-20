@@ -1,0 +1,9 @@
+{
+  "name": "Spatial Diffusion Operator",
+  "abstract": "Fickian diffusion term D·∇²u. Implemented in model.global.Diffusion.java. Combined with any local kinetic model to produce a reaction-diffusion PDE.",
+  "status": "experimental",
+  "dateTimeAddition": "2025-01-01T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "tags": ["spatial", "diffusion", "PDE", "operator"]
+}

@@ -1,0 +1,12 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: BleiKineticsParameters
+description: >
+  One-compartment lead (Blei) kinetics.
+  dX/dt = k_in - k_out·X
+  where X is blood lead concentration.
+type: object
+required: [k_in, k_out, X0]
+properties:
+  k_in:  { type: number, minimum: 0, description: "Lead input rate [µg/dl/d]" }
+  k_out: { type: number, minimum: 0, description: "Lead elimination rate [d^-1]" }
+  X0:    { type: number, minimum: 0, description: "Initial blood lead concentration [µg/dl]" }

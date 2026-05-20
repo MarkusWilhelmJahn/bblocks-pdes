@@ -1,0 +1,9 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: LinearODEParameters
+description: "dX/dt = a·X + b"
+type: object
+required: [a, b, X0]
+properties:
+  a:  { type: number, description: "Linear rate coefficient" }
+  b:  { type: number, description: "Constant forcing term" }
+  X0: { type: number, description: "Initial value" }

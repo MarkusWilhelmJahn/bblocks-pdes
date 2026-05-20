@@ -1,0 +1,16 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: RoesslerParameters
+description: >
+  Rössler (1976) chaotic system:
+    dx/dt = -(y + z)
+    dy/dt = x + a·y
+    dz/dt = b + z·(x - c)
+type: object
+required: [a, b, c, x0, y0, z0]
+properties:
+  a:  { type: number, default: 0.2,  description: "Coupling parameter" }
+  b:  { type: number, default: 0.2,  description: "Constant forcing" }
+  c:  { type: number, default: 5.7,  description: "Bifurcation parameter" }
+  x0: { type: number, default: 0.1 }
+  y0: { type: number, default: 0.0 }
+  z0: { type: number, default: 0.0 }

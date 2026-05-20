@@ -1,0 +1,9 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: HollingTypeIVParameters
+description: "f(X) = a·X / (b + X + c·X²) — inhibition functional response"
+type: object
+required: [a, b, c]
+properties:
+  a: { type: number, minimum: 0, description: "Maximum rate numerator" }
+  b: { type: number, minimum: 0, description: "Baseline half-saturation" }
+  c: { type: number, minimum: 0, description: "Inhibition coefficient" }

@@ -1,0 +1,1 @@
+{ "@context": { "holling": "https://mwj.example.org/pdes/holling/", "gamma": { "@id": "holling:maxConsumptionRate" }, "H": { "@id": "holling:halfSaturation" } } }

@@ -1,0 +1,15 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: LotkaVolterraParameters
+description: >
+  Classic Lotka-Volterra predator-prey:
+    dX/dt = a·X - b·X·Y   (prey)
+    dY/dt = -c·Y + d·X·Y  (predator)
+type: object
+required: [a, b, c, d, X0, Y0]
+properties:
+  a:  { type: number, minimum: 0, description: "Prey growth rate [d^-1]" }
+  b:  { type: number, minimum: 0, description: "Predation rate coefficient" }
+  c:  { type: number, minimum: 0, description: "Predator mortality rate [d^-1]" }
+  d:  { type: number, minimum: 0, description: "Predator growth efficiency" }
+  X0: { type: number, minimum: 0, description: "Initial prey density" }
+  Y0: { type: number, minimum: 0, description: "Initial predator density" }

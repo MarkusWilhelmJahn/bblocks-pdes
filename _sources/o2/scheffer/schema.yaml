@@ -1,0 +1,34 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: SchefferPlanktonParameters
+description: >
+  Scheffer (1991) phytoplankton(X1)/zooplankton(X2) RDA model:
+    dX1/dt = alpha·N/(HN+N)·X1 - c·X1² - gamma·X1/(H1+X1)·X2 - v1·∇X1 + D1·∇²X1
+    dX2/dt = e·gamma·X1/(H1+X1)·X2 - delta·X2 - F·X2²/(H2²+X2²) - v2·∇X2 + D2·∇²X2
+type: object
+required: [alpha, c, gamma, H1, H2, HN, e, delta, F, N, D1, D2, X1_0, X2_0]
+properties:
+  alpha:  { type: number, minimum: 0, default: 0.5,   description: "Max phytoplankton growth rate [d^-1]" }
+  c:      { type: number, minimum: 0, default: 0.05,  description: "Self-limitation coefficient" }
+  gamma:  { type: number, minimum: 0, default: 0.4,   description: "Max grazing rate [d^-1] (Holling II)" }
+  H1:     { type: number, minimum: 0, default: 0.6,   description: "Half-sat grazing [mg.dw/l]" }
+  H2:     { type: number, minimum: 0, default: 5.0,   description: "Half-sat fish predation [mg.dw/l] (Holling III)" }
+  HN:     { type: number, minimum: 0, default: 1.0,   description: "Half-sat nutrient uptake" }
+  e:      { type: number, minimum: 0, maximum: 1, default: 0.6, description: "Assimilation efficiency" }
+  delta:  { type: number, minimum: 0, default: 0.175, description: "Zooplankton mortality [d^-1] — bifurcation param" }
+  F:      { type: number, minimum: 0, default: 0.4,   description: "Fish predation [mg.dw/d/l]" }
+  N:      { type: number, minimum: 0, default: 2.5,   description: "Nutrient level (control)" }
+  D1:     { type: number, minimum: 0, default: 1.0e-5, description: "Phytoplankton diffusivity [cm²/d]" }
+  D2:     { type: number, minimum: 0, default: 1.0e-5, description: "Zooplankton diffusivity [cm²/d]" }
+  v1x:    { type: number, default: 0.0, description: "Phytoplankton advection x [cm/d]" }
+  v2x:    { type: number, default: 0.0, description: "Zooplankton advection x [cm/d]" }
+  v1y:    { type: number, default: 0.0 }
+  v2y:    { type: number, default: 0.0 }
+  X1_0:   { type: number, minimum: 0, description: "Initial phytoplankton density [mg.dw/l]" }
+  X2_0:   { type: number, minimum: 0, description: "Initial zooplankton density [mg.dw/l]" }
+  domain_length_x: { type: number }
+  domain_length_y: { type: number }
+  grid_points_x:   { type: integer }
+  grid_points_y:   { type: integer }
+  dt:              { type: number, minimum: 0 }
+  t_end:           { type: number, minimum: 0 }
+  boundary_condition: { type: string, enum: [zero-flux, periodic, dirichlet] }

@@ -1,0 +1,8 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: HollingTypeIIParameters
+description: "f(X) = gamma·X / (H + X) — saturating response (Michaelis-Menten)"
+type: object
+required: [gamma, H]
+properties:
+  gamma: { type: number, minimum: 0, description: "Maximum consumption rate" }
+  H:     { type: number, minimum: 0, description: "Half-saturation constant" }

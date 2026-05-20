@@ -1,17 +1,10 @@
-# OGC Building Block template
+# Finite Difference Method Simulations OGC Blocks
 
-This template provides a working example of an [OGC Building Block](https:blocks.ogc.org). For more info see [the Documentation](https://ogcincubator.github.io/bblocks-docs/).
+  OGC Building Block register for all ODE/PDE models implemented in
+  FiniteDifferenceMethod4PDES (Java/Maven, MVC architecture).
+  Covers 22 local kinetic models across 4 complexity tiers, 4 Holling
+  functional response components, and 2 spatial operators, all described
+  using SOSA, PROV-O and STAC 1.0.
+```
 
-This template is a working automation recipe to define, test and document a set of Building Blocks.
-
-The automation-generated documentation for this example is here: [https://opengeospatial.github.io/bblock-template/](https://opengeospatial.github.io/bblock-template/)
-
-[Examples of using this with typical applications of OGC standards](https://github.com/ogcincubator/bblocks-examples)
-
-Please replace the contents of this README with information about your Building Block(s).
-
-# How to use this template
-
-[More information on design and usage](https://github.com/opengeospatial/bblock-template/blob/master/USAGE.md)
-
-
+[More information on design and usage](https://ogcincubator.github.io/bblocks-docs/)

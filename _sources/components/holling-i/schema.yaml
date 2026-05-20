@@ -1,0 +1,7 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: HollingTypeIParameters
+description: "f(X) = a·X — linear functional response"
+type: object
+required: [a]
+properties:
+  a: { type: number, minimum: 0, description: "Attack rate (area searched per unit time)" }

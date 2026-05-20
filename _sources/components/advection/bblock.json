@@ -1,0 +1,9 @@
+{
+  "name": "Spatial Advection Operator",
+  "abstract": "Linear advection term -v·∇u. Implemented in model.global.Advection.java. Combined with any local kinetic model and diffusion to produce a DIFICI travelling-wave system.",
+  "status": "experimental",
+  "dateTimeAddition": "2025-01-01T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "tags": ["spatial", "advection", "PDE", "DIFICI", "operator"]
+}

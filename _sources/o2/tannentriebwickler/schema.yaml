@@ -1,0 +1,19 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: TannentriebwicklerParameters
+description: >
+  Zeiraphera diniana (larch budmoth) cycle model.
+  Larval density (N) oscillates with a ~9-year period driven by
+  interplay of tree quality (Q) and parasitism:
+    dN/dt = r·N/(1 + alpha·N) - beta·N·Q
+    dQ/dt = gamma·(Q_max - Q) - delta·N·Q
+type: object
+required: [r, alpha, beta, gamma, delta, Q_max, N0, Q0]
+properties:
+  r:      { type: number, minimum: 0, description: "Budmoth intrinsic growth rate" }
+  alpha:  { type: number, minimum: 0, description: "Intraspecific competition" }
+  beta:   { type: number, minimum: 0, description: "Tree quality effect on budmoth" }
+  gamma:  { type: number, minimum: 0, description: "Tree quality recovery rate" }
+  delta:  { type: number, minimum: 0, description: "Budmoth effect on tree quality" }
+  Q_max:  { type: number, minimum: 0, description: "Maximum tree quality" }
+  N0:     { type: number, minimum: 0, description: "Initial budmoth density" }
+  Q0:     { type: number, minimum: 0, description: "Initial tree quality" }

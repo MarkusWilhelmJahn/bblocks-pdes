@@ -1,0 +1,3 @@
+- title: DIFICI scenario — differential advection in x
+  content: |
+    { "vx": 0.01, "vy": 0.0, "vz": 0.0 }

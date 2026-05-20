@@ -1,0 +1,1 @@
+{ "@context": { "spatial": "https://mwj.example.org/pdes/spatial/", "vx": { "@id": "spatial:velocityX" }, "vy": { "@id": "spatial:velocityY" }, "vz": { "@id": "spatial:velocityZ" } } }

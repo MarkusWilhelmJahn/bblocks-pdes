@@ -1,0 +1,10 @@
+{
+  "name": "Holling Type II Functional Response",
+  "abstract": "Saturating Michaelis-Menten (disc equation) response. Implemented in model/lokal/holling/HollingII.java.",
+  "status": "experimental",
+  "dateTimeAddition": "2025-01-01T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "tags": ["Holling", "functional-response", "component"],
+  "sources": [{ "title": "Holling (1959) Canadian Entomologist 91:293-320" }]
+}

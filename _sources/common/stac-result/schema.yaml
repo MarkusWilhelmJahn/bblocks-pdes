@@ -1,0 +1,45 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: SimulationResultSTACItem
+type: object
+required: [type, stac_version, id, geometry, bbox, properties, links, assets]
+properties:
+  type:          { const: Feature }
+  stac_version:  { const: "1.0.0" }
+  stac_extensions: { type: array, items: { type: string } }
+  id:       { type: string }
+  geometry: { type: object }
+  bbox:     { type: array, items: { type: number }, minItems: 4 }
+  properties:
+    type: object
+    required: [datetime, "mwj-pdes:model", "mwj-pdes:modelClass"]
+    properties:
+      datetime:             { type: string, format: date-time }
+      start_datetime:       { type: string, format: date-time }
+      end_datetime:         { type: string, format: date-time }
+      "mwj-pdes:model":     { type: string }
+      "mwj-pdes:modelClass":{ type: string, description: "Java class name" }
+      "mwj-pdes:solver":    { type: string, enum: [jEuler, jRungeKutta, jButcher] }
+      "mwj-pdes:dimensions":{ type: integer, enum: [0, 1, 2, 3] }
+      "mwj-pdes:scenario":  { type: string }
+      "mwj-pdes:provenance":{ type: string }
+      "mwj-pdes:observation":{ type: string }
+  links:
+    type: array
+    items:
+      type: object
+      required: [href, rel]
+      properties:
+        href:  { type: string }
+        rel:   { type: string }
+        type:  { type: string }
+        title: { type: string }
+  assets:
+    type: object
+    additionalProperties:
+      type: object
+      required: [href, type]
+      properties:
+        href:  { type: string }
+        type:  { type: string }
+        title: { type: string }
+        roles: { type: array, items: { type: string } }

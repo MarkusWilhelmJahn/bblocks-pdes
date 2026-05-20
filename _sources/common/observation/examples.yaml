@@ -1,0 +1,24 @@
+- title: Generic two-variable initial observation
+  content: |
+    {
+      "type": "ObservationCollection",
+      "featureOfInterest": {
+        "type": "Feature",
+        "geometry": { "type": "Point", "coordinates": [9.37, 47.65] },
+        "properties": { "name": "Example system" }
+      },
+      "phenomenonTime": "2024-01-01/2024-01-07",
+      "madeBySensor": "https://mwj.example.org/sensor/generic-001",
+      "hasMember": [
+        {
+          "observedProperty": "https://mwj.example.org/obs/stateVariable1",
+          "hasResult": { "value": 1.0, "unit": "dimensionless" },
+          "resultTime": "2024-01-07T00:00:00Z"
+        },
+        {
+          "observedProperty": "https://mwj.example.org/obs/stateVariable2",
+          "hasResult": { "value": 0.5, "unit": "dimensionless" },
+          "resultTime": "2024-01-07T00:00:00Z"
+        }
+      ]
+    }

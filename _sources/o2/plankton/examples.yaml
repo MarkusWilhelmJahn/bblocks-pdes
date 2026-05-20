@@ -1,0 +1,3 @@
+- title: Default parameter set
+  content: |
+    { "r": 0.5, "K": 10.0, "g": 0.4, "H": 1.0, "e": 0.6, "m": 0.2, "P0": 1.0, "Z0": 0.5 }

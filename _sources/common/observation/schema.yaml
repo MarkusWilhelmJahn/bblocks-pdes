@@ -1,0 +1,39 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: InitialObservation
+description: >
+  A SOSA ObservationCollection providing initial conditions for a simulation run.
+  Each hasMember entry is a sosa:Observation (prov:Activity) generating one
+  sosa:Result (prov:Entity) for one sosa:ObservableProperty.
+type: object
+required: [type, featureOfInterest, phenomenonTime, madeBySensor, hasMember]
+properties:
+  type:             { const: ObservationCollection }
+  featureOfInterest:
+    type: object
+    required: [type, geometry]
+    properties:
+      type:     { const: Feature }
+      geometry: { type: object }
+      properties:
+        type: object
+        properties:
+          name:            { type: string }
+          description:     { type: string }
+  phenomenonTime:   { type: string }
+  madeBySensor:     { type: string }
+  hasMember:
+    type: array
+    minItems: 1
+    items:
+      type: object
+      required: [observedProperty, hasResult, resultTime]
+      properties:
+        observedProperty: { type: string }
+        hasResult:
+          type: object
+          required: [value]
+          properties:
+            value: { type: number }
+            unit:  { type: string }
+        resultTime: { type: string, format: date-time }
+        usedProcedure: { type: string }

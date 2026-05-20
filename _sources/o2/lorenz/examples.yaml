@@ -1,0 +1,3 @@
+- title: Default parameter set
+  content: |
+    { "sigma": 10.0, "rho": 28.0, "beta": 2.6667, "x0": 0.1, "y0": 0.0, "z0": 0.0 }

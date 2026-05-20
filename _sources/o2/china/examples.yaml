@@ -1,0 +1,3 @@
+- title: Default parameter set
+  content: |
+    { "r1": 0.5, "K1": 100.0, "r2": 0.4, "K2": 80.0, "alpha12": 0.003, "alpha21": 0.002, "X0": 10.0, "Y0": 10.0 }

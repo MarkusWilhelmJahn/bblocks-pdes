@@ -1,0 +1,11 @@
+{
+  "name": "Simulation Result STAC Item",
+  "abstract": "STAC 1.0 Item cataloguing outputs of any simulation run from FiniteDifferenceMethod4PDES, with plankton-rda extension for model-specific searchable properties.",
+  "status": "experimental",
+  "dateTimeAddition": "2025-01-01T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "dependsOn": ["mwj.pdes.common.simulation-run"],
+  "tags": ["STAC", "catalog", "timeseries", "spatial-field"],
+  "sources": [{ "title": "STAC 1.0", "link": "https://stacspec.org/" }]
+}

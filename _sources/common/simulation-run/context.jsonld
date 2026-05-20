@@ -1,0 +1,23 @@
+{
+  "@context": {
+    "prov":   "http://www.w3.org/ns/prov#",
+    "dcat":   "http://www.w3.org/ns/dcat#",
+    "rdfs":   "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd":    "http://www.w3.org/2001/XMLSchema#",
+    "plksim": "https://mwj.example.org/pdes/sim/",
+    "SimulationRun":      "prov:Activity",
+    "id":                 "@id",
+    "label":              "rdfs:label",
+    "modelClass":         "plksim:modelClass",
+    "startedAtTime":      { "@id": "prov:startedAtTime", "@type": "xsd:dateTime" },
+    "endedAtTime":        { "@id": "prov:endedAtTime",   "@type": "xsd:dateTime" },
+    "wasAssociatedWith":  "prov:wasAssociatedWith",
+    "used":               "prov:used",
+    "parameters":         "prov:used",
+    "generated":          { "@reverse": "prov:wasGeneratedBy" },
+    "numericalSolver":    "plksim:numericalSolver",
+    "spatialSetup":       "plksim:spatialSetup",
+    "visualisation":      "plksim:visualisation",
+    "stacItem":           "dcat:landingPage"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Holling Type IV Functional Response",
+  "abstract": "Inhibition / Monod-Haldane response — unimodal, decreasing at high prey density. Implemented in model/lokal/holling/HollingIV.java.",
+  "status": "experimental",
+  "dateTimeAddition": "2025-01-01T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "tags": ["Holling", "functional-response", "component"],
+  "sources": [{ "title": "Holling (1959) Canadian Entomologist 91:293-320" }]
+}

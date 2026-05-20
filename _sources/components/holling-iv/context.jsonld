@@ -1,0 +1,1 @@
+{ "@context": { "holling": "https://mwj.example.org/pdes/holling/", "a": { "@id": "holling:maxRate" }, "b": { "@id": "holling:halfSaturation" }, "c": { "@id": "holling:inhibitionCoeff" } } }

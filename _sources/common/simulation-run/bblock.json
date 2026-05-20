@@ -1,0 +1,15 @@
+{
+  "name": "Simulation Run (PROV)",
+  "abstract": "Generic PROV Activity capturing one execution of any local kinetic model in FiniteDifferenceMethod4PDES, optionally extended with spatial operators (Diffusion, Advection).",
+  "status": "experimental",
+  "dateTimeAddition": "2025-01-01T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "dependsOn": ["mwj.pdes.common.observation"],
+  "tags": ["PROV", "simulation", "lineage", "FDM"],
+  "sources": [
+    { "title": "W3C PROV-O", "link": "https://www.w3.org/TR/prov-o/" },
+    { "title": "FiniteDifferenceMethod4PDES", "link": "https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES" }
+  ],
+  "rdfType": ["http://www.w3.org/ns/prov#Activity"]
+}

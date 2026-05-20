@@ -1,0 +1,13 @@
+{
+  "name": "Schlögl Bistable Chemical Reaction",
+  "abstract": "Schlögl (1972) chemical bistability: dX/dt = k1·A·X²-k2·X³+k3·B-k4·X. Schloegl.java.",
+  "status": "experimental",
+  "dateTimeAddition": "2025-01-01T00:00:00Z",
+  "itemClass": "schema",
+  "version": "0.1",
+  "dependsOn": ["mwj.pdes.common.observation", "mwj.pdes.common.simulation-run", "mwj.pdes.common.stac-result"],
+  "tags": ["model", "ODE"],
+  "sources": [
+    { "title": "FiniteDifferenceMethod4PDES", "link": "https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES" }
+  ]
+}

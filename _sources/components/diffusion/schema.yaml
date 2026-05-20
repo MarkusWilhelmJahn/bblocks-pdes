@@ -1,0 +1,7 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: DiffusionOperator
+description: "Spatial diffusion term — D·∇²u"
+type: object
+required: [D]
+properties:
+  D: { type: number, minimum: 0, description: "Diffusion coefficient [cm²/d]" }

@@ -1,0 +1,9 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: GoalSeekingParameters
+description: "dX/dt = r·(Z - X)"
+type: object
+required: [r, Z, X0]
+properties:
+  r:  { type: number, minimum: 0, description: "Adjustment rate [d^-1]" }
+  Z:  { type: number, description: "Target (goal) value" }
+  X0: { type: number, description: "Initial value" }

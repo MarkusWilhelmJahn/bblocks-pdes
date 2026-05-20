@@ -1,0 +1,18 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: TumorImmuneParameters
+description: >
+  Tumor-immune interaction model:
+    dT/dt = r·T·(1-T/K) - k·T·I   (tumor cells)
+    dI/dt = sigma - mu·I + alpha·T·I/(1+beta·T)  (immune cells)
+type: object
+required: [r, K, k, sigma, mu, alpha, beta, T0, I0]
+properties:
+  r:     { type: number, minimum: 0, description: "Tumor growth rate [d^-1]" }
+  K:     { type: number, minimum: 0, description: "Tumor carrying capacity" }
+  k:     { type: number, minimum: 0, description: "Immune killing rate" }
+  sigma: { type: number, minimum: 0, description: "Immune cell influx rate" }
+  mu:    { type: number, minimum: 0, description: "Immune cell death rate" }
+  alpha: { type: number, minimum: 0, description: "Immune stimulation rate" }
+  beta:  { type: number, minimum: 0, description: "Immune inhibition by tumor" }
+  T0:    { type: number, minimum: 0, description: "Initial tumor cell count" }
+  I0:    { type: number, minimum: 0, description: "Initial immune cell count" }

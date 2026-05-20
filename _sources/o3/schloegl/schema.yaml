@@ -1,0 +1,18 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: SchloeglParameters
+description: >
+  Schlögl (1972) bistable chemical reaction:
+    A + 2X <-> 3X  (autocatalytic)
+    B + X  <-> C   (drain)
+    dX/dt = k1·A·X² - k2·X³ + k3·B - k4·X
+  Control parameter: A or B drives first-order phase transition.
+type: object
+required: [k1, k2, k3, k4, A, B, X0]
+properties:
+  k1: { type: number, minimum: 0, description: "Forward rate constant (autocatalysis)" }
+  k2: { type: number, minimum: 0, description: "Reverse rate constant (autocatalysis)" }
+  k3: { type: number, minimum: 0, description: "Forward rate constant (drain)" }
+  k4: { type: number, minimum: 0, description: "Reverse rate constant (drain)" }
+  A:  { type: number, minimum: 0, description: "Concentration of species A (control)" }
+  B:  { type: number, minimum: 0, description: "Concentration of species B (control)" }
+  X0: { type: number, minimum: 0, description: "Initial concentration of X" }

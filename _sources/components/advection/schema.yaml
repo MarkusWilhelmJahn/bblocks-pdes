@@ -1,0 +1,8 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: AdvectionOperator
+description: "Spatial advection term — -v·∇u"
+type: object
+properties:
+  vx: { type: number, description: "Advection velocity x-direction [cm/d]" }
+  vy: { type: number, description: "Advection velocity y-direction [cm/d]" }
+  vz: { type: number, description: "Advection velocity z-direction [cm/d]" }

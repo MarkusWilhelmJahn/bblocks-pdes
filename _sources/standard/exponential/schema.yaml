@@ -1,0 +1,8 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+title: ExponentialParameters
+description: "dX/dt = r·X"
+type: object
+required: [r, X0]
+properties:
+  r:  { type: number, description: "Growth rate [d^-1]. r>0 growth, r<0 decay." }
+  X0: { type: number, minimum: 0, description: "Initial value" }
