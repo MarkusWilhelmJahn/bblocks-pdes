@@ -1,7 +1,7 @@
 {
   "name": "FiniteDifferenceMethod4PDES \u2014 OGC Building Block Register",
   "abstract": "OGC Building Block register for all ODE/PDE models implemented in FiniteDifferenceMethod4PDES (Java/Maven, MVC architecture). Covers 22 local kinetic models across 4 complexity tiers, 4 Holling functional response components, and 2 spatial operators, all described using SOSA, PROV-O and STAC 1.0.\n",
-  "modified": "2026-05-20T15:11:38.640400",
+  "modified": "2026-05-20T15:28:27.831710",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"1c38e230d79a22d5b242ea63ec3c6d6a95af173d",
@@ -11,10 +11,10 @@
   },
   "gitRepository": "https://github.com/MarkusWilhelmJahn/bblocks-pdes",
   "gitHubRepository": "https://github.com/MarkusWilhelmJahn/bblocks-pdes/blob/master/",
-  "baseURL": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/",
-  "viewerURL": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/",
-  "validationReport": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/tests/report.html",
-  "validationReportJson": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/tests/report.json",
+  "baseURL": "https://markuswilhelmjahn.github.io/bblocks-pdes/",
+  "viewerURL": "https://markuswilhelmjahn.github.io/bblocks-pdes/",
+  "validationReport": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/tests/report.html",
+  "validationReportJson": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/tests/report.json",
   "imports": [
     "https://opengeospatial.github.io/bblocks/register.json"
   ],
@@ -42,29 +42,29 @@
         "http://www.w3.org/ns/sosa/ObservationCollection"
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/observation/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/common/observation/context.jsonld",
       "dateOfLastChange": "2025-01-01",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/observation/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/observation/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/common/observation/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/common/observation/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/observation/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/observation/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/observation/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/observation/",
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/common/observation/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/common/observation/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/common/observation/resolvedProperties.json",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/common/observation/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/common/observation/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/common/observation/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/common/observation/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/common/observation/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.common.observation"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.common.observation"
         }
       }
     },
@@ -84,29 +84,29 @@
         "operator"
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/advection/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/advection/context.jsonld",
       "dateOfLastChange": "2025-01-01",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/advection/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/advection/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/advection/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/advection/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/advection/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/advection/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/advection/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/advection/",
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/advection/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/advection/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/advection/resolvedProperties.json",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/advection/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/components/advection/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/components/advection/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/components/advection/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/components/advection/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.components.advection"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.components.advection"
         }
       }
     },
@@ -125,29 +125,29 @@
         "operator"
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/diffusion/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/diffusion/context.jsonld",
       "dateOfLastChange": "2025-01-01",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/diffusion/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/diffusion/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/diffusion/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/diffusion/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/diffusion/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/diffusion/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/diffusion/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/diffusion/",
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/diffusion/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/diffusion/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/diffusion/resolvedProperties.json",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/diffusion/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/components/diffusion/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/components/diffusion/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/components/diffusion/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/components/diffusion/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.components.diffusion"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.components.diffusion"
         }
       }
     },
@@ -170,29 +170,29 @@
         }
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-i/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-i/context.jsonld",
       "dateOfLastChange": "2025-01-01",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-i/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-i/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-i/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-i/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-i/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-i/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-i/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-i/",
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/holling-i/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/holling-i/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-i/resolvedProperties.json",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/holling-i/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/components/holling-i/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/components/holling-i/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/components/holling-i/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/components/holling-i/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.components.holling-i"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.components.holling-i"
         }
       }
     },
@@ -215,29 +215,29 @@
         }
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-ii/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-ii/context.jsonld",
       "dateOfLastChange": "2025-01-01",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-ii/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-ii/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-ii/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-ii/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-ii/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-ii/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-ii/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-ii/",
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/holling-ii/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/holling-ii/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-ii/resolvedProperties.json",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/holling-ii/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/components/holling-ii/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/components/holling-ii/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/components/holling-ii/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/components/holling-ii/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.components.holling-ii"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.components.holling-ii"
         }
       }
     },
@@ -260,29 +260,29 @@
         }
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iii/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-iii/context.jsonld",
       "dateOfLastChange": "2025-01-01",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iii/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iii/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-iii/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-iii/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-iii/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-iii/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iii/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-iii/",
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/holling-iii/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/holling-iii/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-iii/resolvedProperties.json",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/holling-iii/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/components/holling-iii/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/components/holling-iii/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/components/holling-iii/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/components/holling-iii/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.components.holling-iii"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.components.holling-iii"
         }
       }
     },
@@ -305,29 +305,29 @@
         }
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iv/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-iv/context.jsonld",
       "dateOfLastChange": "2025-01-01",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iv/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iv/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-iv/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-iv/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-iv/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-iv/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iv/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-iv/",
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/holling-iv/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/holling-iv/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-iv/resolvedProperties.json",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/holling-iv/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/components/holling-iv/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/components/holling-iv/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/components/holling-iv/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/components/holling-iv/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.components.holling-iv"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.components.holling-iv"
         }
       }
     },
@@ -362,29 +362,29 @@
         "http://www.w3.org/ns/prov#Activity"
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/simulation-run/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/common/simulation-run/context.jsonld",
       "dateOfLastChange": "2025-01-01",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/simulation-run/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/simulation-run/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/common/simulation-run/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/common/simulation-run/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/simulation-run/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/simulation-run/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/simulation-run/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/simulation-run/",
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/common/simulation-run/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/common/simulation-run/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/common/simulation-run/resolvedProperties.json",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/common/simulation-run/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/common/simulation-run/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/common/simulation-run/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/common/simulation-run/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/common/simulation-run/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.common.simulation-run"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.common.simulation-run"
         }
       }
     },
@@ -412,29 +412,29 @@
         }
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/stac-result/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/common/stac-result/context.jsonld",
       "dateOfLastChange": "2025-01-01",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/stac-result/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/stac-result/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/common/stac-result/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/common/stac-result/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/stac-result/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/stac-result/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/stac-result/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/stac-result/",
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/common/stac-result/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/common/stac-result/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/common/stac-result/resolvedProperties.json",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/common/stac-result/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/common/stac-result/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/common/stac-result/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/common/stac-result/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/common/stac-result/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.common.stac-result"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.common.stac-result"
         }
       }
     },
@@ -447,9 +447,9 @@
       "itemClass": "schema",
       "version": "0.1",
       "dependsOn": [
-        "mwj.pdes.common.stac-result",
         "mwj.pdes.common.observation",
-        "mwj.pdes.common.simulation-run"
+        "mwj.pdes.common.simulation-run",
+        "mwj.pdes.common.stac-result"
       ],
       "tags": [
         "model",
@@ -462,29 +462,29 @@
         }
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o1/blei/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o1/blei/context.jsonld",
       "dateOfLastChange": "2025-01-01",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o1/blei/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o1/blei/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o1/blei/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o1/blei/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o1/blei/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o1/blei/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o1/blei/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o1/blei/",
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o1/blei/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o1/blei/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o1/blei/resolvedProperties.json",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o1/blei/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o1/blei/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o1/blei/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o1/blei/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o1/blei/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o1.blei"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o1.blei"
         }
       }
     },
@@ -497,9 +497,9 @@
       "itemClass": "schema",
       "version": "0.1",
       "dependsOn": [
-        "mwj.pdes.common.stac-result",
         "mwj.pdes.common.observation",
-        "mwj.pdes.common.simulation-run"
+        "mwj.pdes.common.simulation-run",
+        "mwj.pdes.common.stac-result"
       ],
       "tags": [
         "model",
@@ -512,29 +512,29 @@
         }
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/china/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/china/context.jsonld",
       "dateOfLastChange": "2025-01-01",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/china/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/china/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/china/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/china/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/china/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/china/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/china/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/china/",
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/china/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/china/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/china/resolvedProperties.json",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/china/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/china/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o2/china/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/china/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o2/china/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.china"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o2.china"
         }
       }
     },
@@ -547,9 +547,9 @@
       "itemClass": "schema",
       "version": "0.1",
       "dependsOn": [
-        "mwj.pdes.common.stac-result",
         "mwj.pdes.common.observation",
-        "mwj.pdes.common.simulation-run"
+        "mwj.pdes.common.simulation-run",
+        "mwj.pdes.common.stac-result"
       ],
       "tags": [
         "model",
@@ -562,29 +562,29 @@
         }
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/harvesting-dependent/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/harvesting-dependent/context.jsonld",
       "dateOfLastChange": "2025-01-01",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/harvesting-dependent/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/harvesting-dependent/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/harvesting-dependent/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/harvesting-dependent/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/harvesting-dependent/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/harvesting-dependent/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/harvesting-dependent/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/harvesting-dependent/",
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/harvesting-dependent/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/harvesting-dependent/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/harvesting-dependent/resolvedProperties.json",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/harvesting-dependent/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/harvesting-dependent/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o2/harvesting-dependent/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/harvesting-dependent/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o2/harvesting-dependent/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.harvesting-dependent"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o2.harvesting-dependent"
         }
       }
     },
@@ -597,9 +597,9 @@
       "itemClass": "schema",
       "version": "0.1",
       "dependsOn": [
-        "mwj.pdes.common.stac-result",
         "mwj.pdes.common.observation",
-        "mwj.pdes.common.simulation-run"
+        "mwj.pdes.common.simulation-run",
+        "mwj.pdes.common.stac-result"
       ],
       "tags": [
         "model",
@@ -612,29 +612,29 @@
         }
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/harvesting-independent/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/harvesting-independent/context.jsonld",
       "dateOfLastChange": "2025-01-01",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/harvesting-independent/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/harvesting-independent/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/harvesting-independent/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/harvesting-independent/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/harvesting-independent/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/harvesting-independent/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/harvesting-independent/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/harvesting-independent/",
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/harvesting-independent/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/harvesting-independent/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/harvesting-independent/resolvedProperties.json",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/harvesting-independent/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/harvesting-independent/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o2/harvesting-independent/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/harvesting-independent/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o2/harvesting-independent/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.harvesting-independent"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o2.harvesting-independent"
         }
       }
     },
@@ -647,9 +647,9 @@
       "itemClass": "schema",
       "version": "0.1",
       "dependsOn": [
-        "mwj.pdes.common.stac-result",
         "mwj.pdes.common.observation",
-        "mwj.pdes.common.simulation-run"
+        "mwj.pdes.common.simulation-run",
+        "mwj.pdes.common.stac-result"
       ],
       "tags": [
         "model",
@@ -662,29 +662,29 @@
         }
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/jansen/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/jansen/context.jsonld",
       "dateOfLastChange": "2025-01-01",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/jansen/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/jansen/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/jansen/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/jansen/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/jansen/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/jansen/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/jansen/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/jansen/",
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/jansen/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/jansen/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/jansen/resolvedProperties.json",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/jansen/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/jansen/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o2/jansen/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/jansen/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o2/jansen/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.jansen"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o2.jansen"
         }
       }
     },
@@ -697,9 +697,9 @@
       "itemClass": "schema",
       "version": "0.1",
       "dependsOn": [
-        "mwj.pdes.common.stac-result",
         "mwj.pdes.common.observation",
-        "mwj.pdes.common.simulation-run"
+        "mwj.pdes.common.simulation-run",
+        "mwj.pdes.common.stac-result"
       ],
       "tags": [
         "model",
@@ -712,29 +712,29 @@
         }
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/lorenz/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/lorenz/context.jsonld",
       "dateOfLastChange": "2025-01-01",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/lorenz/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/lorenz/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/lorenz/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/lorenz/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/lorenz/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/lorenz/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/lorenz/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/lorenz/",
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/lorenz/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/lorenz/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/lorenz/resolvedProperties.json",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/lorenz/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/lorenz/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o2/lorenz/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/lorenz/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o2/lorenz/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.lorenz"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o2.lorenz"
         }
       }
     },
@@ -747,9 +747,9 @@
       "itemClass": "schema",
       "version": "0.1",
       "dependsOn": [
-        "mwj.pdes.common.stac-result",
         "mwj.pdes.common.observation",
-        "mwj.pdes.common.simulation-run"
+        "mwj.pdes.common.simulation-run",
+        "mwj.pdes.common.stac-result"
       ],
       "tags": [
         "model",
@@ -762,29 +762,29 @@
         }
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/lotka-volterra/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/lotka-volterra/context.jsonld",
       "dateOfLastChange": "2025-01-01",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/lotka-volterra/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/lotka-volterra/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/lotka-volterra/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/lotka-volterra/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/lotka-volterra/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/lotka-volterra/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/lotka-volterra/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/lotka-volterra/",
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/lotka-volterra/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/lotka-volterra/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/lotka-volterra/resolvedProperties.json",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/lotka-volterra/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/lotka-volterra/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o2/lotka-volterra/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/lotka-volterra/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o2/lotka-volterra/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.lotka-volterra"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o2.lotka-volterra"
         }
       }
     },
@@ -797,9 +797,9 @@
       "itemClass": "schema",
       "version": "0.1",
       "dependsOn": [
-        "mwj.pdes.common.stac-result",
         "mwj.pdes.common.observation",
-        "mwj.pdes.common.simulation-run"
+        "mwj.pdes.common.simulation-run",
+        "mwj.pdes.common.stac-result"
       ],
       "tags": [
         "model",
@@ -812,29 +812,29 @@
         }
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/plankton/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/plankton/context.jsonld",
       "dateOfLastChange": "2025-01-01",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/plankton/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/plankton/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/plankton/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/plankton/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/plankton/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/plankton/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/plankton/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/plankton/",
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/plankton/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/plankton/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/plankton/resolvedProperties.json",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/plankton/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/plankton/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o2/plankton/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/plankton/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o2/plankton/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.plankton"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o2.plankton"
         }
       }
     },
@@ -847,9 +847,9 @@
       "itemClass": "schema",
       "version": "0.1",
       "dependsOn": [
-        "mwj.pdes.common.stac-result",
         "mwj.pdes.common.observation",
-        "mwj.pdes.common.simulation-run"
+        "mwj.pdes.common.simulation-run",
+        "mwj.pdes.common.stac-result"
       ],
       "tags": [
         "model",
@@ -862,29 +862,29 @@
         }
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/roessler/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/roessler/context.jsonld",
       "dateOfLastChange": "2025-01-01",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/roessler/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/roessler/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/roessler/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/roessler/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/roessler/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/roessler/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/roessler/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/roessler/",
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/roessler/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/roessler/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/roessler/resolvedProperties.json",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/roessler/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/roessler/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o2/roessler/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/roessler/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o2/roessler/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.roessler"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o2.roessler"
         }
       }
     },
@@ -897,9 +897,9 @@
       "itemClass": "schema",
       "version": "0.1",
       "dependsOn": [
-        "mwj.pdes.common.stac-result",
         "mwj.pdes.common.observation",
-        "mwj.pdes.common.simulation-run"
+        "mwj.pdes.common.simulation-run",
+        "mwj.pdes.common.stac-result"
       ],
       "tags": [
         "model",
@@ -912,29 +912,29 @@
         }
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/scheffer/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/scheffer/context.jsonld",
       "dateOfLastChange": "2025-01-01",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/scheffer/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/scheffer/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/scheffer/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/scheffer/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/scheffer/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/scheffer/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/scheffer/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/scheffer/",
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/scheffer/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/scheffer/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/scheffer/resolvedProperties.json",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/scheffer/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/scheffer/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o2/scheffer/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/scheffer/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o2/scheffer/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.scheffer"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o2.scheffer"
         }
       }
     },
@@ -947,9 +947,9 @@
       "itemClass": "schema",
       "version": "0.1",
       "dependsOn": [
-        "mwj.pdes.common.stac-result",
         "mwj.pdes.common.observation",
-        "mwj.pdes.common.simulation-run"
+        "mwj.pdes.common.simulation-run",
+        "mwj.pdes.common.stac-result"
       ],
       "tags": [
         "model",
@@ -962,29 +962,29 @@
         }
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/tannentriebwickler/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/tannentriebwickler/context.jsonld",
       "dateOfLastChange": "2025-01-01",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/tannentriebwickler/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/tannentriebwickler/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/tannentriebwickler/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/tannentriebwickler/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/tannentriebwickler/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/tannentriebwickler/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/tannentriebwickler/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/tannentriebwickler/",
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/tannentriebwickler/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/tannentriebwickler/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/tannentriebwickler/resolvedProperties.json",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/tannentriebwickler/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/tannentriebwickler/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o2/tannentriebwickler/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/tannentriebwickler/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o2/tannentriebwickler/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.tannentriebwickler"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o2.tannentriebwickler"
         }
       }
     },
@@ -997,9 +997,9 @@
       "itemClass": "schema",
       "version": "0.1",
       "dependsOn": [
-        "mwj.pdes.common.stac-result",
         "mwj.pdes.common.observation",
-        "mwj.pdes.common.simulation-run"
+        "mwj.pdes.common.simulation-run",
+        "mwj.pdes.common.stac-result"
       ],
       "tags": [
         "model",
@@ -1012,29 +1012,29 @@
         }
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/tumor/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/tumor/context.jsonld",
       "dateOfLastChange": "2025-01-01",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/tumor/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/tumor/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/tumor/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/tumor/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/tumor/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/tumor/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/tumor/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/tumor/",
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/tumor/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/tumor/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/tumor/resolvedProperties.json",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/tumor/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/tumor/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o2/tumor/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/tumor/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o2/tumor/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.tumor"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o2.tumor"
         }
       }
     },
@@ -1047,9 +1047,9 @@
       "itemClass": "schema",
       "version": "0.1",
       "dependsOn": [
-        "mwj.pdes.common.stac-result",
         "mwj.pdes.common.observation",
-        "mwj.pdes.common.simulation-run"
+        "mwj.pdes.common.simulation-run",
+        "mwj.pdes.common.stac-result"
       ],
       "tags": [
         "model",
@@ -1062,29 +1062,29 @@
         }
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/volterra/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/volterra/context.jsonld",
       "dateOfLastChange": "2025-01-01",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/volterra/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/volterra/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/volterra/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/volterra/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/volterra/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/volterra/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/volterra/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/volterra/",
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/volterra/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/volterra/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/volterra/resolvedProperties.json",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/volterra/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/volterra/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o2/volterra/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/volterra/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o2/volterra/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.volterra"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o2.volterra"
         }
       }
     },
@@ -1097,9 +1097,9 @@
       "itemClass": "schema",
       "version": "0.1",
       "dependsOn": [
-        "mwj.pdes.common.stac-result",
         "mwj.pdes.common.observation",
-        "mwj.pdes.common.simulation-run"
+        "mwj.pdes.common.simulation-run",
+        "mwj.pdes.common.stac-result"
       ],
       "tags": [
         "model",
@@ -1112,29 +1112,29 @@
         }
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o3/fischfang/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o3/fischfang/context.jsonld",
       "dateOfLastChange": "2025-01-01",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o3/fischfang/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o3/fischfang/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o3/fischfang/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o3/fischfang/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o3/fischfang/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o3/fischfang/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o3/fischfang/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o3/fischfang/",
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o3/fischfang/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o3/fischfang/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o3/fischfang/resolvedProperties.json",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o3/fischfang/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o3/fischfang/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o3/fischfang/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o3/fischfang/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o3/fischfang/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o3.fischfang"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o3.fischfang"
         }
       }
     },
@@ -1147,9 +1147,9 @@
       "itemClass": "schema",
       "version": "0.1",
       "dependsOn": [
-        "mwj.pdes.common.stac-result",
         "mwj.pdes.common.observation",
-        "mwj.pdes.common.simulation-run"
+        "mwj.pdes.common.simulation-run",
+        "mwj.pdes.common.stac-result"
       ],
       "tags": [
         "model",
@@ -1162,29 +1162,29 @@
         }
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o3/schloegl/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o3/schloegl/context.jsonld",
       "dateOfLastChange": "2025-01-01",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o3/schloegl/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o3/schloegl/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o3/schloegl/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o3/schloegl/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o3/schloegl/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o3/schloegl/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o3/schloegl/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o3/schloegl/",
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o3/schloegl/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o3/schloegl/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o3/schloegl/resolvedProperties.json",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o3/schloegl/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o3/schloegl/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o3/schloegl/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o3/schloegl/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o3/schloegl/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o3.schloegl"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o3.schloegl"
         }
       }
     },
@@ -1197,9 +1197,9 @@
       "itemClass": "schema",
       "version": "0.1",
       "dependsOn": [
-        "mwj.pdes.common.stac-result",
         "mwj.pdes.common.observation",
-        "mwj.pdes.common.simulation-run"
+        "mwj.pdes.common.simulation-run",
+        "mwj.pdes.common.stac-result"
       ],
       "tags": [
         "model",
@@ -1212,29 +1212,29 @@
         }
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/exponential/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/standard/exponential/context.jsonld",
       "dateOfLastChange": "2025-01-01",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/exponential/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/exponential/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/standard/exponential/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/standard/exponential/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/exponential/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/exponential/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/exponential/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/exponential/",
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/standard/exponential/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/standard/exponential/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/standard/exponential/resolvedProperties.json",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/standard/exponential/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/standard/exponential/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/standard/exponential/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/standard/exponential/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/standard/exponential/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.standard.exponential"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.standard.exponential"
         }
       }
     },
@@ -1247,9 +1247,9 @@
       "itemClass": "schema",
       "version": "0.1",
       "dependsOn": [
-        "mwj.pdes.common.stac-result",
         "mwj.pdes.common.observation",
-        "mwj.pdes.common.simulation-run"
+        "mwj.pdes.common.simulation-run",
+        "mwj.pdes.common.stac-result"
       ],
       "tags": [
         "model",
@@ -1262,29 +1262,29 @@
         }
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/goal-seeking/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/standard/goal-seeking/context.jsonld",
       "dateOfLastChange": "2025-01-01",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/goal-seeking/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/goal-seeking/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/standard/goal-seeking/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/standard/goal-seeking/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/goal-seeking/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/goal-seeking/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/goal-seeking/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/goal-seeking/",
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/standard/goal-seeking/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/standard/goal-seeking/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/standard/goal-seeking/resolvedProperties.json",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/standard/goal-seeking/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/standard/goal-seeking/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/standard/goal-seeking/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/standard/goal-seeking/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/standard/goal-seeking/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.standard.goal-seeking"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.standard.goal-seeking"
         }
       }
     },
@@ -1297,9 +1297,9 @@
       "itemClass": "schema",
       "version": "0.1",
       "dependsOn": [
-        "mwj.pdes.common.stac-result",
         "mwj.pdes.common.observation",
-        "mwj.pdes.common.simulation-run"
+        "mwj.pdes.common.simulation-run",
+        "mwj.pdes.common.stac-result"
       ],
       "tags": [
         "model",
@@ -1312,29 +1312,29 @@
         }
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/linear/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/standard/linear/context.jsonld",
       "dateOfLastChange": "2025-01-01",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/linear/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/linear/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/standard/linear/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/standard/linear/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/linear/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/linear/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/linear/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/linear/",
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/standard/linear/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/standard/linear/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/standard/linear/resolvedProperties.json",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/standard/linear/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/standard/linear/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/standard/linear/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/standard/linear/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/standard/linear/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.standard.linear"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.standard.linear"
         }
       }
     },
@@ -1347,9 +1347,9 @@
       "itemClass": "schema",
       "version": "0.1",
       "dependsOn": [
-        "mwj.pdes.common.stac-result",
         "mwj.pdes.common.observation",
-        "mwj.pdes.common.simulation-run"
+        "mwj.pdes.common.simulation-run",
+        "mwj.pdes.common.stac-result"
       ],
       "tags": [
         "model",
@@ -1362,50 +1362,50 @@
         }
       ],
       "shaclShapes": {},
-      "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/logistic/context.jsonld",
+      "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/standard/logistic/context.jsonld",
       "dateOfLastChange": "2025-01-01",
       "schema": {
-        "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/logistic/schema.yaml",
-        "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/logistic/schema.json"
+        "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/standard/logistic/schema.yaml",
+        "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/standard/logistic/schema.json"
       },
-      "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/logistic/schema.yaml",
-      "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/logistic/context.jsonld",
-      "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/logistic/resolvedProperties.json",
-      "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/logistic/",
+      "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/standard/logistic/schema.yaml",
+      "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/standard/logistic/context.jsonld",
+      "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/standard/logistic/resolvedProperties.json",
+      "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/standard/logistic/",
       "validationPassed": true,
       "documentation": {
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/standard/logistic/index.json"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/standard/logistic/index.json"
         },
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/standard/logistic/index.md"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/standard/logistic/index.md"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.standard.logistic"
+          "url": "https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.standard.logistic"
         }
       }
     }
   ],
-  "remoteCacheDir": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/_cache",
+  "remoteCacheDir": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/_cache",
   "links": [
     {
       "rel": "self",
-      "href": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/register.json",
+      "href": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/register.json",
       "type": "application/json",
       "title": "This Building Blocks Register in JSON format"
     },
     {
       "rel": "self",
-      "href": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/bblocks.ttl",
+      "href": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/bblocks.ttl",
       "type": "text/turtle",
       "title": "This Building Blocks Register in RDF Turtle format"
     },
     {
       "rel": "self",
-      "href": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/bblocks.jsonld",
+      "href": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/bblocks.jsonld",
       "type": "application/ld+json",
       "title": "This Building Blocks Register in JSON-LD format"
     }

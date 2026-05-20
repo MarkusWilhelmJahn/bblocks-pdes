@@ -9,9 +9,9 @@
   "itemClass": "schema",
   "version": "0.1",
   "dependsOn": [
-    "mwj.pdes.common.stac-result",
     "mwj.pdes.common.observation",
-    "mwj.pdes.common.simulation-run"
+    "mwj.pdes.common.simulation-run",
+    "mwj.pdes.common.stac-result"
   ],
   "tags": [
     "model",
@@ -24,16 +24,16 @@
     }
   ],
   "shaclShapes": {},
-  "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/harvesting-independent/context.jsonld",
+  "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/harvesting-independent/context.jsonld",
   "dateOfLastChange": "2025-01-01",
   "schema": {
-    "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/harvesting-independent/schema.yaml",
-    "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/harvesting-independent/schema.json"
+    "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/harvesting-independent/schema.yaml",
+    "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/harvesting-independent/schema.json"
   },
-  "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/harvesting-independent/schema.yaml",
-  "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/harvesting-independent/context.jsonld",
-  "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/harvesting-independent/resolvedProperties.json",
-  "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/harvesting-independent/",
+  "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/harvesting-independent/schema.yaml",
+  "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/harvesting-independent/context.jsonld",
+  "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/harvesting-independent/resolvedProperties.json",
+  "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/harvesting-independent/",
   "validationPassed": true,
   "description": "# Stock-Independent Harvesting\n\n**Equation(s):**\n```\ndX/dt = r\u00b7X\u00b7(1-X/K) - H\n```\n\n**Java class:** `model.lokal.o2.Bestandsunabhaengige_Ernte`\n**Tags:** o2, harvesting, constant-quota\n\nCombined with `model.global.Diffusion` / `model.global.Advection` for PDE runs.\nSolved by `jEuler`, `jRungeKutta`, or `jButcher` (model/numerik/).\nOutput via `JPlotter0D` (ODE), `JPlotter1D/2D` or `VTKPlotter3D` (PDE).\n",
   "examples": [

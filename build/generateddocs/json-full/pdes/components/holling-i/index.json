@@ -19,16 +19,16 @@
     }
   ],
   "shaclShapes": {},
-  "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-i/context.jsonld",
+  "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-i/context.jsonld",
   "dateOfLastChange": "2025-01-01",
   "schema": {
-    "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-i/schema.yaml",
-    "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-i/schema.json"
+    "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-i/schema.yaml",
+    "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-i/schema.json"
   },
-  "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-i/schema.yaml",
-  "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-i/context.jsonld",
-  "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-i/resolvedProperties.json",
-  "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-i/",
+  "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/holling-i/schema.yaml",
+  "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/holling-i/context.jsonld",
+  "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-i/resolvedProperties.json",
+  "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/holling-i/",
   "validationPassed": true,
   "description": "# Holling Type I Functional Response\n**Formula:** `f(X) = a\u00b7X`\nLinear consumption; no saturation. Used as predation term in basic Lotka-Volterra variants.\n",
   "examples": [

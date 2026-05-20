@@ -19,16 +19,16 @@
     }
   ],
   "shaclShapes": {},
-  "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iii/context.jsonld",
+  "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-iii/context.jsonld",
   "dateOfLastChange": "2025-01-01",
   "schema": {
-    "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iii/schema.yaml",
-    "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iii/schema.json"
+    "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-iii/schema.yaml",
+    "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-iii/schema.json"
   },
-  "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-iii/schema.yaml",
-  "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-iii/context.jsonld",
-  "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iii/resolvedProperties.json",
-  "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-iii/",
+  "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/holling-iii/schema.yaml",
+  "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/holling-iii/context.jsonld",
+  "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-iii/resolvedProperties.json",
+  "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/holling-iii/",
   "validationPassed": true,
   "description": "# Holling Type III Functional Response\n**Formula:** `f(X) = gamma\u00b7X\u00b2 / (H\u00b2 + X\u00b2)`\nSigmoid. Used for fish predation on zooplankton in Scheffer model.\n",
   "examples": [

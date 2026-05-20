@@ -16,16 +16,16 @@
     "operator"
   ],
   "shaclShapes": {},
-  "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/advection/context.jsonld",
+  "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/advection/context.jsonld",
   "dateOfLastChange": "2025-01-01",
   "schema": {
-    "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/advection/schema.yaml",
-    "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/advection/schema.json"
+    "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/advection/schema.yaml",
+    "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/advection/schema.json"
   },
-  "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/advection/schema.yaml",
-  "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/advection/context.jsonld",
-  "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/advection/resolvedProperties.json",
-  "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/advection/",
+  "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/advection/schema.yaml",
+  "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/advection/context.jsonld",
+  "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/advection/resolvedProperties.json",
+  "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/advection/",
   "validationPassed": true,
   "description": "# Spatial Advection Operator\n**Term:** `-v\u00b7\u2207u`\nImplemented in `model.global.Advection.java`. Differential advection between species (v1 \u2260 v2) triggers DIFICI travelling waves even when D1 = D2.\n",
   "examples": [

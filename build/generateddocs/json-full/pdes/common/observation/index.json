@@ -23,16 +23,16 @@
     "http://www.w3.org/ns/sosa/ObservationCollection"
   ],
   "shaclShapes": {},
-  "ldContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/observation/context.jsonld",
+  "ldContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/common/observation/context.jsonld",
   "dateOfLastChange": "2025-01-01",
   "schema": {
-    "application/yaml": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/observation/schema.yaml",
-    "application/json": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/observation/schema.json"
+    "application/yaml": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/common/observation/schema.yaml",
+    "application/json": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/common/observation/schema.json"
   },
-  "sourceSchema": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/observation/schema.yaml",
-  "sourceLdContext": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/observation/context.jsonld",
-  "resolvedSchemaProperties": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/observation/resolvedProperties.json",
-  "sourceFiles": "https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/observation/",
+  "sourceSchema": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/common/observation/schema.yaml",
+  "sourceLdContext": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/common/observation/context.jsonld",
+  "resolvedSchemaProperties": "https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/common/observation/resolvedProperties.json",
+  "sourceFiles": "https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/common/observation/",
   "validationPassed": true,
   "description": "# Initial Observation (SOSA)\n\nGeneric **SOSA `ObservationCollection`** used as initial conditions for any\nmodel in this register. Each state variable and control parameter is a\nseparate `sosa:Observation` member, individually typed as a `prov:Activity`\nthat generates one `sosa:Result` (`prov:Entity`).\n\n## PROV alignment (SSN \u00a76.5)\n\n| Concept | PROV equivalent |\n|---|---|\n| `sosa:Observation` (each member) | `prov:Activity` |\n| `sosa:Sensor` (`madeBySensor`) | `prov:Agent` |\n| `sosa:FeatureOfInterest` | `prov:Entity` |\n| `sosa:Result` (`hasResult`) | `prov:Entity` |\n| `sosa:usedProcedure` | `prov:used` |\n",
   "examples": [

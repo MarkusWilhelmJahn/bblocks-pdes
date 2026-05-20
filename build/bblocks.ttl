@@ -22,34 +22,34 @@
     dct:abstract "Linear advection term -v·∇u. Implemented in model.global.Advection.java. Combined with any local kinetic model and diffusion to produce a DIFICI travelling-wave system."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-01T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/components/advection/index.json> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/components/advection/index.md> ],
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/components/advection/index.json> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.components.advection> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.components.advection> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/components/advection/index.md> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-01-01"^^xsd:date ;
-    skos:inScheme <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:inScheme <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     skos:prefLabel "Spatial Advection Operator" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:topConceptOf <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     dcat:keyword "DIFICI",
         "PDE",
         "advection",
         "operator",
         "spatial" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/advection/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/advection/schema.yaml> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/advection/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/advection/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/advection/schema.json> ;
-            prof:hasRole role:schema ] ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/advection/context.jsonld> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/advection/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
+    bblocks:hasSourceJsonLdContext <https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/advection/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/experimental> ;
     bblocks:validationPassed true .
 
@@ -60,34 +60,34 @@
     rdfs:label "Spatial Diffusion Operator" ;
     dct:abstract "Fickian diffusion term D·∇²u. Implemented in model.global.Diffusion.java. Combined with any local kinetic model to produce a reaction-diffusion PDE."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/components/diffusion/index.md> ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.components.diffusion> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/components/diffusion/index.md> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/components/diffusion/index.json> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.components.diffusion> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/components/diffusion/index.json> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-01-01"^^xsd:date ;
-    skos:inScheme <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:inScheme <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     skos:prefLabel "Spatial Diffusion Operator" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:topConceptOf <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     dcat:keyword "PDE",
         "diffusion",
         "operator",
         "spatial" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/diffusion/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/diffusion/context.jsonld> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/diffusion/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/diffusion/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/diffusion/schema.yaml> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/diffusion/schema.json> ;
             prof:hasRole role:schema ] ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/diffusion/context.jsonld> ;
+    bblocks:hasSourceJsonLdContext <https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/diffusion/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/experimental> ;
     bblocks:validationPassed true .
 
@@ -98,34 +98,34 @@
     rdfs:label "Holling Type I Functional Response" ;
     dct:abstract "Linear prey consumption proportional to prey density. No handling time. Implemented in model/lokal/holling/HollingI.java."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/components/holling-i/index.md> ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/components/holling-i/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/components/holling-i/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.components.holling-i> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/components/holling-i/index.json> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.components.holling-i> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-01-01"^^xsd:date ;
     dct:source [ rdfs:label "Holling (1959) Canadian Entomologist 91:293-320" ] ;
-    skos:inScheme <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:inScheme <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     skos:prefLabel "Holling Type I Functional Response" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:topConceptOf <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     dcat:keyword "Holling",
         "component",
         "functional-response" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-i/schema.json> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-i/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-i/schema.yaml> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-i/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-i/context.jsonld> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-i/context.jsonld> ;
             prof:hasRole role:mapping ] ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-i/context.jsonld> ;
+    bblocks:hasSourceJsonLdContext <https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/holling-i/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/experimental> ;
     bblocks:validationPassed true .
 
@@ -136,34 +136,34 @@
     rdfs:label "Holling Type II Functional Response" ;
     dct:abstract "Saturating Michaelis-Menten (disc equation) response. Implemented in model/lokal/holling/HollingII.java."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/components/holling-ii/index.md> ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.components.holling-ii> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/components/holling-ii/index.json> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.components.holling-ii> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/components/holling-ii/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/components/holling-ii/index.md> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-01-01"^^xsd:date ;
     dct:source [ rdfs:label "Holling (1959) Canadian Entomologist 91:293-320" ] ;
-    skos:inScheme <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:inScheme <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     skos:prefLabel "Holling Type II Functional Response" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:topConceptOf <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     dcat:keyword "Holling",
         "component",
         "functional-response" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-ii/schema.yaml> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-ii/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-ii/schema.json> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-ii/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-ii/context.jsonld> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-ii/context.jsonld> ;
             prof:hasRole role:mapping ] ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-ii/context.jsonld> ;
+    bblocks:hasSourceJsonLdContext <https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/holling-ii/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/experimental> ;
     bblocks:validationPassed true .
 
@@ -175,33 +175,33 @@
     dct:abstract "Sigmoid response — accelerating at low density, saturating at high. Implemented in model/lokal/holling/HollingIII.java."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-01T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.components.holling-iii> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/components/holling-iii/index.md> ],
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.components.holling-iii> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/components/holling-iii/index.json> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/components/holling-iii/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/components/holling-iii/index.md> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-01-01"^^xsd:date ;
     dct:source [ rdfs:label "Holling (1959) Canadian Entomologist 91:293-320" ] ;
-    skos:inScheme <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:inScheme <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     skos:prefLabel "Holling Type III Functional Response" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:topConceptOf <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     dcat:keyword "Holling",
         "component",
         "functional-response" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iii/schema.yaml> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-iii/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iii/context.jsonld> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-iii/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iii/schema.json> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-iii/schema.json> ;
             prof:hasRole role:schema ] ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-iii/context.jsonld> ;
+    bblocks:hasSourceJsonLdContext <https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/holling-iii/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/experimental> ;
     bblocks:validationPassed true .
 
@@ -212,34 +212,34 @@
     rdfs:label "Holling Type IV Functional Response" ;
     dct:abstract "Inhibition / Monod-Haldane response — unimodal, decreasing at high prey density. Implemented in model/lokal/holling/HollingIV.java."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.components.holling-iv> ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/components/holling-iv/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/components/holling-iv/index.md> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/components/holling-iv/index.json> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/components/holling-iv/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.components.holling-iv> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-01-01"^^xsd:date ;
     dct:source [ rdfs:label "Holling (1959) Canadian Entomologist 91:293-320" ] ;
-    skos:inScheme <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:inScheme <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     skos:prefLabel "Holling Type IV Functional Response" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:topConceptOf <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     dcat:keyword "Holling",
         "component",
         "functional-response" ;
     prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iv/context.jsonld> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-iv/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iv/schema.yaml> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-iv/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/components/holling-iv/schema.json> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/components/holling-iv/schema.yaml> ;
             prof:hasRole role:schema ] ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/components/holling-iv/context.jsonld> ;
+    bblocks:hasSourceJsonLdContext <https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/components/holling-iv/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/experimental> ;
     bblocks:validationPassed true .
 
@@ -250,36 +250,36 @@
     rdfs:label "Lead Kinetics (Blei)" ;
     dct:abstract "One-compartment lead (Blei) kinetics model dX/dt = k_in - k_out·X. Implemented in Blei.java."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o1.blei> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o1/blei/index.json> ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o1/blei/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o1.blei> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o1/blei/index.md> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o1/blei/index.md> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-01-01"^^xsd:date ;
     dct:source <https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES> ;
-    skos:inScheme <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:inScheme <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     skos:prefLabel "Lead Kinetics (Blei)" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:topConceptOf <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     dcat:keyword "ODE",
         "model" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o1/blei/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o1/blei/context.jsonld> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o1/blei/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o1/blei/schema.yaml> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o1/blei/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o1/blei/schema.json> ;
             prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://mwj.pdes.common.observation>,
         <bblocks://mwj.pdes.common.simulation-run>,
         <bblocks://mwj.pdes.common.stac-result> ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o1/blei/context.jsonld> ;
+    bblocks:hasSourceJsonLdContext <https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o1/blei/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/experimental> ;
     bblocks:validationPassed true .
 
@@ -290,36 +290,36 @@
     rdfs:label "China Population Model" ;
     dct:abstract "Two-component demographic or resource-competition model. China.java."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.china> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/china/index.json> ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o2/china/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o2.china> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/china/index.md> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o2/china/index.md> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-01-01"^^xsd:date ;
     dct:source <https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES> ;
-    skos:inScheme <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:inScheme <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     skos:prefLabel "China Population Model" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:topConceptOf <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     dcat:keyword "ODE",
         "model" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/china/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/china/schema.json> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/china/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/china/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/china/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/china/schema.yaml> ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://mwj.pdes.common.observation>,
         <bblocks://mwj.pdes.common.simulation-run>,
         <bblocks://mwj.pdes.common.stac-result> ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/china/context.jsonld> ;
+    bblocks:hasSourceJsonLdContext <https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/china/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/experimental> ;
     bblocks:validationPassed true .
 
@@ -330,36 +330,36 @@
     rdfs:label "Stock-Dependent Harvesting" ;
     dct:abstract "Logistic growth with proportional (stock-dependent) harvesting effort. Bestandsabhaengige_Ernte.java."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.harvesting-dependent> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/harvesting-dependent/index.json> ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o2/harvesting-dependent/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/harvesting-dependent/index.md> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o2/harvesting-dependent/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o2.harvesting-dependent> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-01-01"^^xsd:date ;
     dct:source <https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES> ;
-    skos:inScheme <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:inScheme <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     skos:prefLabel "Stock-Dependent Harvesting" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:topConceptOf <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     dcat:keyword "ODE",
         "model" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/harvesting-dependent/schema.yaml> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/harvesting-dependent/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/harvesting-dependent/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/harvesting-dependent/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/harvesting-dependent/schema.json> ;
-            prof:hasRole role:schema ] ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/harvesting-dependent/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     bblocks:dependsOn <bblocks://mwj.pdes.common.observation>,
         <bblocks://mwj.pdes.common.simulation-run>,
         <bblocks://mwj.pdes.common.stac-result> ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/harvesting-dependent/context.jsonld> ;
+    bblocks:hasSourceJsonLdContext <https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/harvesting-dependent/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/experimental> ;
     bblocks:validationPassed true .
 
@@ -370,36 +370,36 @@
     rdfs:label "Stock-Independent Harvesting" ;
     dct:abstract "Logistic growth with constant (stock-independent) harvest rate H. Bestandsunabhaengige_Ernte.java."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/harvesting-independent/index.json> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/harvesting-independent/index.md> ],
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o2/harvesting-independent/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o2/harvesting-independent/index.json> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.harvesting-independent> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o2.harvesting-independent> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-01-01"^^xsd:date ;
     dct:source <https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES> ;
-    skos:inScheme <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:inScheme <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     skos:prefLabel "Stock-Independent Harvesting" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:topConceptOf <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     dcat:keyword "ODE",
         "model" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/harvesting-independent/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/harvesting-independent/schema.json> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/harvesting-independent/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/harvesting-independent/schema.yaml> ;
-            prof:hasRole role:schema ] ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/harvesting-independent/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/harvesting-independent/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     bblocks:dependsOn <bblocks://mwj.pdes.common.observation>,
         <bblocks://mwj.pdes.common.simulation-run>,
         <bblocks://mwj.pdes.common.stac-result> ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/harvesting-independent/context.jsonld> ;
+    bblocks:hasSourceJsonLdContext <https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/harvesting-independent/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/experimental> ;
     bblocks:validationPassed true .
 
@@ -410,36 +410,36 @@
     rdfs:label "Jansen Host-Parasitoid Model" ;
     dct:abstract "Jansen (1995) host-parasitoid model with density dependence. Jansen.java."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/jansen/index.json> ],
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o2/jansen/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o2/jansen/index.json> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.jansen> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/jansen/index.md> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o2.jansen> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-01-01"^^xsd:date ;
     dct:source <https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES> ;
-    skos:inScheme <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:inScheme <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     skos:prefLabel "Jansen Host-Parasitoid Model" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:topConceptOf <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     dcat:keyword "ODE",
         "model" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/jansen/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/jansen/context.jsonld> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/jansen/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/jansen/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/jansen/schema.json> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/jansen/schema.yaml> ;
             prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://mwj.pdes.common.observation>,
         <bblocks://mwj.pdes.common.simulation-run>,
         <bblocks://mwj.pdes.common.stac-result> ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/jansen/context.jsonld> ;
+    bblocks:hasSourceJsonLdContext <https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/jansen/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/experimental> ;
     bblocks:validationPassed true .
 
@@ -451,35 +451,35 @@
     dct:abstract "Lorenz (1963) chaotic attractor: dx/dt=sigma(y-x), dy/dt=x(rho-z)-y, dz/dt=xy-beta·z. Lorenz.java."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-01T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.lorenz> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/lorenz/index.json> ],
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o2.lorenz> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/lorenz/index.md> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o2/lorenz/index.md> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o2/lorenz/index.json> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-01-01"^^xsd:date ;
     dct:source <https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES> ;
-    skos:inScheme <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:inScheme <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     skos:prefLabel "Lorenz System" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:topConceptOf <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     dcat:keyword "ODE",
         "model" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/lorenz/schema.yaml> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/lorenz/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/lorenz/schema.json> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/lorenz/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/lorenz/context.jsonld> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/lorenz/context.jsonld> ;
             prof:hasRole role:mapping ] ;
     bblocks:dependsOn <bblocks://mwj.pdes.common.observation>,
         <bblocks://mwj.pdes.common.simulation-run>,
         <bblocks://mwj.pdes.common.stac-result> ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/lorenz/context.jsonld> ;
+    bblocks:hasSourceJsonLdContext <https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/lorenz/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/experimental> ;
     bblocks:validationPassed true .
 
@@ -490,36 +490,36 @@
     rdfs:label "Lotka-Volterra Predator-Prey" ;
     dct:abstract "Classic Lotka-Volterra: dX/dt=a·X-b·X·Y, dY/dt=-c·Y+d·X·Y. Implemented in Lotka.java."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/lotka-volterra/index.md> ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o2.lotka-volterra> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/lotka-volterra/index.json> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.lotka-volterra> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o2/lotka-volterra/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o2/lotka-volterra/index.md> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-01-01"^^xsd:date ;
     dct:source <https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES> ;
-    skos:inScheme <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:inScheme <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     skos:prefLabel "Lotka-Volterra Predator-Prey" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:topConceptOf <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     dcat:keyword "ODE",
         "model" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/lotka-volterra/schema.json> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/lotka-volterra/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/lotka-volterra/schema.yaml> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/lotka-volterra/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/lotka-volterra/context.jsonld> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/lotka-volterra/context.jsonld> ;
             prof:hasRole role:mapping ] ;
     bblocks:dependsOn <bblocks://mwj.pdes.common.observation>,
         <bblocks://mwj.pdes.common.simulation-run>,
         <bblocks://mwj.pdes.common.stac-result> ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/lotka-volterra/context.jsonld> ;
+    bblocks:hasSourceJsonLdContext <https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/lotka-volterra/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/experimental> ;
     bblocks:validationPassed true .
 
@@ -530,36 +530,36 @@
     rdfs:label "Generic Plankton Model" ;
     dct:abstract "Simplified two-component phytoplankton-zooplankton model. Plankton.java."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/plankton/index.json> ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o2.plankton> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o2/plankton/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/plankton/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.plankton> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o2/plankton/index.md> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-01-01"^^xsd:date ;
     dct:source <https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES> ;
-    skos:inScheme <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:inScheme <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     skos:prefLabel "Generic Plankton Model" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:topConceptOf <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     dcat:keyword "ODE",
         "model" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/plankton/schema.json> ;
-            prof:hasRole role:schema ],
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/plankton/context.jsonld> ;
+            prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/plankton/schema.yaml> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/plankton/schema.yaml> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/plankton/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/plankton/schema.json> ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://mwj.pdes.common.observation>,
         <bblocks://mwj.pdes.common.simulation-run>,
         <bblocks://mwj.pdes.common.stac-result> ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/plankton/context.jsonld> ;
+    bblocks:hasSourceJsonLdContext <https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/plankton/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/experimental> ;
     bblocks:validationPassed true .
 
@@ -571,35 +571,35 @@
     dct:abstract "Rössler (1976) chaotic system: dx/dt=-(y+z), dy/dt=x+a·y, dz/dt=b+z(x-c). Roessler.java."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-01T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.roessler> ],
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o2.roessler> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/roessler/index.md> ],
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o2/roessler/index.md> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/roessler/index.json> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o2/roessler/index.json> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-01-01"^^xsd:date ;
     dct:source <https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES> ;
-    skos:inScheme <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:inScheme <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     skos:prefLabel "Rössler System" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:topConceptOf <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     dcat:keyword "ODE",
         "model" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/roessler/schema.json> ;
-            prof:hasRole role:schema ],
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/roessler/context.jsonld> ;
+            prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/roessler/schema.yaml> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/roessler/schema.yaml> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/roessler/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/roessler/schema.json> ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://mwj.pdes.common.observation>,
         <bblocks://mwj.pdes.common.simulation-run>,
         <bblocks://mwj.pdes.common.stac-result> ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/roessler/context.jsonld> ;
+    bblocks:hasSourceJsonLdContext <https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/roessler/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/experimental> ;
     bblocks:validationPassed true .
 
@@ -610,36 +610,36 @@
     rdfs:label "Scheffer Phytoplankton-Zooplankton (RDA)" ;
     dct:abstract "Scheffer (1991) phytoplankton/zooplankton predator-prey model with Holling II/III responses and optional diffusion/advection. Scheffer.java."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/scheffer/index.md> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/scheffer/index.json> ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o2/scheffer/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o2/scheffer/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.scheffer> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o2.scheffer> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-01-01"^^xsd:date ;
     dct:source <https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES> ;
-    skos:inScheme <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:inScheme <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     skos:prefLabel "Scheffer Phytoplankton-Zooplankton (RDA)" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:topConceptOf <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     dcat:keyword "ODE",
         "model" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/scheffer/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/scheffer/context.jsonld> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/scheffer/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/scheffer/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/scheffer/schema.yaml> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/scheffer/schema.yaml> ;
             prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://mwj.pdes.common.observation>,
         <bblocks://mwj.pdes.common.simulation-run>,
         <bblocks://mwj.pdes.common.stac-result> ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/scheffer/context.jsonld> ;
+    bblocks:hasSourceJsonLdContext <https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/scheffer/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/experimental> ;
     bblocks:validationPassed true .
 
@@ -650,36 +650,36 @@
     rdfs:label "Larch Budmoth (Tannentriebwickler)" ;
     dct:abstract "Zeiraphera diniana (larch budmoth) population cycle model. Tannentriebwickler.java."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/tannentriebwickler/index.md> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/tannentriebwickler/index.json> ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o2/tannentriebwickler/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o2/tannentriebwickler/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.tannentriebwickler> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o2.tannentriebwickler> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-01-01"^^xsd:date ;
     dct:source <https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES> ;
-    skos:inScheme <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:inScheme <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     skos:prefLabel "Larch Budmoth (Tannentriebwickler)" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:topConceptOf <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     dcat:keyword "ODE",
         "model" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/tannentriebwickler/schema.yaml> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/tannentriebwickler/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/tannentriebwickler/schema.json> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/tannentriebwickler/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/tannentriebwickler/context.jsonld> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/tannentriebwickler/context.jsonld> ;
             prof:hasRole role:mapping ] ;
     bblocks:dependsOn <bblocks://mwj.pdes.common.observation>,
         <bblocks://mwj.pdes.common.simulation-run>,
         <bblocks://mwj.pdes.common.stac-result> ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/tannentriebwickler/context.jsonld> ;
+    bblocks:hasSourceJsonLdContext <https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/tannentriebwickler/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/experimental> ;
     bblocks:validationPassed true .
 
@@ -690,36 +690,36 @@
     rdfs:label "Tumor-Immune Interaction" ;
     dct:abstract "Two-component tumor growth and immune response model. Tumor.java."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/tumor/index.json> ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o2.tumor> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o2/tumor/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/tumor/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.tumor> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o2/tumor/index.md> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-01-01"^^xsd:date ;
     dct:source <https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES> ;
-    skos:inScheme <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:inScheme <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     skos:prefLabel "Tumor-Immune Interaction" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:topConceptOf <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     dcat:keyword "ODE",
         "model" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/tumor/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/tumor/context.jsonld> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/tumor/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/tumor/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/tumor/schema.json> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/tumor/schema.json> ;
             prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://mwj.pdes.common.observation>,
         <bblocks://mwj.pdes.common.simulation-run>,
         <bblocks://mwj.pdes.common.stac-result> ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/tumor/context.jsonld> ;
+    bblocks:hasSourceJsonLdContext <https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/tumor/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/experimental> ;
     bblocks:validationPassed true .
 
@@ -730,36 +730,36 @@
     rdfs:label "Volterra Predator-Prey with Carrying Capacity" ;
     dct:abstract "Extended Volterra with logistic prey: dX/dt=r·X(1-X/K)-a·X·Y, dY/dt=-c·Y+d·a·X·Y. Volterra.java."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o2.volterra> ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o2/volterra/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o2.volterra> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o2/volterra/index.md> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o2/volterra/index.json> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o2/volterra/index.md> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-01-01"^^xsd:date ;
     dct:source <https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES> ;
-    skos:inScheme <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:inScheme <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     skos:prefLabel "Volterra Predator-Prey with Carrying Capacity" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:topConceptOf <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     dcat:keyword "ODE",
         "model" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/volterra/schema.yaml> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/volterra/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/volterra/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/volterra/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o2/volterra/schema.json> ;
-            prof:hasRole role:schema ] ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o2/volterra/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     bblocks:dependsOn <bblocks://mwj.pdes.common.observation>,
         <bblocks://mwj.pdes.common.simulation-run>,
         <bblocks://mwj.pdes.common.stac-result> ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o2/volterra/context.jsonld> ;
+    bblocks:hasSourceJsonLdContext <https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o2/volterra/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/experimental> ;
     bblocks:validationPassed true .
 
@@ -770,36 +770,36 @@
     rdfs:label "Fish Harvesting (Fischfang)" ;
     dct:abstract "Three-component fish harvesting model (prey-predator-effort or nutrient-fish-harvest). Fischfang.java."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o3/fischfang/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o3.fischfang> ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o3.fischfang> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o3/fischfang/index.json> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o3/fischfang/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o3/fischfang/index.md> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-01-01"^^xsd:date ;
     dct:source <https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES> ;
-    skos:inScheme <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:inScheme <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     skos:prefLabel "Fish Harvesting (Fischfang)" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:topConceptOf <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     dcat:keyword "ODE",
         "model" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o3/fischfang/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o3/fischfang/schema.json> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o3/fischfang/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o3/fischfang/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o3/fischfang/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o3/fischfang/schema.yaml> ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://mwj.pdes.common.observation>,
         <bblocks://mwj.pdes.common.simulation-run>,
         <bblocks://mwj.pdes.common.stac-result> ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o3/fischfang/context.jsonld> ;
+    bblocks:hasSourceJsonLdContext <https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o3/fischfang/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/experimental> ;
     bblocks:validationPassed true .
 
@@ -810,36 +810,36 @@
     rdfs:label "Schlögl Bistable Chemical Reaction" ;
     dct:abstract "Schlögl (1972) chemical bistability: dX/dt = k1·A·X²-k2·X³+k3·B-k4·X. Schloegl.java."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/o3/schloegl/index.md> ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/o3/schloegl/index.json> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.o3.schloegl> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/o3/schloegl/index.json> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.o3.schloegl> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/o3/schloegl/index.md> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-01-01"^^xsd:date ;
     dct:source <https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES> ;
-    skos:inScheme <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:inScheme <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     skos:prefLabel "Schlögl Bistable Chemical Reaction" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:topConceptOf <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     dcat:keyword "ODE",
         "model" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o3/schloegl/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o3/schloegl/schema.json> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o3/schloegl/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/o3/schloegl/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o3/schloegl/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/o3/schloegl/schema.json> ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://mwj.pdes.common.observation>,
         <bblocks://mwj.pdes.common.simulation-run>,
         <bblocks://mwj.pdes.common.stac-result> ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/o3/schloegl/context.jsonld> ;
+    bblocks:hasSourceJsonLdContext <https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/o3/schloegl/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/experimental> ;
     bblocks:validationPassed true .
 
@@ -850,36 +850,36 @@
     rdfs:label "Exponential Growth" ;
     dct:abstract "Single-species exponential growth dX/dt = r·X. Implemented in Exponentiell.java."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/standard/exponential/index.json> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.standard.exponential> ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.standard.exponential> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/standard/exponential/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/standard/exponential/index.md> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/standard/exponential/index.md> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-01-01"^^xsd:date ;
     dct:source <https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES> ;
-    skos:inScheme <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:inScheme <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     skos:prefLabel "Exponential Growth" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:topConceptOf <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     dcat:keyword "ODE",
         "model" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/exponential/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/exponential/schema.yaml> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/standard/exponential/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/exponential/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/standard/exponential/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/standard/exponential/schema.yaml> ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://mwj.pdes.common.observation>,
         <bblocks://mwj.pdes.common.simulation-run>,
         <bblocks://mwj.pdes.common.stac-result> ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/exponential/context.jsonld> ;
+    bblocks:hasSourceJsonLdContext <https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/standard/exponential/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/experimental> ;
     bblocks:validationPassed true .
 
@@ -891,35 +891,35 @@
     dct:abstract "Goal-seeking (target) dynamics dX/dt = r·(Z-X). Implemented in Zielsuchend.java."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-01T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/standard/goal-seeking/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.standard.goal-seeking> ],
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/standard/goal-seeking/index.md> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/standard/goal-seeking/index.json> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/standard/goal-seeking/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.standard.goal-seeking> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-01-01"^^xsd:date ;
     dct:source <https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES> ;
-    skos:inScheme <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:inScheme <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     skos:prefLabel "Goal-Seeking Model" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:topConceptOf <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     dcat:keyword "ODE",
         "model" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/standard/goal-seeking/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/goal-seeking/context.jsonld> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/standard/goal-seeking/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/goal-seeking/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/goal-seeking/schema.yaml> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/standard/goal-seeking/schema.json> ;
             prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://mwj.pdes.common.observation>,
         <bblocks://mwj.pdes.common.simulation-run>,
         <bblocks://mwj.pdes.common.stac-result> ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/goal-seeking/context.jsonld> ;
+    bblocks:hasSourceJsonLdContext <https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/standard/goal-seeking/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/experimental> ;
     bblocks:validationPassed true .
 
@@ -931,35 +931,35 @@
     dct:abstract "Linear scalar ODE dX/dt = a·X + b. Implemented in Linear.java."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-01T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/standard/linear/index.json> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.standard.linear> ],
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/standard/linear/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/standard/linear/index.md> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/standard/linear/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.standard.linear> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-01-01"^^xsd:date ;
     dct:source <https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES> ;
-    skos:inScheme <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:inScheme <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     skos:prefLabel "Linear ODE" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:topConceptOf <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     dcat:keyword "ODE",
         "model" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/linear/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/linear/schema.json> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/standard/linear/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/linear/schema.yaml> ;
-            prof:hasRole role:schema ] ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/standard/linear/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/standard/linear/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     bblocks:dependsOn <bblocks://mwj.pdes.common.observation>,
         <bblocks://mwj.pdes.common.simulation-run>,
         <bblocks://mwj.pdes.common.stac-result> ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/linear/context.jsonld> ;
+    bblocks:hasSourceJsonLdContext <https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/standard/linear/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/experimental> ;
     bblocks:validationPassed true .
 
@@ -970,53 +970,53 @@
     rdfs:label "Logistic Growth" ;
     dct:abstract "Single-species logistic growth dX/dt = r·X·(1-X/K). Implemented in Logistisch.java."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/standard/logistic/index.md> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.standard.logistic> ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.standard.logistic> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/standard/logistic/index.json> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/standard/logistic/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/standard/logistic/index.md> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-01-01"^^xsd:date ;
     dct:source <https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES> ;
-    skos:inScheme <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:inScheme <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     skos:prefLabel "Logistic Growth" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:topConceptOf <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     dcat:keyword "ODE",
         "model" ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/logistic/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/logistic/schema.yaml> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/standard/logistic/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/standard/logistic/schema.json> ;
-            prof:hasRole role:schema ] ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/standard/logistic/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/standard/logistic/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     bblocks:dependsOn <bblocks://mwj.pdes.common.observation>,
         <bblocks://mwj.pdes.common.simulation-run>,
         <bblocks://mwj.pdes.common.stac-result> ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/standard/logistic/context.jsonld> ;
+    bblocks:hasSourceJsonLdContext <https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/standard/logistic/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/experimental> ;
     bblocks:validationPassed true .
 
-<https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/bblocks.ttl> a prov:Entity ;
+<https://markuswilhelmjahn.github.io/bblocks-pdes/build/bblocks.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    prov:wasAttributedTo _:N21761fd547234b039d59b9454574e1ad ;
+    prov:wasAttributedTo _:Nd4302ef40f9a42dab61765ed456e0a5c ;
     prov:wasGeneratedBy [ a prov:Activity ;
-            prov:endedAtTime "2026-05-20T15:11:46.102410"^^xsd:dateTime ;
-            prov:startedAtTime "2026-05-20T15:11:45.928341"^^xsd:dateTime ;
+            prov:endedAtTime "2026-05-20T15:28:35.769227"^^xsd:dateTime ;
+            prov:startedAtTime "2026-05-20T15:28:35.579024"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
-                    dct:format "application/yaml" ;
-                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
-                [ a prov:Entity ;
                     dct:format "application/json" ;
-                    dct:hasVersion "git:3ef1edfc0691f047d68991a803eb504bd8a324ad" ;
-                    rdfs:seeAlso <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/register.json> ] ;
-            prov:wasAssociatedWith _:N21761fd547234b039d59b9454574e1ad ] .
+                    dct:hasVersion "git:380effb99a7d98f9d23e54d4979a747fc6007b4c" ;
+                    rdfs:seeAlso <https://markuswilhelmjahn.github.io/bblocks-pdes/build/register.json> ],
+                [ a prov:Entity ;
+                    dct:format "application/yaml" ;
+                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ] ;
+            prov:wasAssociatedWith _:Nd4302ef40f9a42dab61765ed456e0a5c ] .
 
 <https://stacspec.org/> rdfs:label "STAC 1.0" .
 
@@ -1032,35 +1032,35 @@
     dct:abstract "STAC 1.0 Item cataloguing outputs of any simulation run from FiniteDifferenceMethod4PDES, with plankton-rda extension for model-specific searchable properties."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-01T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/common/stac-result/index.md> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/common/stac-result/index.json> ],
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/common/stac-result/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.common.stac-result> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.common.stac-result> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/common/stac-result/index.json> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-01-01"^^xsd:date ;
     dct:source <https://stacspec.org/> ;
-    skos:inScheme <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:inScheme <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     skos:prefLabel "Simulation Result STAC Item" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:topConceptOf <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     dcat:keyword "STAC",
         "catalog",
         "spatial-field",
         "timeseries" ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/common/stac-result/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/stac-result/schema.yaml> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/common/stac-result/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/stac-result/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/stac-result/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/common/stac-result/schema.json> ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://mwj.pdes.common.simulation-run> ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/stac-result/context.jsonld> ;
+    bblocks:hasSourceJsonLdContext <https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/common/stac-result/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/experimental> ;
     bblocks:validationPassed true .
 
@@ -1073,35 +1073,35 @@
     rdfs:label "Initial Observation (SOSA)" ;
     dct:abstract "SOSA ObservationCollection providing initial state variables and control parameters for any model run. resultTime becomes t=0 of the simulation."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.common.observation> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/common/observation/index.md> ],
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/common/observation/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.common.observation> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/common/observation/index.json> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/common/observation/index.json> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-01-01"^^xsd:date ;
     dct:source <https://www.w3.org/TR/vocab-ssn/> ;
     rdfs:subClassOf sosa:ObservationCollection ;
-    skos:inScheme <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:inScheme <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     skos:prefLabel "Initial Observation (SOSA)" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:topConceptOf <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     dcat:keyword "SOSA",
         "initial-conditions",
         "observation" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/observation/schema.json> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/common/observation/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/observation/context.jsonld> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/common/observation/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/observation/schema.yaml> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/common/observation/schema.yaml> ;
             prof:hasRole role:schema ] ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/observation/context.jsonld> ;
+    bblocks:hasSourceJsonLdContext <https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/common/observation/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/experimental> ;
     bblocks:validationPassed true .
 
@@ -1112,48 +1112,48 @@
     rdfs:label "Simulation Run (PROV)" ;
     dct:abstract "Generic PROV Activity capturing one execution of any local kinetic model in FiniteDifferenceMethod4PDES, optionally extended with spatial operators (Diffusion, Advection)."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2025-01-01T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/markdown/pdes/common/simulation-run/index.md> ],
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/bblock/mwj.pdes.common.simulation-run> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/generateddocs/json-full/pdes/common/simulation-run/index.json> ],
-        [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/bblock/mwj.pdes.common.simulation-run> ] ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/json-full/pdes/common/simulation-run/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://markuswilhelmjahn.github.io/bblocks-pdes/build/generateddocs/markdown/pdes/common/simulation-run/index.md> ] ;
     dct:hasVersion "0.1" ;
     dct:modified "2025-01-01"^^xsd:date ;
     dct:source <https://github.com/MarkusWilhelmJahn/FiniteDifferenceMethod4PDES>,
         <https://www.w3.org/TR/prov-o/> ;
     rdfs:subClassOf prov:Activity ;
-    skos:inScheme <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:inScheme <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     skos:prefLabel "Simulation Run (PROV)" ;
-    skos:topConceptOf <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
+    skos:topConceptOf <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
     dcat:keyword "FDM",
         "PROV",
         "lineage",
         "simulation" ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/simulation-run/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/simulation-run/schema.json> ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/common/simulation-run/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
-            prof:hasArtifact <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/annotated/pdes/common/simulation-run/context.jsonld> ;
-            prof:hasRole role:mapping ] ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/common/simulation-run/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://markuswilhelmjahn.github.io/bblocks-pdes/build/annotated/pdes/common/simulation-run/schema.json> ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://mwj.pdes.common.observation> ;
-    bblocks:hasSourceJsonLdContext <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/_sources/common/simulation-run/context.jsonld> ;
+    bblocks:hasSourceJsonLdContext <https://markuswilhelmjahn.github.io/bblocks-pdes/_sources/common/simulation-run/context.jsonld> ;
     bblocks:status <http://www.opengis.net/def/status/experimental> ;
     bblocks:validationPassed true .
 
-<https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> a skos:ConceptScheme,
+<https://markuswilhelmjahn.github.io/bblocks-pdes/> a skos:ConceptScheme,
         dcat:Catalog,
         bblocks:BBlocksRegister ;
     rdfs:label "Building Blocks - FiniteDifferenceMethod4PDES — OGC Building Block Register" ;
     dct:abstract """OGC Building Block register for all ODE/PDE models implemented in FiniteDifferenceMethod4PDES (Java/Maven, MVC architecture). Covers 22 local kinetic models across 4 complexity tiers, 4 Holling functional response components, and 2 spatial operators, all described using SOSA, PROV-O and STAC 1.0.
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:modified "2026-05-20T15:11:38.640400"^^xsd:dateTime ;
+    dct:modified "2026-05-20T15:28:27.831710"^^xsd:dateTime ;
     owl:imports <https://opengeospatial.github.io/bblocks/register.json> ;
     skos:hasTopConcept <bblocks://mwj.pdes.common.observation>,
         <bblocks://mwj.pdes.common.simulation-run>,
@@ -1184,22 +1184,22 @@
         <bblocks://mwj.pdes.standard.linear>,
         <bblocks://mwj.pdes.standard.logistic> ;
     skos:prefLabel "Building Blocks - FiniteDifferenceMethod4PDES — OGC Building Block Register" ;
-    prof:hasResource [ rdfs:label "This Building Blocks Register in JSON format" ;
-            dct:type "application/json" ;
-            ns2:relation <http://www.iana.org/assignments/relation/self> ;
-            ns1:hasTarget <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/register.json> ],
-        [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
+    prof:hasResource [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
             dct:type "application/ld+json" ;
             ns2:relation <http://www.iana.org/assignments/relation/self> ;
-            ns1:hasTarget <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/bblocks.jsonld> ],
+            ns1:hasTarget <https://markuswilhelmjahn.github.io/bblocks-pdes/build/bblocks.jsonld> ],
+        [ rdfs:label "This Building Blocks Register in JSON format" ;
+            dct:type "application/json" ;
+            ns2:relation <http://www.iana.org/assignments/relation/self> ;
+            ns1:hasTarget <https://markuswilhelmjahn.github.io/bblocks-pdes/build/register.json> ],
         [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
             dct:type "text/turtle" ;
             ns2:relation <http://www.iana.org/assignments/relation/self> ;
-            ns1:hasTarget <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/bblocks.ttl> ] ;
-    foaf:homepage <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/> ;
-    bblocks:hasValidationReport <https://raw.githubusercontent.com/MarkusWilhelmJahn/bblocks-pdes/undefined/build/tests/report.html> .
+            ns1:hasTarget <https://markuswilhelmjahn.github.io/bblocks-pdes/build/bblocks.ttl> ] ;
+    foaf:homepage <https://markuswilhelmjahn.github.io/bblocks-pdes/> ;
+    bblocks:hasValidationReport <https://markuswilhelmjahn.github.io/bblocks-pdes/build/tests/report.html> .
 
-_:N21761fd547234b039d59b9454574e1ad a prov:Agent,
+_:Nd4302ef40f9a42dab61765ed456e0a5c a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
     dct:hasVersion "0.5.29" ;
